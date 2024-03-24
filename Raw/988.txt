@@ -1,0 +1,1597 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta name="csrf-token" content="c22u0jwywb3DDrj7iyBZLbYeLJYRylYahG3KfTlS">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Grafici ultime 24/48 h | Stazione meteorologica di Panoramica - Soverato (CZ) - MeteoNetwork</title>
+        <meta name="description" content="Scopri le località della rete Meteonetwork e scopri i nostri strumenti di climatologia - MeteoNetwork">
+
+
+        
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/bootstrap-daterangepicker/daterangepicker.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/toastr/toastr.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/fancybox/jquery.fancybox.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/datatables/css/jquery.dataTables.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/dropzone/dropzone.css">
+        
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/leaflet/leaflet.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/leaflet-markercluster/MarkerCluster.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/leaflet-markercluster/MarkerCluster.Default.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/bootstrap-toggle/css/bootstrap-toggle.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/bootstrap-select/css/bootstrap-select.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/mapbox/mapbox-gl.css">
+
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/css/app.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/css/style.css?v=1">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/css/custom.css?v=1">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/css/cookieconsent.css">
+
+
+        
+        
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Luca Cerri, Staff tecnico Meteonetwork" />
+    </head>
+    <body class="app">
+        <wrapper class="d-flex flex-column">
+            <!--header -->
+            <div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <a class="navbar-brand" href="http://www.meteonetwork.it">meteonetwork<span class="square"></span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Associazione
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="http://www.meteonetwork.it/chisiamo/">Chi siamo</a>
+                        <a class="dropdown-item" href="http://www.meteonetwork.it/iscrizioni-e-donazioni/">Iscrizioni e donazioni</a>
+                        <a class="dropdown-item" href="http://www.meteonetwork.it/partners/">Partners</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Rete Stazioni Meteo
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="https://www.meteonetwork.it/rete">Dati e Mappe</a>
+                        <a class="dropdown-item" href="https://www.meteonetwork.it/rete/livemap/">LiveMap</a>
+                        <a class="dropdown-item" href="http://my.meteonetwork.it">myMeteoNetwork</a>
+                        <a class="dropdown-item" href="https://www.meteonetwork.it/supporto/meteonetwork-api/">MeteoNetwork API</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Progetti
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="http://www.meteonetwork.it/webcam-venezia/">Webcam Venezia</a>
+                        <a class="dropdown-item" href="http://www.meteonetwork.it/radiosondaggi/">Radiosondaggi</a>
+                        <a class="dropdown-item" href="http://www.meteonetwork.it/tt/stormreport/">Storm report</a>
+                        <a class="dropdown-item" href="http://www.meteonetwork.it/models/mjo/">MJO</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://www.meteonetwork.it/didattica-2/">Didattica</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://www.meteonetwork.it/blog/">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://www.meteonetwork.it/models/">Modelli</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://forum.meteonetwork.it/">Forum</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contatti</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        Lingua
+                        <img src="https://meteonetwork.eu/img/flags/it.png">
+                    </a>
+                    <div class="dropdown-menu">
+                        
+                        <a class="dropdown-item tabs" href="https://meteonetwork.eu/it/weather-station/clb305-stazione-meteorologica-di-panoramica/graphs" ><img src="https://meteonetwork.eu/img/flags/it.png"> Italiano</a>
+                        <a class="dropdown-item tabs" href="https://meteonetwork.eu/en/weather-station/clb305-stazione-meteorologica-di-panoramica/graphs" ><img src="https://meteonetwork.eu/img/flags/en.png"> English</a>
+                        <a class="dropdown-item tabs" href="https://meteonetwork.eu/de/weather-station/clb305-stazione-meteorologica-di-panoramica/graphs" ><img src="https://meteonetwork.eu/img/flags/de.png"> Deutsch</a>
+                        <a class="dropdown-item tabs" href="https://meteonetwork.eu/fr/weather-station/clb305-stazione-meteorologica-di-panoramica/graphs" ><img src="https://meteonetwork.eu/img/flags/fr.png"> Français</a>
+                        <a class="dropdown-item tabs" href="https://meteonetwork.eu/el/weather-station/clb305-stazione-meteorologica-di-panoramica/graphs" ><img src="https://meteonetwork.eu/img/flags/el.png"> Ελληνικά</a>
+                        <a class="dropdown-item tabs" href="https://meteonetwork.eu/no/weather-station/clb305-stazione-meteorologica-di-panoramica/graphs" ><img src="https://meteonetwork.eu/img/flags/no.png"> Norsk</a>
+                    </div>
+                </li>
+
+                                
+                
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<!--
+TODO: ELIMINARE QUESTA PARTE COMMENTATA
+<div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light no_padding">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://meteonetwork.eu/it"><i class="fa fa-home"></i></a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Meteogrammi</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        Mappe
+    </a>
+    <div class="dropdown-menu">
+                       LUCA: RIMOSSI LINK NON PIÙ UTILI
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+-->
+
+
+
+            <main class="flex-fill">
+                
+                    <div class="col dx_breadc station">
+    <a class="extreme breadc" href="https://meteonetwork.eu/it">
+        myMNW
+    </a> ›
+    Stazione meteorologica di Soverato (CZ)
+    
+    /
+                <button type="button" class="btn btn-danger">offline</button>
+        
+    <!--offline
+    <button type="button" class="btn btn-danger">Offline</button>
+    -->
+</div>
+
+                <!-- Titolo: può essere sovrascritto -->
+                    <div class="row no-gutters">
+    <div class="col dx">
+        <h1 class="d-inline">
+            Stazione meteorologica di Panoramica - Soverato (CZ)
+
+        </h1>
+        
+            Rating: 
+
+           
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+            
+            
+
+                            <i class="far fa-star"></i>
+            
+
+            (95.3 %)
+        
+
+        <br/>
+                    <span class="subtitle_st">Stazione meteorologica a norma MeteoNetwork -
+                    <a class="extreme" href="#">Rete MeteoNetwork</a>
+                                        - <a class="extreme" href="https://www.meteonetwork.it/supporto/termini-di-licenza-dei-dati-meteorologici-odbl/">CC-BY 4.0</a></span><br>
+                
+        
+    </div>
+</div>
+
+                
+                    <div class="container-fluid">
+    <ul class="nav nav-tabs" role="tablist">
+                    
+            <li class="nav-item">
+                <a class="nav-link px-3" href="https://meteonetwork.eu/it">
+                    <i class="fa fa-home"></i>
+                </a>
+            </li>
+
+
+                            <li class="nav-item ">
+    <a class="nav-link px-3 station_context " href="https://meteonetwork.eu/it/weather-station/clb305-stazione-meteorologica-di-panoramica">
+        Stazione meteorologica di Soverato (CZ)
+    </a>
+</li>
+<li class="nav-item ">
+    <a class="nav-link  px-3 station_context active " href="https://meteonetwork.eu/it/weather-station/clb305-stazione-meteorologica-di-panoramica/graphs">
+        Grafici (24/48h)
+    </a>
+</li>
+<li class="nav-item">
+    <a class="nav-link px-3 station_context " href="https://meteonetwork.eu/it/weather-station/clb305-stazione-meteorologica-di-panoramica/reports">
+        Estremi
+    </a>
+</li>
+<li class="nav-item ">
+    <a class="nav-link px-3  station_context " href="https://meteonetwork.eu/it/weather-station/clb305-stazione-meteorologica-di-panoramica/archive">
+        Archivio
+    </a>
+</li>
+
+
+<li class="nav-item">
+    <a class="nav-link px-3 station_context " href="https://meteonetwork.eu/it/weather-station/clb305-stazione-meteorologica-di-panoramica/details">
+        Dettagli e Webcam
+    </a>
+</li>
+
+
+
+<li class="nav-item d-none">
+    <a class="nav-link px-3 " href="https://meteonetwork.eu/it/weather-station/clb305-stazione-meteorologica-di-panoramica/meteogram">
+        Meteogrammi
+    </a>
+</li>
+
+            
+            
+            
+                            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                Mappe
+            </a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item tabs" href="https://meteonetwork.eu/it/models" >Modelli</a>
+                <a class="dropdown-item tabs" href="https://meteonetwork.eu/it/mappe-realtime" >Mappe Realtime</a>
+                
+                <a class="dropdown-item tabs" href="https://meteonetwork.eu/it/mappe-periodiche" >Mappe Riepilogative</a>
+                <a class="dropdown-item tabs" href="https://meteonetwork.eu/it/mappe-internazionali" >Mappe Internazionali</a>
+                <a class="dropdown-item tabs" href="https://meteonetwork.eu/it/mappa-fulmini" >Mappa Fulminazioni</a>
+                <a class="dropdown-item tabs" href="https://meteonetwork.eu/it/mappa-radar" >Mappa Radar</a>
+                <a class="dropdown-item tabs" href="https://meteonetwork.eu/it/mappa-estremi" >Mappa Estremi</a>
+                <a class="dropdown-item tabs" href="https://meteonetwork.eu/it/mappa-stazioni" >Mappa Stazioni</a>
+                <a class="dropdown-item tabs" href="https://meteonetwork.eu/it/stations-list" >Elenco Stazioni</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link px-3" href="https://meteonetwork.eu/it/stations-list">Elenco Stazioni</a>
+        </li>
+                <li class="nav-item">
+            <a class="nav-link px-3" href="https://meteonetwork.eu/it/climatologia">Climatologia</a>
+        </li>
+        
+
+    </ul>
+
+    </div>
+
+                
+                    <div class="tab-content">
+        <div class="container-fluid active tab-pane">
+            <div class="row no-gutters justify-content-center">
+                <div class="col-12">
+                    <h2 class="sub config"><i class="fas fa-chevron-right"></i> Grafici ultime 24/48 h</h2>
+                </div>
+
+                
+                <div class="col-lg-5 col-md-5 col-sm-12 bg-white shadow-sm p-3 mb-5 ml-3 mr-3 text-center">
+                    <div class="card-header"><span class="c_head align-baseline">Estremi giornalieri</span></div>
+                    <div class="tab-card config table-responsive">
+                        <table class="table table-hover table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">
+                                        Variabile
+                                    </th>
+                                    <th>
+                                        <i class="fa fa2x fa-arrow-up text-danger"></i>
+                                    </th>
+                                    <th>
+                                        <i class="fa fa2x fa-arrow-down text-info"></i>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-left">
+                                
+                                <tr>
+                                    <td class="p-0 pl-2 align-middle text-center">
+                                        <img src="https://meteonetwork.eu/img/icons/cold.svg">
+                                    </td>
+                                    <td>Temperatura</td>
+                                    <td class="p-0 pl-2 align-middle">--- &deg;C <span id="tmaxspan"></span></td>
+                                    <td class="p-0 pl-2 align-middle">--- &deg;C <span id="tminspan"></span></td>
+                                </tr>
+
+                                
+                                <tr>
+                                    <td class="p-0 pl-2 align-middle text-center">
+                                        <img src="https://meteonetwork.eu/img/icons/rain2.svg">
+                                    </td>
+                                    <td>Pioggia</td>
+                                    <td class="p-0 pl-2 align-middle">--- mm</td>
+                                    <td class="p-0 pl-2 align-middle"></td>
+                                </tr>
+
+                                
+                                <tr>
+                                    <td class="p-0 pl-2 align-middle text-center">
+                                        <img src="https://meteonetwork.eu/img/icons/wind2.svg">
+                                    </td>
+                                    <td>Vento</td>
+                                    <td class="p-0 pl-2 align-middle">
+                                        Gust: --- km/h <span id="wgspan"></span>
+                                        <br>
+                                        Speed: --- km/h <span id="wsspan"></span>
+                                    </td>
+                                    <td class="p-0 pl-2 align-middle"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                
+                <div class="col-lg-5 col-md-5 col-sm-12 bg-white shadow-sm p-3 mb-5 ml-3 mr-3 text-center">
+                    <div class="card-header"><span class="c_head align-baseline">Temperatura</span></div>
+                    <div class="tab-card config " id="24h_graph_div_t">
+
+                    </div>
+                </div>
+                
+                <div class="col-lg-5 col-md-5 col-sm-12 bg-white shadow-sm p-3 mb-5 ml-3 mr-3 text-center">
+                    <div class="card-header"><span class="c_head align-baseline">Umidità</span></div>
+                    <div class="tab-card config" id="24h_graph_div_rh">
+
+                    </div>
+                </div>
+                
+                <div class="col-lg-5 col-md-5 col-sm-12 bg-white shadow-sm p-3 mb-5 ml-3 mr-3 text-center">
+                    <div class="card-header"><span class="c_head align-baseline">Temp. di rugiada</span></div>
+                    <div class="tab-card config" id="24h_graph_div_dp">
+
+                    </div>
+                </div>
+                
+                <div class="col-lg-5 col-md-5 col-sm-12 bg-white shadow-sm p-3 mb-5 ml-3 mr-3 text-center">
+                    <div class="card-header"><span class="c_head align-baseline">Pressione</span></div>
+                    <div class="tab-card config " id="24h_graph_div_slmp">
+
+                    </div>
+                </div>
+                
+                <div class="col-lg-5 col-md-5 col-sm-12 bg-white shadow-sm p-3 mb-5 ml-3 mr-3 text-center">
+                    <div class="card-header"><span class="c_head align-baseline">Pioggia</span></div>
+                    <div class="tab-card config " id="24h_graph_div_rain">
+
+                    </div>
+                </div>
+
+                
+                <div class="col-lg-5 col-md-12 bg-white shadow-sm p-3 mb-5 ml-3 mr-3 text-center">
+                    <div class="card-header"><span class="c_head align-baseline">Vento</span></div>
+                    <div class="tab-card config " id="24h_wind_rose_frequencies">
+
+                    </div>
+                </div>
+
+                
+                <div class="col-lg-5 col-md-12 bg-white shadow-sm p-3 mb-5 ml-3 mr-3 text-center">
+                    <div class="card-header"><span class="c_head align-baseline">Vento</span></div>
+                    <div class="tab-card config " id="24h_wind_rose">
+
+                    </div>
+                </div>
+
+                
+                <div class="col-lg-12 col-md-12 col-sm-12 bg-white shadow-sm p-3 mb-5 ml-3 mr-3 text-center">
+                    <div class="card-header"><span class="c_head align-baseline">Vento</span></div>
+                    <div class="tab-card config " id="24h_graph_div_wind_main">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                            </main>
+
+            <!--Footer -->
+            <footer>
+    <div class="wrapper-top-footer">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="mail"><a class="mail" href="mailto:info@meteonetwork.it">info@meteonetwork.it</a></div>
+            </div>
+            <div class="col-lg-4">
+                <div class="social">Follow us <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    <a class="social" href="https://www.facebook.com/meteonetwork/?fref=ts" target="_blank">FB</a> / <a class="social" href="https://twitter.com/meteonetwork" target="_blank">TW</a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <h6 class="claim">Always looking at the sky</h6>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 credits">
+                Associazione MeteoNetwork OdV - Via Cascina Bianca, 9/5 20142 Milano (MI) - CF 03968320964 - Licenza <a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.it">CC-BY 4.0</a> – <a href="/supporto" target="_blank">Supporto</a> - <a href="https://www.meteonetwork.it/informative/informativa-privacy-ai-sensi-del-regolamento-generale-per-la-protezione-dei-dati-personali/" target="_blank">Informativa privacy</a> - <a href="https://www.meteonetwork.it/informative/" target="_blank">Altre informative</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        </wrapper>
+
+
+        <!--Modali -->
+                    <!-- placeholder per le modali -->
+        
+        <!-- Loader -->
+        <div id="loaders">
+    <div id="full_loader" style="display: none;">
+        <h1>
+            <i class="fas fa-cog fa-spin"></i>
+            <span id="full_loader_message"></span>
+        </h1>
+    </div>
+</div>
+
+        <!-- Scripts -->
+        <script src="https://meteonetwork.eu/js/app.js"></script>
+        <script src="https://meteonetwork.eu/plugins/moment/moment.min.js"></script>
+        <script src="https://meteonetwork.eu/plugins/moment-timezone/moment-timezone-with-data.js"></script>
+
+        <script src="https://meteonetwork.eu/plugins/highcharts/highcharts.js"></script>
+        <script src="https://meteonetwork.eu/plugins/highcharts/highcharts-more.js"></script>
+        <script src="https://meteonetwork.eu/plugins/highcharts/modules/windbarb.js"></script>
+        <script src="https://meteonetwork.eu/plugins/highcharts/modules/heatmap.js"></script>
+        <script src="https://meteonetwork.eu/plugins/highcharts/modules/data.js"></script>
+        <script src="https://meteonetwork.eu/plugins/highcharts/modules/boost-canvas.js"></script>
+        <script src="https://meteonetwork.eu/plugins/highcharts/modules/boost.js"></script>
+        <script src="https://meteonetwork.eu/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+        <script src="https://meteonetwork.eu/plugins/bootstrap-3-typeahead/bootstrap3-typeahead.min.js"></script>
+        <script src="https://meteonetwork.eu/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+        <script src="https://meteonetwork.eu/plugins/block-ui/jquery.blockUI.js"></script>
+        <script src="https://meteonetwork.eu/plugins/toastr/toastr.min.js"></script>
+        <script src="https://meteonetwork.eu/plugins/datatables/js/jquery.dataTables.js"></script>
+        <script src="https://meteonetwork.eu/plugins/dropzone/min/dropzone.min.js"></script>
+        <script src="https://meteonetwork.eu/plugins/sly/sly.min.js"></script>
+        <script src="https://meteonetwork.eu/plugins/leaflet/leaflet.js"></script>
+        <script src="https://meteonetwork.eu/plugins/leaflet-markercluster/leaflet.markercluster-src.js"></script>
+        <script src="https://meteonetwork.eu/plugins/fancybox/jquery.fancybox.js"></script>
+        <script src="https://meteonetwork.eu/plugins/jquery-touchswipe/jquery.touchSwipe.js"></script>
+        <script src="https://meteonetwork.eu/plugins/bootstrap-toggle/js/bootstrap-toggle.js"></script>
+        <script src="https://meteonetwork.eu/plugins/bootstrap-select/js/bootstrap-select.js"></script>
+        <script src="https://meteonetwork.eu/plugins/mapbox/mapbox-gl.js"></script>
+        <script src="https://meteonetwork.eu/plugins/deck.gl/dist.dev.js"></script>
+        <script src="https://meteonetwork.eu/plugins/elevatezoom/jquery.elevateZoom-3.0.8.min.js"></script>
+
+
+        <script src="https://meteonetwork.eu/js/custom.js"></script>
+
+        <script src="https://meteonetwork.eu/js/cookieconsent.js"></script>
+        <script src="https://meteonetwork.eu/js/cookieconsent_init.js"></script>
+
+
+	    <script data-ad-client="ca-pub-7296075361209517" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+        <!-- AddThis -->
+        <script type="text/javascript" src="https://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4e12f0576c06d0e7"></script>
+
+        <!-- Scripts di pagina dopo tutti i plugins -->
+        
+    
+    <script type="text/javascript">
+
+        /*Variabili per i grafici*/
+        let last_24_48_graph_t=null;
+        let last_24_48_graph_rh=null;
+        let last_24_48_graph_dp=null;
+        let last_24_48_graph_slmp=null;
+        let last_24_rain=null;
+        let last_24_wind=null;
+        let last_24_windrose=null;
+        let last_24_windrose_frequencies=null;
+
+        //Variabili di controllo
+        let bigGraphHeight=200;
+        let windGraphHeight=280;
+        let windRoseHeight=280;
+        let bigGraphWidth=500;
+
+        /**
+         * Funzione di utilità per rinfescare i grafici
+         */
+        function reflowLast24hGraphs()
+        {
+
+        }
+
+        function setAndShowExtremesLocalTimeHour(){
+            let localOffset=  new Date().getTimezoneOffset();
+            let minutes =-(localOffset%60);
+            minutes=parseInt(minutes*60);
+
+            while (minutes>60){
+                minutes-=60;
+            }
+
+            
+            
+            
+                    }
+
+        /**
+         * Offset con la data di sistema
+         * @type  {number}
+         */
+        let offset=  new Date().getTimezoneOffset();
+        Highcharts.setOptions({
+            time: {
+                timezoneOffset: offset
+            }
+        });
+
+        let originalDataWindPerc=null;
+        let valuesMap = new Map();
+
+        //Variabili per le serioline
+        let d05 = [];
+        let d510 = [];
+        let d1020 = [];
+        let d2030 = [];
+        let d3050 = [];
+        let d50inf = [];
+
+        let roseWindCorrectSerie = [];
+
+        $(document).ready(function(){
+
+            setAndShowExtremesLocalTimeHour();
+
+            
+            let coordinatesArray = ["N","NNE","NE","ENE","E","ESE","SE","SSE","S","SSW","SW","WSW","W","WNW","NW","NNW"];
+            originalDataWindPerc=[{
+          "ord" : 1 ,
+          "nome": "N",
+          "0-5": 0,
+          "5-10":  0,
+          "10-20":0,
+          "20-30":0,
+          "30-50":0,
+          "50-9999":0,
+        },{
+          "ord" : 2 ,
+          "nome": "NNE",
+          "0-5": 0,
+          "5-10":  0,
+          "10-20":0,
+          "20-30":0,
+          "30-50":0,
+          "50-9999":0,
+        },{
+          "ord" : 3 ,
+          "nome": "NE",
+          "0-5": 0,
+          "5-10":  0,
+          "10-20":0,
+          "20-30":0,
+          "30-50":0,
+          "50-9999":0,
+        },{
+          "ord" : 4 ,
+          "nome": "ENE",
+          "0-5": 0,
+          "5-10":  0,
+          "10-20":0,
+          "20-30":0,
+          "30-50":0,
+          "50-9999":0,
+        },{
+          "ord" : 5 ,
+          "nome": "E",
+          "0-5": 0,
+          "5-10":  0,
+          "10-20":0,
+          "20-30":0,
+          "30-50":0,
+          "50-9999":0,
+        },{
+          "ord" : 6 ,
+          "nome": "ESE",
+          "0-5": 0,
+          "5-10":  0,
+          "10-20":0,
+          "20-30":0,
+          "30-50":0,
+          "50-9999":0,
+        },{
+          "ord" : 7 ,
+          "nome": "SE",
+          "0-5": 0,
+          "5-10":  0,
+          "10-20":0,
+          "20-30":0,
+          "30-50":0,
+          "50-9999":0,
+        },{
+          "ord" : 8 ,
+          "nome": "SSE",
+          "0-5": 0,
+          "5-10":  0,
+          "10-20":0,
+          "20-30":0,
+          "30-50":0,
+          "50-9999":0,
+        },{
+          "ord" : 9 ,
+          "nome": "S",
+          "0-5": 0,
+          "5-10":  0,
+          "10-20":0,
+          "20-30":0,
+          "30-50":0,
+          "50-9999":0,
+        },{
+          "ord" : 10 ,
+          "nome": "SSW",
+          "0-5": 0,
+          "5-10":  0,
+          "10-20":0,
+          "20-30":0,
+          "30-50":0,
+          "50-9999":0,
+        },{
+          "ord" : 11 ,
+          "nome": "SW",
+          "0-5": 0,
+          "5-10":  0,
+          "10-20":0,
+          "20-30":0,
+          "30-50":0,
+          "50-9999":0,
+        },{
+          "ord" : 12 ,
+          "nome": "WSW",
+          "0-5": 0,
+          "5-10":  0,
+          "10-20":0,
+          "20-30":0,
+          "30-50":0,
+          "50-9999":0,
+        },{
+          "ord" : 13 ,
+          "nome": "W",
+          "0-5": 0,
+          "5-10":  0,
+          "10-20":0,
+          "20-30":0,
+          "30-50":0,
+          "50-9999":0,
+        },{
+          "ord" : 14 ,
+          "nome": "WNW",
+          "0-5": 0,
+          "5-10":  0,
+          "10-20":0,
+          "20-30":0,
+          "30-50":0,
+          "50-9999":0,
+        },{
+          "ord" : 15 ,
+          "nome": "NW",
+          "0-5": 0,
+          "5-10":  0,
+          "10-20":0,
+          "20-30":0,
+          "30-50":0,
+          "50-9999":0,
+        },{
+          "ord" : 16 ,
+          "nome": "NNW",
+          "0-5": 0,
+          "5-10":  0,
+          "10-20":0,
+          "20-30":0,
+          "30-50":0,
+          "50-9999":0,
+        }];
+
+            if(Array.isArray(originalDataWindPerc)){
+                for (let i = 0; i < originalDataWindPerc.length; i++) {
+                    let currentSerie = originalDataWindPerc[i];
+                    let currentSerieName = currentSerie.nome;
+
+                    d05.push([currentSerieName, currentSerie["0-5"]]);
+                    d510.push([currentSerieName, currentSerie["5-10"]]);
+                    d1020.push([currentSerieName, currentSerie["10-20"]]);
+                    d2030.push([currentSerieName, currentSerie["20-30"]]);
+                    d3050.push([currentSerieName, currentSerie["30-50"]]);
+                    d50inf.push([currentSerieName, currentSerie["50-9999"]]);
+                }
+            }
+
+            valuesMap.set("&lt; 5 [km/h]", d05);
+            valuesMap.set("5-10 [km/h]", d510);
+            valuesMap.set("10-20 [km/h]", d1020);
+            valuesMap.set("20-30 [km/h]", d2030);
+            valuesMap.set("30-50 [km/h]", d3050);
+            valuesMap.set("&gt; 50 [km/h]", d50inf);
+
+            for (let [key, value] of valuesMap.entries()) {
+                let arrData = valuesMap.get(key);
+                roseWindCorrectSerie.push({
+                    name: key,
+                    data: arrData
+                });
+            }
+
+            last_24_windrose_frequencies=Highcharts.chart('24h_wind_rose_frequencies',{
+                chart: {
+                    polar: true,
+                    type: 'column',
+                    height: windRoseHeight,
+                },
+
+                title: {
+                    text: null
+                },
+
+                pane: {
+                    size: '85%'
+                },
+
+                legend: {
+                    reversed: true,
+                    align: 'right',
+                    verticalAlign: 'top',
+                    y: 100,
+                    layout: 'vertical'
+                },
+
+                xAxis: {
+                    tickInterval : 1,
+                    tickmarkPlacement: 'on',
+                    labels: {
+                        formatter: function () {
+                            return coordinatesArray[this.value];
+                        }
+                    }
+                },
+
+                yAxis: {
+                    min: 0,
+                    endOnTick: false,
+                    showLastLabel: true,
+                    title: {
+                        text: 'Frequency (%)'
+                    },
+                    labels: {
+                        formatter: function () {
+                            return this.value + '%';
+                        }
+                    },
+                    reversedStacks: false,
+                    color: '#ffffff'
+                },
+
+                tooltip: {
+                    valueSuffix: '%',
+                    followPointer: true,
+                    valueDecimals: 1,
+                },
+
+                plotOptions: {
+                    series: {
+                        stacking: 'normal',
+                        shadow: false,
+                        groupPadding: 0,
+                        pointPlacement: 'on'
+                    }
+                },
+                series:roseWindCorrectSerie
+            });
+
+            //Grafico della rosa dei venti
+            last_24_windrose=Highcharts.chart('24h_wind_rose',{
+                chart : {
+                    polar : true,
+                    width: null,
+                    height: windRoseHeight,
+                },
+                title : {
+                    text : null
+                },
+                pane: {
+                    size: '85%'
+                },
+                tooltip : {
+                    formatter : function() {
+                        value = '';
+                        if ((this.x >= 348.75) && (this.x <= 11.25)) {
+                            value = 'N';
+                        }
+                        if ((this.x > 11.25) && (this.x <= 33.75)) {
+                            value = 'NNE';
+                        }
+                        if ((this.x > 33.75) && (this.x <= 56.25)) {
+                            value = 'NE';
+                        }
+                        if ((this.x > 56.25) && (this.x <= 78.75)) {
+                            value = 'ENE';
+                        }
+                        if ((this.x > 78.75) && (this.x <= 101.25)) {
+                            value = 'E';
+                        }
+                        if ((this.x > 101.25) && (this.x <= 123.75)) {
+                            value = 'ESE';
+                        }
+                        if ((this.x > 123.75) && (this.x <= 146.25)) {
+                            value = 'SE';
+                        }
+                        if ((this.x > 146.25) && (this.x <= 168.75)) {
+                            value = 'SSE';
+                        }
+                        if ((this.x > 168.75) && (this.x <= 191.25)) {
+                            value = 'S';
+                        }
+                        if ((this.x > 191.25) && (this.x <= 213.75)) {
+                            value = 'SSW';
+                        }
+                        if ((this.x > 213.75) && (this.x <= 236.25)) {
+                            value = 'SW';
+                        }
+                        if ((this.x > 236.25) && (this.x <= 258.75)) {
+                            value = 'WSW';
+                        }
+                        if ((this.x > 258.75) && (this.x <= 281.25)) {
+                            value = 'W';
+                        }
+                        if ((this.x > 281.25) && (this.x <= 303.75)) {
+                            value = 'WNW';
+                        }
+                        if ((this.x > 303.75) && (this.x <= 326.25)) {
+                            value = 'NW';
+                        }
+                        if ((this.x > 326.75) && (this.x <= 348.75)) {
+                            value = 'NNW';
+                        }
+                        return '<b>' + this.series.name + '</b><br/>'
+                            + 'Velocità ' + this.y + ' km/h Dir. '
+                            + value;
+                    }
+                },
+                pane : {
+                    startAngle : 0,
+                    endAngle : 360
+                },
+                legend: {
+                    enabled: false
+                },
+                yAxis : {
+                    min : 0
+                },
+                xAxis : {
+                    tickmarkPlacement : 'on',
+                    tickInterval : 22.5,
+                    min : 0,
+                    max : 360,
+                    labels : {
+                        formatter : function() {
+                            // return this.value + '°';
+                            value = '';
+                            if (this.value == 0) {
+                                value = 'N';
+                            }
+                            if (this.value == 22.5) {
+                                value = 'NNE';
+                            }
+                            if (this.value == 45) {
+                                value = 'NE';
+                            }
+                            if (this.value == 67.5) {
+                                value = 'ENE';
+                            }
+                            if (this.value == 90) {
+                                value = 'E';
+                            }
+                            if (this.value == 112.5) {
+                                value = 'ESE';
+                            }
+                            if (this.value == 135) {
+                                value = 'SE';
+                            }
+                            if (this.value == 157.5) {
+                                value = 'SSE';
+                            }
+                            if (this.value == 180) {
+                                value = 'S';
+                            }
+                            if (this.value == 202.5) {
+                                value = 'SSW';
+                            }
+                            if (this.value == 225) {
+                                value = 'SW';
+                            }
+                            if (this.value == 247.5) {
+                                value = 'WSW';
+                            }
+                            if (this.value == 270) {
+                                value = 'W';
+                            }
+                            if (this.value == 292.5) {
+                                value = 'WNW';
+                            }
+                            if (this.value == 315) {
+                                value = 'NW';
+                            }
+                            if (this.value == 337.5) {
+                                value = 'NNW';
+                            }
+                            if (this.value == 360) {
+                                value = 'N';
+                            }
+                            return value;
+                        }
+                    }
+                },
+                plotOptions : {
+                    TurboThreshold : 0,
+                    scatter : {
+                        marker : {
+                            radius : 3,
+                            states : {
+                                hover : {
+                                    enabled : true,
+                                    lineColor : 'rgb(100,100,100)'
+                                }
+                            }
+                        },
+
+                        tooltip : {
+                            formatter : function() {
+                                return '<b>'
+                                    + Highcharts.numberFormat(
+                                        this.y, 0)
+                                    + '</b><br/>' + 'in year: '
+                                    + this.x;
+                            }
+                        }
+                    }
+
+                },
+                series : [{
+                    name: 'Panoramica - Soverato',
+                    marker: {
+                        symbol: 'square',
+                        enabled: true
+                    },
+                    type:'scatter',
+                    data: [
+                        
+                    ]
+
+                }]
+            });
+
+            //Grafico del vento, ultime 24 h
+            last_24_wind=Highcharts.chart('24h_graph_div_wind_main', {
+                chart: {
+                    height: windGraphHeight,
+                    width: null,
+                    zoomType: 'x'
+                },
+                title:
+                {
+                    text: null
+                },
+                xAxis: {
+                    type: 'datetime',
+                    dateTimeLabelFormats: {
+                        week: '%Y-%m-%d',
+                        month: '%Y-%m-%d',
+                        year: '%Y-%m-%d',
+                        day: '<b style="font-weight: 900; color:#000000 !important; fill:#000000 !important; font-size:12px;">%d/%m</b>',
+                        minute: '%H:%M',
+                        hour: '%H:%M',
+                    },
+                    labels:
+                    {
+                        enabled: true,
+                        style: '{"fontSize": "5px"}',
+                        rotation: 0
+                    },
+                    offset: 40
+                },
+                yAxis: {
+                    title: {
+                        text:'[km/h]'
+                    },
+                    labels: {
+                        enabled: true,
+                        formatter: function () {
+                            return this.value;
+                        }
+                    }
+                },
+                legend: {
+                    enabled: true,
+                    align: 'center',
+                    verticalAlign: 'bottom',
+                    layout: 'horizontal'
+
+                },
+                tooltip: {
+                    crosshairs: true,
+                    shared: true,
+                    formatter: function() {
+                        var datastring='';
+
+                        $.each(this.points, function(i, point) {
+                            console.log(point);
+                            datastring+=('<span style="color:'+point.series.color+';font-weight:bold;">'+ point.series.name +' : '+
+                                Highcharts.numberFormat(point.y,1) +' km/h '+ point.point.cardinalPoint + ' ('+point.point.windDirection+'°)' +'<span><br>');
+                        });
+
+                        //return '' + Highcharts.dateFormat('%H:%M', this.x ) + ', <b>' + Highcharts.numberFormat(this.y, 1) +' °C </b>';
+                        return '' + Highcharts.dateFormat('%H:%M', this.x )+'<br>' + datastring;
+                    }
+                },
+                plotOptions: {
+                    series:{
+                        turboThreshold : 0,
+                    },
+                    spline: {
+                        marker: {
+                            radius: 4,
+                            lineColor: '#666666',
+                            lineWidth: 1
+                        }
+                    }
+                },
+                series: [{
+                    name: 'Ultime 24h',
+                    marker: {
+                        enabled: false,
+                        width: 64,
+                        height: 64
+                    },
+                    type: 'area',
+                    color: 'rgba(59,157,215,0.94)',
+                    data: [
+                        
+                    ]
+                },{
+                    type: 'windbarb',
+                    data: [],
+                    name: 'direzione',
+                    color: Highcharts.getOptions().colors[1],
+                }]
+            });
+
+            //Grafico delle precipitazioni ultime 24h
+            last_24_rain=Highcharts.chart('24h_graph_div_rain', {
+                chart: {
+                    type: 'area',
+                    height: bigGraphHeight,
+                    width: null
+                },
+                title:
+                    {
+                        text: null
+                    },
+                xAxis: {
+                    type: 'datetime',
+                    dateTimeLabelFormats: {
+                        week: '%Y-%m-%d',
+                        month: '%Y-%m-%d',
+                        year: '%Y-%m-%d',
+                        day: '<b style="font-weight: 900; color:#000000 !important; fill:#000000 !important; font-size:12px;">%d/%m</b>',
+                        minute: '%H:%M',
+                        hour: '%H:%M',
+                    },
+                    labels:
+                        {
+                            enabled: true,
+                            style: '{"fontSize": "5px"}',
+                            rotation: 0
+                        }
+                },
+                yAxis: [{
+                    title: {
+                        text:'[mm]'
+                    },
+                    labels: {
+                        enabled: true,
+                        formatter: function () {
+                            return this.value;
+                        }
+                    }
+                },{
+                    title: {
+                        text: '[mm]'
+                    },
+                    labels: {
+                        enabled: true,
+                        formatter: function () {
+                            return this.value;
+                        }
+                    },
+                    opposite: true
+                }],
+                legend: {
+                    enabled: true,
+                    align: 'center',
+                    verticalAlign: 'bottom',
+                    layout: 'horizontal'
+
+                },
+                tooltip: {
+                    crosshairs: true,
+                    shared: true,
+                    formatter: function() {
+                        var datastring='';
+
+                        $.each(this.points, function(i, point) {
+                            datastring+=('<span style="color:'+point.series.color+';font-weight:bold;">'+ point.series.name +' : '+
+                                Highcharts.numberFormat(point.y,1) +' mm<span><br>');
+                        });
+
+                        //return '' + Highcharts.dateFormat('%H:%M', this.x ) + ', <b>' + Highcharts.numberFormat(this.y, 1) +' °C </b>';
+                        return '' + Highcharts.dateFormat('%H:%M', this.x )+'<br>' + datastring;
+                    }
+                },
+                plotOptions: {
+                    spline: {
+                        marker: {
+                            radius: 4,
+                            lineColor: '#666666',
+                            lineWidth: 1
+                        }
+                    }
+                },
+                series: [{
+                    name: 'pioggia cumulata',
+                    marker: {
+                        symbol: 'square',
+                        enabled: false
+                    },
+                    data: [
+                        
+                    ]
+
+                },
+                    {
+                        type: 'column',
+                        name: 'pioggia istantanea',
+                        yAxis: 1,
+                        marker: {
+                            symbol: 'square',
+                            enabled: false
+                        },
+                        data: [
+                            
+                        ]
+
+                    }]
+            });
+
+            //Grafico della pressione
+            last_24_48_graph_slmp=Highcharts.chart('24h_graph_div_slmp', {
+                chart: {
+                    type: 'spline',
+                    height: bigGraphHeight,
+                    width: null
+                },
+                title:
+                    {
+                        text: null
+                    },
+                xAxis: {
+                    type: 'datetime',
+                    dateTimeLabelFormats: {
+                        week: '%Y-%m-%d',
+                        month: '%Y-%m-%d',
+                        year: '%Y-%m-%d',
+                        day: '<b style="font-weight: 900; color:#000000 !important; fill:#000000 !important; font-size:12px;">%d/%m</b>',
+                        minute: '%H:%M',
+                        hour: '%H:%M',
+                    },
+                    labels:
+                        {
+                            enabled: true,
+                            style: '{"fontSize": "5px"}',
+                            rotation: 0
+                        }
+                },
+                yAxis: {
+                    title: {
+                        text: '[hPa]'
+                    },
+                    labels: {
+                        enabled: true,
+                        formatter: function () {
+                            return this.value;
+                        }
+                    }
+                },
+                legend: {
+                    enabled: true,
+                    align: 'center',
+                    verticalAlign: 'bottom',
+                    layout: 'horizontal'
+
+                },
+                tooltip: {
+                    crosshairs: true,
+                    shared: true,
+                    formatter: function() {
+                        var datastring='';
+
+                        $.each(this.points, function(i, point) {
+                            datastring+=('<span style="color:'+point.series.color+';font-weight:bold;">'+ point.series.name +' : '+
+                                Highcharts.numberFormat(point.y,1) +' hPa<span><br>');
+                        });
+
+                        //return '' + Highcharts.dateFormat('%H:%M', this.x ) + ', <b>' + Highcharts.numberFormat(this.y, 1) +' °C </b>';
+                        return '' + Highcharts.dateFormat('%H:%M', this.x )+'<br>' + datastring;
+                    }
+                },
+                plotOptions: {
+                    spline: {
+                        marker: {
+                            radius: 4,
+                            lineColor: '#666666',
+                            lineWidth: 1
+                        }
+                    }
+                },
+                series: [{
+                    name: 'Ultime 24h',
+                    marker: {
+                        symbol: 'square',
+                        enabled: false
+                    },
+                    color: 'rgba(215,75,58,0.94)',
+                    data: [
+                        
+                    ]
+
+                },
+                    {
+                        name: 'Da 48 a 24h fa',
+                        marker: {
+                            symbol: 'square',
+                            enabled: false
+                        },
+                        color: '#c0c3bf',
+                        data: [
+                            [Date.UTC(2023,07-1,12,18,00),1019.8],[Date.UTC(2023,07-1,12,18,04),1019.9],[Date.UTC(2023,07-1,12,18,09),1019.9],[Date.UTC(2023,07-1,12,18,14),1019.8],[Date.UTC(2023,07-1,12,18,20),1019.8],[Date.UTC(2023,07-1,12,18,24),1019.7],[Date.UTC(2023,07-1,12,18,29),1019.9],[Date.UTC(2023,07-1,12,18,34),1019.8],[Date.UTC(2023,07-1,12,18,39),1019.7],[Date.UTC(2023,07-1,12,18,44),1019.5],[Date.UTC(2023,07-1,12,18,49),1019.4],[Date.UTC(2023,07-1,12,18,54),1019.5],[Date.UTC(2023,07-1,12,19,00),1019.7],[Date.UTC(2023,07-1,12,19,04),1019.3],[Date.UTC(2023,07-1,12,19,09),1019.3],[Date.UTC(2023,07-1,12,19,14),1019.4],[Date.UTC(2023,07-1,12,19,19),1019.5],[Date.UTC(2023,07-1,12,19,24),1019.7],[Date.UTC(2023,07-1,12,19,29),1019.4],[Date.UTC(2023,07-1,12,19,34),1019.3],[Date.UTC(2023,07-1,12,19,39),1019.4],[Date.UTC(2023,07-1,12,19,44),1019.4],[Date.UTC(2023,07-1,12,19,49),1019.4],[Date.UTC(2023,07-1,12,19,54),1019.6],[Date.UTC(2023,07-1,12,20,00),1019.3],[Date.UTC(2023,07-1,12,20,04),1019.6],[Date.UTC(2023,07-1,12,20,09),1019.6],[Date.UTC(2023,07-1,12,20,14),1019.7],[Date.UTC(2023,07-1,12,20,20),1019.5],[Date.UTC(2023,07-1,12,20,24),1019.7],[Date.UTC(2023,07-1,12,20,29),1019.5],[Date.UTC(2023,07-1,12,20,34),1019.7],[Date.UTC(2023,07-1,12,20,40),1019.6],[Date.UTC(2023,07-1,12,20,44),1019.6],[Date.UTC(2023,07-1,12,20,49),1019.6],[Date.UTC(2023,07-1,12,20,54),1019.6],[Date.UTC(2023,07-1,12,21,00),1019.7],[Date.UTC(2023,07-1,12,21,04),1019.8],[Date.UTC(2023,07-1,12,21,09),1019.6],[Date.UTC(2023,07-1,12,21,14),1019.6],[Date.UTC(2023,07-1,12,21,19),1019.6],[Date.UTC(2023,07-1,12,21,24),1019.6],[Date.UTC(2023,07-1,12,21,29),1019.7],[Date.UTC(2023,07-1,12,21,34),1019.5],[Date.UTC(2023,07-1,12,21,39),1019.4],[Date.UTC(2023,07-1,12,21,44),1019.5],[Date.UTC(2023,07-1,12,21,49),1019.6],[Date.UTC(2023,07-1,12,21,54),1019.7],[Date.UTC(2023,07-1,12,22,00),1019.7],[Date.UTC(2023,07-1,12,22,04),1019.7],[Date.UTC(2023,07-1,12,22,09),1019.8],[Date.UTC(2023,07-1,12,22,14),1019.7],[Date.UTC(2023,07-1,12,22,19),1019.6],[Date.UTC(2023,07-1,12,22,24),1019.9],[Date.UTC(2023,07-1,12,22,29),1019.7],[Date.UTC(2023,07-1,12,22,34),1019.7],[Date.UTC(2023,07-1,12,22,39),1019.7],[Date.UTC(2023,07-1,12,22,44),1019.7],[Date.UTC(2023,07-1,12,22,49),1019.7],[Date.UTC(2023,07-1,12,22,54),1019.6],[Date.UTC(2023,07-1,12,22,59),1019.6],[Date.UTC(2023,07-1,12,23,04),1019.8],[Date.UTC(2023,07-1,12,23,09),1019.4],[Date.UTC(2023,07-1,12,23,14),1019.6],[Date.UTC(2023,07-1,12,23,19),1019.6],[Date.UTC(2023,07-1,12,23,24),1019.4],[Date.UTC(2023,07-1,12,23,29),1019.4],[Date.UTC(2023,07-1,12,23,34),1019.4],[Date.UTC(2023,07-1,12,23,39),1019.5],[Date.UTC(2023,07-1,12,23,44),1019.6],[Date.UTC(2023,07-1,12,23,49),1019.3],[Date.UTC(2023,07-1,12,23,54),1019.3],[Date.UTC(2023,07-1,12,23,59),1019.3],[Date.UTC(2023,07-1,13,00,04),1019.2],[Date.UTC(2023,07-1,13,00,09),1019.2],[Date.UTC(2023,07-1,13,00,14),1019.4],[Date.UTC(2023,07-1,13,00,20),1019.2],[Date.UTC(2023,07-1,13,00,24),1019.1],[Date.UTC(2023,07-1,13,00,29),1019.4],[Date.UTC(2023,07-1,13,00,34),1019.2],[Date.UTC(2023,07-1,13,00,40),1019],[Date.UTC(2023,07-1,13,00,44),1019],[Date.UTC(2023,07-1,13,00,48),1019],
+                        ]
+                    }],
+            });
+
+            //Grafico della dp
+            last_24_48_graph_dp=Highcharts.chart('24h_graph_div_dp', {
+                chart: {
+                    type: 'spline',
+                    height: bigGraphHeight,
+                    width: null
+                },
+                title:
+                    {
+                        text: null
+                    },
+                xAxis: {
+                    type: 'datetime',
+                    dateTimeLabelFormats: {
+                        week: '%Y-%m-%d',
+                        month: '%Y-%m-%d',
+                        year: '%Y-%m-%d',
+                        day: '<b style="font-weight: 900; color:#000000 !important; fill:#000000 !important; font-size:12px;">%d/%m</b>',
+                        minute: '%H:%M',
+                        hour: '%H:%M',
+                    },
+                    labels:
+                        {
+                            enabled: true,
+                            style: '{"fontSize": "5px"}',
+                            rotation: 0
+                        }
+                },
+                yAxis: {
+                    title: {
+                        text: '[°C] '
+                    },
+                    labels: {
+                        enabled: true,
+                        formatter: function () {
+                            return this.value ;
+                        }
+                    }
+                },
+                legend: {
+                    enabled: true,
+                    align: 'center',
+                    verticalAlign: 'bottom',
+                    layout: 'horizontal'
+
+                },
+                tooltip: {
+                    crosshairs: true,
+                    shared: true,
+                    formatter: function() {
+                        var datastring='';
+
+                        $.each(this.points, function(i, point) {
+                            datastring+=('<span style="color:'+point.series.color+';font-weight:bold;">'+ point.series.name +' : '+
+                                Highcharts.numberFormat(point.y,1) +' °C<span><br>');
+                        });
+
+                        //return '' + Highcharts.dateFormat('%H:%M', this.x ) + ', <b>' + Highcharts.numberFormat(this.y, 1) +' °C </b>';
+                        return '' + Highcharts.dateFormat('%H:%M', this.x )+'<br>' + datastring;
+                    }
+                },
+                plotOptions: {
+                    spline: {
+                        marker: {
+                            radius: 4,
+                            lineColor: '#666666',
+                            lineWidth: 1
+                        }
+                    }
+                },
+                series: [{
+                    name: 'Ultime 24h',
+                    marker: {
+                        symbol: 'square',
+                        enabled: false
+                    },
+                    color: 'rgba(215,75,58,0.94)',
+                    data: [
+                        
+                    ]
+
+                },
+                    {
+                        name: 'Da 48 a 24h fa',
+                        marker: {
+                            symbol: 'square',
+                            enabled: false
+                        },
+                        color: '#c0c3bf',
+                        data: [
+                            [Date.UTC(2023,07-1,12,18,00),16.3],[Date.UTC(2023,07-1,12,18,04),16.3],[Date.UTC(2023,07-1,12,18,09),16.3],[Date.UTC(2023,07-1,12,18,14),16.2],[Date.UTC(2023,07-1,12,18,20),17.4],[Date.UTC(2023,07-1,12,18,24),17.6],[Date.UTC(2023,07-1,12,18,29),17.6],[Date.UTC(2023,07-1,12,18,34),17.8],[Date.UTC(2023,07-1,12,18,39),17.6],[Date.UTC(2023,07-1,12,18,44),18],[Date.UTC(2023,07-1,12,18,49),17.9],[Date.UTC(2023,07-1,12,18,54),18.3],[Date.UTC(2023,07-1,12,19,00),18.7],[Date.UTC(2023,07-1,12,19,04),18.6],[Date.UTC(2023,07-1,12,19,09),18.3],[Date.UTC(2023,07-1,12,19,14),18.3],[Date.UTC(2023,07-1,12,19,19),17.7],[Date.UTC(2023,07-1,12,19,24),17.5],[Date.UTC(2023,07-1,12,19,29),17.3],[Date.UTC(2023,07-1,12,19,34),16.5],[Date.UTC(2023,07-1,12,19,39),16.8],[Date.UTC(2023,07-1,12,19,44),16],[Date.UTC(2023,07-1,12,19,49),15.8],[Date.UTC(2023,07-1,12,19,54),16.1],[Date.UTC(2023,07-1,12,20,00),16.2],[Date.UTC(2023,07-1,12,20,04),16.7],[Date.UTC(2023,07-1,12,20,09),18.5],[Date.UTC(2023,07-1,12,20,14),18.9],[Date.UTC(2023,07-1,12,20,20),18.4],[Date.UTC(2023,07-1,12,20,24),19.5],[Date.UTC(2023,07-1,12,20,29),19.5],[Date.UTC(2023,07-1,12,20,34),19.2],[Date.UTC(2023,07-1,12,20,40),18.1],[Date.UTC(2023,07-1,12,20,44),15.9],[Date.UTC(2023,07-1,12,20,49),16.8],[Date.UTC(2023,07-1,12,20,54),18.1],[Date.UTC(2023,07-1,12,21,00),18.4],[Date.UTC(2023,07-1,12,21,04),16.2],[Date.UTC(2023,07-1,12,21,09),15.3],[Date.UTC(2023,07-1,12,21,14),15],[Date.UTC(2023,07-1,12,21,19),15.1],[Date.UTC(2023,07-1,12,21,24),15.2],[Date.UTC(2023,07-1,12,21,29),15.3],[Date.UTC(2023,07-1,12,21,34),15.1],[Date.UTC(2023,07-1,12,21,39),15.1],[Date.UTC(2023,07-1,12,21,44),15.1],[Date.UTC(2023,07-1,12,21,49),15],[Date.UTC(2023,07-1,12,21,54),15],[Date.UTC(2023,07-1,12,22,00),15],[Date.UTC(2023,07-1,12,22,04),15],[Date.UTC(2023,07-1,12,22,09),15.2],[Date.UTC(2023,07-1,12,22,14),15.1],[Date.UTC(2023,07-1,12,22,19),14.9],[Date.UTC(2023,07-1,12,22,24),14.9],[Date.UTC(2023,07-1,12,22,29),15],[Date.UTC(2023,07-1,12,22,34),15],[Date.UTC(2023,07-1,12,22,39),14.9],[Date.UTC(2023,07-1,12,22,44),14.9],[Date.UTC(2023,07-1,12,22,49),14.8],[Date.UTC(2023,07-1,12,22,54),14.9],[Date.UTC(2023,07-1,12,22,59),14.9],[Date.UTC(2023,07-1,12,23,04),14.8],[Date.UTC(2023,07-1,12,23,09),15],[Date.UTC(2023,07-1,12,23,14),15.3],[Date.UTC(2023,07-1,12,23,19),14.8],[Date.UTC(2023,07-1,12,23,24),14.7],[Date.UTC(2023,07-1,12,23,29),15],[Date.UTC(2023,07-1,12,23,34),15],[Date.UTC(2023,07-1,12,23,39),15],[Date.UTC(2023,07-1,12,23,44),15.3],[Date.UTC(2023,07-1,12,23,49),15.3],[Date.UTC(2023,07-1,12,23,54),15],[Date.UTC(2023,07-1,12,23,59),15],[Date.UTC(2023,07-1,13,00,04),15.1],[Date.UTC(2023,07-1,13,00,09),15.5],[Date.UTC(2023,07-1,13,00,14),15.4],[Date.UTC(2023,07-1,13,00,20),15.5],[Date.UTC(2023,07-1,13,00,24),15.5],[Date.UTC(2023,07-1,13,00,29),15.5],[Date.UTC(2023,07-1,13,00,34),15.5],[Date.UTC(2023,07-1,13,00,40),15.5],[Date.UTC(2023,07-1,13,00,44),15.5],[Date.UTC(2023,07-1,13,00,48),15.6],
+                        ]
+                    }],
+            });
+
+            //Grafico della ur
+            last_24_48_graph_rh=Highcharts.chart('24h_graph_div_rh', {
+                chart: {
+                    type: 'spline',
+                    height: bigGraphHeight,
+                    width: null
+                },
+                title:
+                    {
+                        text: null
+                    },
+                xAxis: {
+                    type: 'datetime',
+                    dateTimeLabelFormats: {
+                        week: '%Y-%m-%d',
+                        month: '%Y-%m-%d',
+                        year: '%Y-%m-%d',
+                        day: '<b style="font-weight: 900; color:#000000 !important; fill:#000000 !important; font-size:12px;">%d/%m</b>',
+                        minute: '%H:%M',
+                        hour: '%H:%M',
+                    },
+                    labels:
+                        {
+                            enabled: true,
+                            style: '{"fontSize": "5px"}',
+                            rotation: 0
+                        }
+                },
+                yAxis: {
+                    title: {
+                        text: '[\%]'
+                    },
+                    labels: {
+                        enabled: true,
+                        formatter: function () {
+                            return this.value;
+                        }
+                    },
+                    max:100
+                },
+                legend: {
+                    enabled: true,
+                    align: 'center',
+                    verticalAlign: 'bottom',
+                    layout: 'horizontal'
+                },
+                tooltip: {
+                    crosshairs: true,
+                    shared: true,
+                    formatter: function() {
+                        var datastring='';
+
+                        $.each(this.points, function(i, point) {
+                            datastring+=('<span style="color:'+point.series.color+';font-weight:bold;">'+ point.series.name +' : '+
+                                Highcharts.numberFormat(point.y,1) +' %<span><br>');
+                        });
+
+                        //return '' + Highcharts.dateFormat('%H:%M', this.x ) + ', <b>' + Highcharts.numberFormat(this.y, 1) +' °C </b>';
+                        return '' + Highcharts.dateFormat('%H:%M', this.x )+'<br>' + datastring;
+                    }
+                },
+                plotOptions: {
+                    spline: {
+                        marker: {
+                            radius: 4,
+                            lineColor: '#666666',
+                            lineWidth: 1
+                        }
+                    }
+                },
+                series: [{
+                    name: 'Ultime 24h',
+                    marker: {
+                        symbol: 'square',
+                        enabled: false
+                    },
+                    color: 'rgba(215,75,58,0.94)',
+                    data: [
+                        
+                    ]
+
+                },
+                    {
+                        name: 'Da 48 a 24h fa',
+                        marker: {
+                            symbol: 'square',
+                            enabled: false
+                        },
+                        color: '#c0c3bf',
+                        data: [
+                            [Date.UTC(2023,07-1,12,18,00),48],[Date.UTC(2023,07-1,12,18,04),48],[Date.UTC(2023,07-1,12,18,09),48],[Date.UTC(2023,07-1,12,18,14),49],[Date.UTC(2023,07-1,12,18,20),53],[Date.UTC(2023,07-1,12,18,24),55],[Date.UTC(2023,07-1,12,18,29),56],[Date.UTC(2023,07-1,12,18,34),57],[Date.UTC(2023,07-1,12,18,39),57],[Date.UTC(2023,07-1,12,18,44),59],[Date.UTC(2023,07-1,12,18,49),59],[Date.UTC(2023,07-1,12,18,54),59],[Date.UTC(2023,07-1,12,19,00),60],[Date.UTC(2023,07-1,12,19,04),59],[Date.UTC(2023,07-1,12,19,09),58],[Date.UTC(2023,07-1,12,19,14),58],[Date.UTC(2023,07-1,12,19,19),55],[Date.UTC(2023,07-1,12,19,24),54],[Date.UTC(2023,07-1,12,19,29),53],[Date.UTC(2023,07-1,12,19,34),50],[Date.UTC(2023,07-1,12,19,39),51],[Date.UTC(2023,07-1,12,19,44),49],[Date.UTC(2023,07-1,12,19,49),48],[Date.UTC(2023,07-1,12,19,54),49],[Date.UTC(2023,07-1,12,20,00),49],[Date.UTC(2023,07-1,12,20,04),50],[Date.UTC(2023,07-1,12,20,09),59],[Date.UTC(2023,07-1,12,20,14),61],[Date.UTC(2023,07-1,12,20,20),61],[Date.UTC(2023,07-1,12,20,24),64],[Date.UTC(2023,07-1,12,20,29),66],[Date.UTC(2023,07-1,12,20,34),65],[Date.UTC(2023,07-1,12,20,40),60],[Date.UTC(2023,07-1,12,20,44),50],[Date.UTC(2023,07-1,12,20,49),52],[Date.UTC(2023,07-1,12,20,54),57],[Date.UTC(2023,07-1,12,21,00),59],[Date.UTC(2023,07-1,12,21,04),52],[Date.UTC(2023,07-1,12,21,09),48],[Date.UTC(2023,07-1,12,21,14),47],[Date.UTC(2023,07-1,12,21,19),47],[Date.UTC(2023,07-1,12,21,24),48],[Date.UTC(2023,07-1,12,21,29),49],[Date.UTC(2023,07-1,12,21,34),49],[Date.UTC(2023,07-1,12,21,39),49],[Date.UTC(2023,07-1,12,21,44),49],[Date.UTC(2023,07-1,12,21,49),49],[Date.UTC(2023,07-1,12,21,54),49],[Date.UTC(2023,07-1,12,22,00),49],[Date.UTC(2023,07-1,12,22,04),49],[Date.UTC(2023,07-1,12,22,09),50],[Date.UTC(2023,07-1,12,22,14),50],[Date.UTC(2023,07-1,12,22,19),50],[Date.UTC(2023,07-1,12,22,24),50],[Date.UTC(2023,07-1,12,22,29),50],[Date.UTC(2023,07-1,12,22,34),50],[Date.UTC(2023,07-1,12,22,39),49],[Date.UTC(2023,07-1,12,22,44),50],[Date.UTC(2023,07-1,12,22,49),50],[Date.UTC(2023,07-1,12,22,54),51],[Date.UTC(2023,07-1,12,22,59),51],[Date.UTC(2023,07-1,12,23,04),51],[Date.UTC(2023,07-1,12,23,09),51],[Date.UTC(2023,07-1,12,23,14),51],[Date.UTC(2023,07-1,12,23,19),51],[Date.UTC(2023,07-1,12,23,24),50],[Date.UTC(2023,07-1,12,23,29),51],[Date.UTC(2023,07-1,12,23,34),51],[Date.UTC(2023,07-1,12,23,39),51],[Date.UTC(2023,07-1,12,23,44),50],[Date.UTC(2023,07-1,12,23,49),51],[Date.UTC(2023,07-1,12,23,54),51],[Date.UTC(2023,07-1,12,23,59),51],[Date.UTC(2023,07-1,13,00,04),52],[Date.UTC(2023,07-1,13,00,09),53],[Date.UTC(2023,07-1,13,00,14),53],[Date.UTC(2023,07-1,13,00,20),54],[Date.UTC(2023,07-1,13,00,24),54],[Date.UTC(2023,07-1,13,00,29),55],[Date.UTC(2023,07-1,13,00,34),55],[Date.UTC(2023,07-1,13,00,40),55],[Date.UTC(2023,07-1,13,00,44),55],[Date.UTC(2023,07-1,13,00,48),56],
+                        ]
+                    }],
+            });
+
+            //Grafico della temperaturaa
+            last_24_48_graph_t=Highcharts.chart('24h_graph_div_t', {
+                chart: {
+                    type: 'spline',
+                    height: bigGraphHeight,
+                    width: null
+                },
+                title:
+                    {
+                        text: null
+                    },
+                xAxis: {
+                    type: 'datetime',
+                    dateTimeLabelFormats: {
+                        week: '%Y-%m-%d',
+                        month: '%Y-%m-%d',
+                        year: '%Y-%m-%d',
+                        day: '<b style="font-weight: 900; color:#000000 !important; fill:#000000 !important; font-size:12px;">%d/%m</b>',
+                        minute: '%H:%M',
+                        hour: '%H:%M',
+                    },
+                    labels:
+                        {
+                            enabled: true,
+                            style: '{"fontSize": "5px"}',
+                            rotation: 0
+                        }
+                },
+                yAxis: {
+                    title: {
+                        text: '[°C]'
+                    },
+                    labels: {
+                        enabled: true,
+                        formatter: function () {
+                            return this.value;
+                        }
+                    }
+                },
+                legend: {
+                    enabled: true,
+                    align: 'center',
+                    verticalAlign: 'bottom',
+                    layout: 'horizontal'
+                },
+                tooltip: {
+                    crosshairs: true,
+                    shared: true,
+                    formatter: function() {
+                        var data = new Date(this.x);
+                        var datastring='';
+
+                        $.each(this.points, function(i, point) {
+                            datastring+=('<span style="color:'+point.series.color+';font-weight:bold;">'+ point.series.name +' : '+
+                                Highcharts.numberFormat(point.y,1) +' °C<span><br>');
+                        });
+
+                        //return '' + Highcharts.dateFormat('%H:%M', this.x ) + ', <b>' + Highcharts.numberFormat(this.y, 1) +' °C </b>';
+                        return '' + Highcharts.dateFormat('%H:%M', this.x )+'<br>' + datastring;
+                    }
+                },
+                plotOptions: {
+                    spline: {
+                        marker: {
+                            radius: 4,
+                            lineColor: '#666666',
+                            lineWidth: 1
+                        }
+                    }
+                },
+                series: [{
+                    name: 'Ultime 24h',
+                    marker: {
+                        symbol: 'square',
+                        enabled: false
+                    },
+                    color: 'rgba(215,75,58,0.94)',
+                    data: [
+                        
+                    ]
+
+                },
+                    {
+                        name: 'Da 48 a 24h fa',
+                        marker: {
+                            symbol: 'square',
+                            enabled: false
+                        },
+                        color: '#c0c3bf',
+                        data: [
+                            [Date.UTC(2023,07-1,12,18,00),28.3],[Date.UTC(2023,07-1,12,18,04),28.3],[Date.UTC(2023,07-1,12,18,09),28.3],[Date.UTC(2023,07-1,12,18,14),27.9],[Date.UTC(2023,07-1,12,18,20),27.8],[Date.UTC(2023,07-1,12,18,24),27.4],[Date.UTC(2023,07-1,12,18,29),27.1],[Date.UTC(2023,07-1,12,18,34),27],[Date.UTC(2023,07-1,12,18,39),26.8],[Date.UTC(2023,07-1,12,18,44),26.6],[Date.UTC(2023,07-1,12,18,49),26.5],[Date.UTC(2023,07-1,12,18,54),27],[Date.UTC(2023,07-1,12,19,00),27.1],[Date.UTC(2023,07-1,12,19,04),27.3],[Date.UTC(2023,07-1,12,19,09),27.3],[Date.UTC(2023,07-1,12,19,14),27.3],[Date.UTC(2023,07-1,12,19,19),27.5],[Date.UTC(2023,07-1,12,19,24),27.6],[Date.UTC(2023,07-1,12,19,29),27.7],[Date.UTC(2023,07-1,12,19,34),27.9],[Date.UTC(2023,07-1,12,19,39),27.8],[Date.UTC(2023,07-1,12,19,44),27.6],[Date.UTC(2023,07-1,12,19,49),27.8],[Date.UTC(2023,07-1,12,19,54),27.7],[Date.UTC(2023,07-1,12,20,00),27.9],[Date.UTC(2023,07-1,12,20,04),28.1],[Date.UTC(2023,07-1,12,20,09),27.2],[Date.UTC(2023,07-1,12,20,14),27],[Date.UTC(2023,07-1,12,20,20),26.5],[Date.UTC(2023,07-1,12,20,24),26.8],[Date.UTC(2023,07-1,12,20,29),26.4],[Date.UTC(2023,07-1,12,20,34),26.3],[Date.UTC(2023,07-1,12,20,40),26.5],[Date.UTC(2023,07-1,12,20,44),27.2],[Date.UTC(2023,07-1,12,20,49),27.5],[Date.UTC(2023,07-1,12,20,54),27.3],[Date.UTC(2023,07-1,12,21,00),27.1],[Date.UTC(2023,07-1,12,21,04),26.8],[Date.UTC(2023,07-1,12,21,09),27.2],[Date.UTC(2023,07-1,12,21,14),27.3],[Date.UTC(2023,07-1,12,21,19),27.4],[Date.UTC(2023,07-1,12,21,24),27.1],[Date.UTC(2023,07-1,12,21,29),26.9],[Date.UTC(2023,07-1,12,21,34),26.7],[Date.UTC(2023,07-1,12,21,39),26.7],[Date.UTC(2023,07-1,12,21,44),26.7],[Date.UTC(2023,07-1,12,21,49),26.5],[Date.UTC(2023,07-1,12,21,54),26.5],[Date.UTC(2023,07-1,12,22,00),26.5],[Date.UTC(2023,07-1,12,22,04),26.5],[Date.UTC(2023,07-1,12,22,09),26.4],[Date.UTC(2023,07-1,12,22,14),26.3],[Date.UTC(2023,07-1,12,22,19),26.1],[Date.UTC(2023,07-1,12,22,24),26.1],[Date.UTC(2023,07-1,12,22,29),26.2],[Date.UTC(2023,07-1,12,22,34),26.2],[Date.UTC(2023,07-1,12,22,39),26.4],[Date.UTC(2023,07-1,12,22,44),26.1],[Date.UTC(2023,07-1,12,22,49),26],[Date.UTC(2023,07-1,12,22,54),25.8],[Date.UTC(2023,07-1,12,22,59),25.8],[Date.UTC(2023,07-1,12,23,04),25.7],[Date.UTC(2023,07-1,12,23,09),25.9],[Date.UTC(2023,07-1,12,23,14),26.2],[Date.UTC(2023,07-1,12,23,19),25.7],[Date.UTC(2023,07-1,12,23,24),25.9],[Date.UTC(2023,07-1,12,23,29),25.9],[Date.UTC(2023,07-1,12,23,34),25.9],[Date.UTC(2023,07-1,12,23,39),25.9],[Date.UTC(2023,07-1,12,23,44),26.5],[Date.UTC(2023,07-1,12,23,49),26.2],[Date.UTC(2023,07-1,12,23,54),25.9],[Date.UTC(2023,07-1,12,23,59),25.9],[Date.UTC(2023,07-1,13,00,04),25.7],[Date.UTC(2023,07-1,13,00,09),25.8],[Date.UTC(2023,07-1,13,00,14),25.7],[Date.UTC(2023,07-1,13,00,20),25.5],[Date.UTC(2023,07-1,13,00,24),25.5],[Date.UTC(2023,07-1,13,00,29),25.2],[Date.UTC(2023,07-1,13,00,34),25.2],[Date.UTC(2023,07-1,13,00,40),25.2],[Date.UTC(2023,07-1,13,00,44),25.2],[Date.UTC(2023,07-1,13,00,48),25],
+                        ]
+                    }]
+            });
+
+            reflowLast24hGraphs();
+        });
+    </script>
+
+        <script type="text/javascript">
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+        </script>
+
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172409-9"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-172409-3');
+        </script>
+
+    </body>
+</html>

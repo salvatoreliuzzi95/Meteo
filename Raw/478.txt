@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="csrf-token" content="MVlpIo1DWJI6t6crW12LG9CDxTl58B7X7WIAHd9u">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+                    <link rel="canonical" href="https://meteonetwork.eu/it/weather-station/clb305-stazione-meteorologica-di-panoramica" />
+        
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/bootstrap-daterangepicker/daterangepicker.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/toastr/toastr.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/fancybox/jquery.fancybox.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/datatables/css/jquery.dataTables.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/dropzone/dropzone.css">
+        
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/leaflet/leaflet.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/leaflet-markercluster/MarkerCluster.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/leaflet-markercluster/MarkerCluster.Default.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/bootstrap-toggle/css/bootstrap-toggle.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/bootstrap-select/css/bootstrap-select.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/mapbox/mapbox-gl.css">
+
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/css/app.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/css/style.css?v=1">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/css/custom.css?v=1">
+
+                
+        <meta name="robots" content="noindex, nofollow" />
+        <meta name="author" content="Luca Cerri" />
+    </head>
+    <body class="app">
+        <wrapper class="d-flex flex-column">
+            <!--header -->
+            <div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <a class="navbar-brand" href="http://www.meteonetwork.it">meteonetwork<span class="square"></span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Associazione
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="http://www.meteonetwork.it/chisiamo/">Chi siamo</a>
+                        <a class="dropdown-item" href="http://www.meteonetwork.it/iscrizioni-e-donazioni/">Iscrizioni e donazioni</a>
+                        <a class="dropdown-item" href="http://www.meteonetwork.it/partners/">Partners</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Rete Stazioni Meteo
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="https://www.meteonetwork.it/rete">Dati e Mappe</a>
+                        <a class="dropdown-item" href="https://www.meteonetwork.it/rete/livemap/">LiveMap</a>
+                        <a class="dropdown-item" href="http://my.meteonetwork.it">myMeteoNetwork</a>
+                        <a class="dropdown-item" href="https://www.meteonetwork.it/supporto/meteonetwork-api/">MeteoNetwork API</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Progetti
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="http://www.meteonetwork.it/webcam-venezia/">Webcam Venezia</a>
+                        <a class="dropdown-item" href="http://www.meteonetwork.it/radiosondaggi/">Radiosondaggi</a>
+                        <a class="dropdown-item" href="http://www.meteonetwork.it/tt/stormreport/">Storm report</a>
+                        <a class="dropdown-item" href="http://www.meteonetwork.it/models/mjo/">MJO</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://www.meteonetwork.it/didattica-2/">Didattica</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://www.meteonetwork.it/blog/">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://www.meteonetwork.it/models/">Modelli</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://forum.meteonetwork.it/">Forum</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contatti</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        Lingua
+                        <img src="https://meteonetwork.eu/img/flags/it.png">
+                    </a>
+                    <div class="dropdown-menu">
+                        
+                        <a class="dropdown-item tabs" href="https://meteonetwork.eu/it/weather-station/clb305-stazione-meteorologica-di-panoramica" ><img src="https://meteonetwork.eu/img/flags/it.png"> Italiano</a>
+                        <a class="dropdown-item tabs" href="https://meteonetwork.eu/en/weather-station/clb305-stazione-meteorologica-di-panoramica" ><img src="https://meteonetwork.eu/img/flags/en.png"> English</a>
+                        <a class="dropdown-item tabs" href="https://meteonetwork.eu/de/weather-station/clb305-stazione-meteorologica-di-panoramica" ><img src="https://meteonetwork.eu/img/flags/de.png"> Deutsch</a>
+                        <a class="dropdown-item tabs" href="https://meteonetwork.eu/fr/weather-station/clb305-stazione-meteorologica-di-panoramica" ><img src="https://meteonetwork.eu/img/flags/fr.png"> Français</a>
+                        <a class="dropdown-item tabs" href="https://meteonetwork.eu/el/weather-station/clb305-stazione-meteorologica-di-panoramica" ><img src="https://meteonetwork.eu/img/flags/el.png"> Ελληνικά</a>
+                        <a class="dropdown-item tabs" href="https://meteonetwork.eu/no/weather-station/clb305-stazione-meteorologica-di-panoramica" ><img src="https://meteonetwork.eu/img/flags/no.png"> Norsk</a>
+                    </div>
+                </li>
+
+                                
+                
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<!--
+TODO: ELIMINARE QUESTA PARTE COMMENTATA
+<div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light no_padding">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://meteonetwork.eu/it"><i class="fa fa-home"></i></a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Meteogrammi</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        Mappe
+    </a>
+    <div class="dropdown-menu">
+                       LUCA: RIMOSSI LINK NON PIÙ UTILI
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+-->
+
+
+
+            <main class="flex-fill">
+                
+                    <div class="col dx_breadc station">
+    <a class="extreme breadc" href="https://meteonetwork.eu/it">
+        myMNW
+    </a> ›
+    Stazione di Soverato (IT)
+    
+    /
+                <button type="button" class="btn btn-success">online</button>
+        
+    <!--offline
+    <button type="button" class="btn btn-danger">Offline</button>
+    -->
+</div>
+
+                <!-- Titolo: può essere sovrascritto -->
+                    <div class="row no-gutters">
+    <div class="col dx">
+        <h1 class="d-inline">
+            Stazione di Panoramica - Soverato (CZ)
+
+        </h1>
+        
+            Rating: 
+
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+            
+            
+            
+
+            (100 %)
+        
+
+        <br/>
+                    <span class="subtitle_st">Stazione meteorologica a norma MeteoNetwork -
+                    <a class="extreme" href="#">Rete MeteoNetwork</a>
+                                        - <a class="extreme" href="https://www.meteonetwork.it/supporto/termini-di-licenza-dei-dati-meteorologici-odbl/">CC-BY 4.0</a></span><br>
+                
+        
+    </div>
+</div>
+
+                
+                    <div class="container-fluid">
+    <ul class="nav nav-tabs" role="tablist">
+                    
+            <li class="nav-item">
+                <a class="nav-link px-3" href="https://meteonetwork.eu/it">
+                    <i class="fa fa-home"></i>
+                </a>
+            </li>
+
+
+                            <li class="nav-item ">
+    <a class="nav-link px-3 station_context active" href="https://meteonetwork.eu/it/weather-station/clb305-stazione-meteorologica-di-panoramica">
+        Stazione di Soverato (IT)
+    </a>
+</li>
+<li class="nav-item ">
+    <a class="nav-link  px-3 station_context  " href="https://meteonetwork.eu/it/weather-station/clb305-stazione-meteorologica-di-panoramica/graphs">
+        Grafici (24/48h)
+    </a>
+</li>
+<li class="nav-item">
+    <a class="nav-link px-3 station_context " href="https://meteonetwork.eu/it/weather-station/clb305-stazione-meteorologica-di-panoramica/reports">
+        Estremi
+    </a>
+</li>
+<li class="nav-item ">
+    <a class="nav-link px-3  station_context " href="https://meteonetwork.eu/it/weather-station/clb305-stazione-meteorologica-di-panoramica/archive">
+        Archivio
+    </a>
+</li>
+
+
+<li class="nav-item">
+    <a class="nav-link px-3 station_context " href="https://meteonetwork.eu/it/weather-station/clb305-stazione-meteorologica-di-panoramica/details">
+        Dettagli e Webcam
+    </a>
+</li>
+
+
+
+<li class="nav-item d-none">
+    <a class="nav-link px-3" href="https://meteonetwork.eu/it/weather-station/clb305-stazione-meteorologica-di-panoramica/meteogram">
+        Meteogrammi
+    </a>
+</li>
+
+            
+            
+            
+                            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                Mappe
+            </a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item tabs" href="https://meteonetwork.eu/it/models" >Modelli</a>
+                <a class="dropdown-item tabs" href="https://meteonetwork.eu/it/mappe-realtime" >Mappe Realtime</a>
+                
+                <a class="dropdown-item tabs" href="https://meteonetwork.eu/it/mappe-periodiche" >Mappe Riepilogative</a>
+                <a class="dropdown-item tabs" href="https://meteonetwork.eu/it/mappe-internazionali" >Mappe Internazionali</a>
+                <a class="dropdown-item tabs" href="https://meteonetwork.eu/it/mappa-fulmini" >Mappa Fulminazioni</a>
+                <a class="dropdown-item tabs" href="https://meteonetwork.eu/it/mappa-radar" >Mappa Radar</a>
+                <a class="dropdown-item tabs" href="https://meteonetwork.eu/it/mappa-estremi" >Mappa Estremi</a>
+                                    <a class="dropdown-item tabs" href="https://meteonetwork.eu/it/mappa-stazioni" >Mappa Stazioni</a>
+                    <a class="dropdown-item tabs" href="https://meteonetwork.eu/it/stations-list" >Elenco Stazioni</a>
+                            </div>
+        </li>
+                <li class="nav-item">
+            <a class="nav-link px-3" href="#faq">FAQ</a>
+        </li>
+
+    </ul>
+
+    </div>
+
+                
+                
+                
+
+    <div class="tab-content">
+        <div class="container-fluid active tab-pane">
+            <div class="row no-gutters">
+                <div class="col-12">
+                    <h3 class="section"> >
+                                                    Dati realtime
+                                        </div>
+                <div class="col-12 mt-1 mb-1">
+                    <i class="fa  fa-exclamation-triangle text-info"></i>
+                    <span style="font-size: 16px">
+                        <strong>Nota</strong>: In questa pagina sono mostrati solo gli ultimi dati ricevuti, per visualizzare i grafici delle ultime 24/48h utilizzare la tab "Grafici (24/48h)"
+                    </span>
+                    <br/>
+                    <span style="font-size: 16px; font-weight: bold" id="last_data_div">
+
+                    </span>
+                </div>
+
+
+                                    <div class="col-lg shadow-sm p-3 mb-5 bg-white rounded ml-3 mr-3">
+                        <div class="card-header">
+                            <img src="https://meteonetwork.eu/img/icons/cold.svg">
+                                                            <i class="fa fa-exclamation-triangle" style="font-size: 24px; color:#ff0000;"
+                                    data-toggle="tooltip" title="Il sensore di questo parametro è attualmente contrassegnato Non a norma per una trasmissione dei dati temporaneamente non valida (interferenze, errori software, ecc.) o componenti non affidabili. Se sei il gestore della stazione, consulta le FAQ su myMeteoNetwork e, nel caso il tuo sensore sia stato disabilitato per errori di trasmissione, effettua una manutenzione alla tua stazione e invia un ticket per la riabilitazione"></i>
+                                                        <span class="c_head align-baseline text-right">
+                                Temperatura
+                                <br>
+                                22.4 &deg;C
+                            </span>
+                        </div>
+                        <div class="card-text" id="tempGraph" style="width:100%;">
+
+                        </div>
+                        <div class="card-footer max config noround">
+                            <i class="fas fa-arrow-up"></i> 28.2 &deg;C
+                        </div>
+                        <div class="card-footer min noround">
+                            <i class="fas fa-arrow-down"></i> 17.4&deg;C
+                        </div>
+                    </div>
+
+                    <div class="col-lg shadow-sm p-3 mb-5 bg-white rounded ml-3 mr-3">
+                        <div class="card-header">
+                            <img src="https://meteonetwork.eu/img/icons/dewpoint.svg">
+                                                            <i class="fa fa-exclamation-triangle" style="font-size: 24px; color:#ff0000;"
+                                   data-toggle="tooltip" title="Il sensore di questo parametro è attualmente contrassegnato Non a norma per una trasmissione dei dati temporaneamente non valida (interferenze, errori software, ecc.) o componenti non affidabili. Se sei il gestore della stazione, consulta le FAQ su myMeteoNetwork e, nel caso il tuo sensore sia stato disabilitato per errori di trasmissione, effettua una manutenzione alla tua stazione e invia un ticket per la riabilitazione"></i>
+                                                        <span class="c_head align-baseline text-right">
+                                Umidità
+                                <br>
+                                64 %
+                            </span>
+                        </div>
+                        <div class="card-text" id="urGraph" style="width:100%;">
+
+                        </div>
+                        <div class="card-footer max config noround">
+                            <i class="fas fa-arrow-up"></i> 67%
+                        </div>
+                        <div class="card-footer min noround">
+                            <i class="fas fa-arrow-down"></i> 49%
+                        </div>
+                    </div>
+
+                    <div class="col-lg shadow-sm p-3 mb-5 bg-white rounded ml-3 mr-3">
+                        <div class="card-header">
+                            <img src="https://meteonetwork.eu/img/icons/pression.svg">
+                                                        <span class="c_head align-baseline text-right">
+                                Pressione
+                                <br>
+                                1015.6 hPa
+                            </span>
+                        </div>
+                        <div class="card-text" id="pressGraph" style="width:100%;">
+
+                        </div>
+                        <div class="card-footer max config noround">
+                            <i class="fas fa-arrow-up"></i> 1019.7 hPa
+                        </div>
+                        <div class="card-footer min noround">
+                            <i class="fas fa-arrow-down"></i> 1014.3 hPa
+                        </div>
+                    </div>
+
+                    <div class="col-lg shadow-sm p-3 mb-5 bg-white rounded ml-3 mr-3">
+                        <div class="card-header">
+                            <img src="https://meteonetwork.eu/img/icons/rain2.svg">
+                                                        <span class="c_head align-baseline text-right">
+                                Pioggia
+                                <br>
+                                0 mm (0 mm/h)
+                            </span>
+                        </div>
+                        <div class="card-text" id="rainGraph" style="width:100%;">
+
+                        </div>
+                        <div class="card-footer max noround config">
+                            <i class="fas fa-arrow-up"></i> Rate: 0 mm/h
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg shadow-sm p-3 mb-5 bg-white rounded ml-3 mr-3">
+                        <div class="card-header">
+                            <img src="https://meteonetwork.eu/img/icons/wind2.svg">
+                                                        <span class="c_head align-baseline text-right">
+                                Vento
+                                <br>
+                                4.7 km/h (WNW)
+                            </span>
+                        </div>
+                        <div class="card-text" id="windGraph" style="width:100%;">
+
+                        </div>
+                        <div class="card-footer max noround config">
+                            Raffica 29.5 km/h
+                        </div>
+                        <div class="card-footer max noround">
+                            Vel. media 7.4 km/h
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row no-gutters">
+                    <div class="col-lg shadow-sm p-3 mb-5 bg-white rounded ml-3 mr-3">
+                        <div class="card-header"><span class="c_head align-baseline">Temp. di rugiada</span></div>
+                        <p class="card-text great">
+                            15.3°C
+                        </p>
+                    </div>
+
+                    <div class="col-lg shadow-sm p-3 mb-5 bg-white rounded ml-3 mr-3">
+                        <div class="card-header">
+                            <span class="c_head align-baseline">
+                                <i class="fa fa-question-circle" style="font-size: 24px; color:#2a2549;"
+                                   data-placement="top"
+                                   data-toggle="tooltip" title="L’Indice di Calore (HI), è un indice che consente di stimare il disagio fisiologico causato da condizioni meteorologiche caratterizzate da alte temperature ed elevati livelli di umidità dell’aria. Tale indice può essere calcolato per temperature uguali o superiori a 27°C ed umidità relativa uguale o maggiore al 40%. È, quindi, idoneo per valutare il disagio termico durante la stagione estiva, cioè quando il calore e la radiazione solare possono rappresentare un serio problema. Con temperature superiori a 42°C, anche al variare dell&#039;umidità relativa, l&#039;indice attribuisce la condizione esaminata sempre alla classe estrema. Fonte: UNIMI - Dipartimento di scienze biomediche"></i>
+                                Indice di calore
+                            </span>
+                        </div>
+                        <p class="card-text great">
+                                                            --- °C
+                                                    </p>
+                    </div>
+
+                    <div class="col-lg shadow-sm p-3 mb-5 bg-white rounded ml-3 mr-3">
+                        <div class="card-header">
+                            <span class="c_head align-baseline">
+                                                                 Radiazione solare
+                            </span>
+                        </div>
+                        <p class="card-text great">
+                            --- W/m2
+                        </p>
+                    </div>
+
+                    <div class="col-lg shadow-sm p-3 mb-5 bg-white rounded ml-3 mr-3">
+                        <div class="card-header">
+                            <span class="c_head align-baseline">
+                                                                 Radiazione UV
+                            </span>
+                        </div>
+                        <p class="card-text great">
+                            0
+                        </p>
+                    </div>
+                </div>
+                    </div>
+    </div>
+
+
+                            </main>
+
+            <!--Footer -->
+            <footer>
+    <div class="wrapper-top-footer">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="mail"><a class="mail" href="mailto:info@meteonetwork.it">info@meteonetwork.it</a></div>
+            </div>
+            <div class="col-lg-4">
+                <div class="social">Follow us <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    <a class="social" href="https://www.facebook.com/meteonetwork/?fref=ts" target="_blank">FB</a> / <a class="social" href="https://twitter.com/meteonetwork" target="_blank">TW</a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <h6 class="claim">Always looking at the sky</h6>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 credits">
+                Associazione MeteoNetwork OdV - Via Cascina Bianca, 9/5 20142 Milano (MI) - CF 03968320964 - Licenza <a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.it">CC-BY 4.0</a> – <a href="/supporto" target="_blank">Supporto</a> - <a href="https://www.meteonetwork.it/informative/informativa-privacy-ai-sensi-del-regolamento-generale-per-la-protezione-dei-dati-personali/" target="_blank">Informativa privacy</a> - <a href="https://www.meteonetwork.it/informative/" target="_blank">Altre informative</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        </wrapper>
+
+
+        <!--Modali -->
+                    <!-- placeholder per le modali -->
+        
+        <!-- Loader -->
+        <div id="loaders">
+    <div id="full_loader" style="display: none;">
+        <h1>
+            <i class="fas fa-cog fa-spin"></i>
+            <span id="full_loader_message"></span>
+        </h1>
+    </div>
+</div>
+
+        <!-- Scripts -->
+        <script src="https://meteonetwork.eu/js/app.js"></script>
+        <script src="https://meteonetwork.eu/plugins/moment/moment.min.js"></script>
+        <script src="https://meteonetwork.eu/plugins/moment-timezone/moment-timezone-with-data.js"></script>
+
+        <script src="https://meteonetwork.eu/plugins/highcharts/highcharts.js"></script>
+        <script src="https://meteonetwork.eu/plugins/highcharts/highcharts-more.js"></script>
+        <script src="https://meteonetwork.eu/plugins/highcharts/modules/windbarb.js"></script>
+        <script src="https://meteonetwork.eu/plugins/highcharts/modules/heatmap.js"></script>
+        <script src="https://meteonetwork.eu/plugins/highcharts/modules/data.js"></script>
+        <script src="https://meteonetwork.eu/plugins/highcharts/modules/boost-canvas.js"></script>
+        <script src="https://meteonetwork.eu/plugins/highcharts/modules/boost.js"></script>
+        <script src="https://meteonetwork.eu/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+        <script src="https://meteonetwork.eu/plugins/bootstrap-3-typeahead/bootstrap3-typeahead.min.js"></script>
+        <script src="https://meteonetwork.eu/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+        <script src="https://meteonetwork.eu/plugins/block-ui/jquery.blockUI.js"></script>
+        <script src="https://meteonetwork.eu/plugins/toastr/toastr.min.js"></script>
+        <script src="https://meteonetwork.eu/plugins/datatables/js/jquery.dataTables.js"></script>
+        <script src="https://meteonetwork.eu/plugins/dropzone/min/dropzone.min.js"></script>
+        <script src="https://meteonetwork.eu/plugins/sly/sly.min.js"></script>
+        <script src="https://meteonetwork.eu/plugins/leaflet/leaflet.js"></script>
+        <script src="https://meteonetwork.eu/plugins/leaflet-markercluster/leaflet.markercluster-src.js"></script>
+        <script src="https://meteonetwork.eu/plugins/fancybox/jquery.fancybox.js"></script>
+        <script src="https://meteonetwork.eu/plugins/jquery-touchswipe/jquery.touchSwipe.js"></script>
+        <script src="https://meteonetwork.eu/plugins/bootstrap-toggle/js/bootstrap-toggle.js"></script>
+        <script src="https://meteonetwork.eu/plugins/bootstrap-select/js/bootstrap-select.js"></script>
+        <script src="https://meteonetwork.eu/plugins/mapbox/mapbox-gl.js"></script>
+        <script src="https://meteonetwork.eu/plugins/deck.gl/dist.dev.js"></script>
+
+
+        <script src="https://meteonetwork.eu/js/custom.js"></script>
+
+	 <script data-ad-client="ca-pub-7296075361209517" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+        <!-- AddThis -->
+        <script type="text/javascript" src="https://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4e12f0576c06d0e7"></script>
+
+        <!-- Scripts di pagina dopo tutti i plugins -->
+            <script type="text/javascript">
+            
+        var quickTempGraph = null;
+        var quickUrGraph = null;
+        var quickPressGraph = null;
+        var quickRainGraph = null;
+        var quickWindGraph = null;
+
+        function getData() {
+            toastr.success("Lettura dei dati")
+        }
+
+
+            
+
+        let offset=  new Date().getTimezoneOffset();
+        Highcharts.setOptions({
+            time: {
+                timezoneOffset: offset
+            }
+        });
+
+        //A DOM caricato...
+        $(document).ready(function () {
+
+            $('[data-toggle="tooltip"]').tooltip({
+                container: 'body'
+            });
+
+            //Rosa dei venti... qui sarà un dramma
+            quickWindGraph = Highcharts.chart('windGraph', {
+                chart: {
+                    polar: true,
+                    height: 160,
+                    width: null
+                },
+                title: {
+                    text: null
+                },
+                tooltip: {
+                    formatter: function () {
+                        value = '';
+                        if ((this.x >= 348.75) || (this.x <= 11.25)) {
+                            value = 'N';
+                        }
+                        if ((this.x > 11.25) && (this.x <= 33.75)) {
+                            value = 'NNE';
+                        }
+                        if ((this.x > 33.75) && (this.x <= 56.25)) {
+                            value = 'NE';
+                        }
+                        if ((this.x > 56.25) && (this.x <= 78.75)) {
+                            value = 'ENE';
+                        }
+                        if ((this.x > 78.75) && (this.x <= 101.25)) {
+                            value = 'E';
+                        }
+                        if ((this.x > 101.25) && (this.x <= 123.75)) {
+                            value = 'ESE';
+                        }
+                        if ((this.x > 123.75) && (this.x <= 146.25)) {
+                            value = 'SE';
+                        }
+                        if ((this.x > 146.25) && (this.x <= 168.75)) {
+                            value = 'SSE';
+                        }
+                        if ((this.x > 168.75) && (this.x <= 191.25)) {
+                            value = 'S';
+                        }
+                        if ((this.x > 191.25) && (this.x <= 213.75)) {
+                            value = 'SSW';
+                        }
+                        if ((this.x > 213.75) && (this.x <= 236.25)) {
+                            value = 'SW';
+                        }
+                        if ((this.x > 236.25) && (this.x <= 258.75)) {
+                            value = 'WSW';
+                        }
+                        if ((this.x > 258.75) && (this.x <= 281.25)) {
+                            value = 'W';
+                        }
+                        if ((this.x > 281.25) && (this.x <= 303.75)) {
+                            value = 'WNW';
+                        }
+                        if ((this.x > 303.75) && (this.x <= 326.25)) {
+                            value = 'NW';
+                        }
+                        if ((this.x > 326.75) && (this.x <= 348.75)) {
+                            value = 'NNW';
+                        }
+                        return '<b>' + this.series.name + '</b><br/>'
+                            + 'Velocità ' + this.y + ' km/h Dir. '
+                            + value;
+                    }
+                },
+                pane: {
+                    startAngle: 0,
+                    endAngle: 360
+                },
+                legend: {
+                    enabled: false
+                },
+                yAxis: {
+                    min: 0
+                },
+                xAxis: {
+                    tickmarkPlacement: 'on',
+                    tickInterval: 22.5,
+                    min: 0,
+                    max: 360,
+                    labels: {
+                        formatter: function () {
+                            // return this.value + '°';
+                            value = '';
+                            if (this.value == 0) {
+                                value = 'N';
+                            }
+                            if (this.value == 22.5) {
+                                value = 'NNE';
+                            }
+                            if (this.value == 45) {
+                                value = 'NE';
+                            }
+                            if (this.value == 67.5) {
+                                value = 'ENE';
+                            }
+                            if (this.value == 90) {
+                                value = 'E';
+                            }
+                            if (this.value == 112.5) {
+                                value = 'ESE';
+                            }
+                            if (this.value == 135) {
+                                value = 'SE';
+                            }
+                            if (this.value == 157.5) {
+                                value = 'SSE';
+                            }
+                            if (this.value == 180) {
+                                value = 'S';
+                            }
+                            if (this.value == 202.5) {
+                                value = 'SSW';
+                            }
+                            if (this.value == 225) {
+                                value = 'SW';
+                            }
+                            if (this.value == 247.5) {
+                                value = 'WSW';
+                            }
+                            if (this.value == 270) {
+                                value = 'W';
+                            }
+                            if (this.value == 292.5) {
+                                value = 'WNW';
+                            }
+                            if (this.value == 315) {
+                                value = 'NW';
+                            }
+                            if (this.value == 337.5) {
+                                value = 'NNW';
+                            }
+                            if (this.value == 360) {
+                                value = 'N';
+                            }
+                            return value;
+                        }
+                    }
+                },
+                plotOptions: {
+                    TurboThreshold: 0,
+                    scatter: {
+                        marker: {
+                            radius: 3,
+                            states: {
+                                hover: {
+                                    enabled: true,
+                                    lineColor: 'rgb(100,100,100)'
+                                }
+                            }
+                        },
+
+                        tooltip: {
+                            formatter: function () {
+                                return '<b>'
+                                    + Highcharts.numberFormat(
+                                        this.y, 0)
+                                    + '</b><br/>' + 'in year: '
+                                    + this.x;
+                            }
+                        }
+                    }
+
+                },
+                series: [{
+                    name: 'Panoramica - Soverato',
+                    marker: {
+                        symbol: 'square',
+                        enabled: true
+                    },
+                    type: 'scatter',
+                    data: [
+                        [208.00,7.20],[205.00,6.90],[220.00,8.70],[252.00,6.10],[281.00,10.50],[203.00,7.60],[260.00,5.50],[318.00,1.80],[253.00,3.50],[253.00,3.50],[281.00,2.90],[302.00,4.70],
+                    ]
+
+                }]
+            });
+
+            //Grafico della pioggia
+            quickRainGraph = Highcharts.chart('rainGraph', {
+                chart: {
+                    type: 'area',
+                    height: 160,
+                    defaultSeriesType: 'area',
+                    width: null
+                },
+                title:
+                    {
+                        text: null
+                    },
+                xAxis: {
+                    type: 'datetime',
+                    dateTimeLabelFormats: {
+                        week: '%Y-%m-%d',
+                        month: '%Y-%m-%d',
+                        year: '%Y-%m-%d',
+                        day: '<b style="font-weight: 900; color:#000000 !important; fill:#000000 !important; font-size:12px;">%d/%m</b>',
+                        minute: '%H:%M',
+                        hour: '%H:%M',
+                    },
+                    labels:
+                        {
+                            enabled: true,
+                            style: '{"fontSize": "5px"}',
+                            rotation: 0
+                        }
+                },
+                yAxis: {
+                    title: {
+                        text: '[mm]'
+                    },
+                    labels: {
+                        enabled: true,
+                        formatter: function () {
+                            return Highcharts.numberFormat(this.value,1);
+                        }
+                    }
+                },
+                legend: {
+                    enabled: false
+                },
+                tooltip: {
+                    crosshairs: true,
+                    shared: true,
+                    formatter: function () {
+                        var data = new Date(this.x);
+                        return '' + Highcharts.dateFormat('%d-%m-%Y %H:%M', this.x) + ', <b>' + Highcharts.numberFormat(this.y, 2) + ' mm </b>';
+                    }
+                },
+                plotOptions: {
+                    area: {
+                        marker: {
+                            radius: 4,
+                            lineColor: '#666666',
+                            lineWidth: 1
+                        },
+                        states: {
+                            hover: {
+                                lineWidth: 2
+                            }
+                        }
+                    }
+                },
+                series: [{
+                    name: 'Panoramica - Soverato',
+                    marker: {
+                        symbol: 'square',
+                        enabled: true
+                    },
+                    data: [
+                        [Date.UTC(2022,09-1,25,18,39),0],[Date.UTC(2022,09-1,25,18,44),0],[Date.UTC(2022,09-1,25,18,49),0],[Date.UTC(2022,09-1,25,18,54),0],[Date.UTC(2022,09-1,25,18,59),0],[Date.UTC(2022,09-1,25,19,04),0],[Date.UTC(2022,09-1,25,19,09),0],[Date.UTC(2022,09-1,25,19,14),0],[Date.UTC(2022,09-1,25,19,19),0],[Date.UTC(2022,09-1,25,19,24),0],[Date.UTC(2022,09-1,25,19,29),0],[Date.UTC(2022,09-1,25,19,34),0],
+                    ]
+
+                }]
+            });
+
+            //Grafico della pressione
+            quickPressGraph = Highcharts.chart('pressGraph', {
+                chart: {
+                    type: 'spline',
+                    height: 160,
+                    width: null
+                },
+                title:
+                    {
+                        text: null
+                    },
+                xAxis: {
+                    type: 'datetime',
+                    dateTimeLabelFormats: {
+                        week: '%Y-%m-%d',
+                        month: '%Y-%m-%d',
+                        year: '%Y-%m-%d',
+                        day: '<b style="font-weight: 900; color:#000000 !important; fill:#000000 !important; font-size:12px;">%d/%m</b>',
+                        minute: '%H:%M',
+                        hour: '%H:%M',
+                    },
+                    labels:
+                        {
+                            enabled: true,
+                            style: '{"fontSize": "5px"}',
+                            rotation: 0
+                        }
+                },
+                yAxis: {
+                    title: {
+                        text: '[hPa]'
+                    },
+                    labels: {
+                        enabled: true,
+                        formatter: function () {
+                            return this.value;
+                        }
+                    }
+                },
+                legend: {
+                    enabled: false
+                },
+                tooltip: {
+                    crosshairs: true,
+                    shared: true,
+                    formatter: function () {
+                        var data = new Date(this.x);
+                        return '' + Highcharts.dateFormat('%d-%m-%Y %H:%M', this.x) + ', <b>' + Highcharts.numberFormat(this.y, 2) + ' hPa </b>';
+                    }
+                },
+                plotOptions: {
+                    spline: {
+                        marker: {
+                            radius: 4,
+                            lineColor: '#666666',
+                            lineWidth: 1
+                        }
+                    }
+                },
+                series: [{
+                    name: 'Panoramica - Soverato',
+                    marker: {
+                        symbol: 'square',
+                        enabled: true
+                    },
+                    data: [
+                        [Date.UTC(2022,09-1,25,18,39),1015.5],[Date.UTC(2022,09-1,25,18,44),1015.4],[Date.UTC(2022,09-1,25,18,49),1015.5],[Date.UTC(2022,09-1,25,18,54),1015.4],[Date.UTC(2022,09-1,25,18,59),1015.6],[Date.UTC(2022,09-1,25,19,04),1015.5],[Date.UTC(2022,09-1,25,19,09),1015.4],[Date.UTC(2022,09-1,25,19,14),1015.4],[Date.UTC(2022,09-1,25,19,19),1015.7],[Date.UTC(2022,09-1,25,19,24),1015.5],[Date.UTC(2022,09-1,25,19,29),1015.3],[Date.UTC(2022,09-1,25,19,34),1015.6],
+                    ]
+
+                }]
+            });
+
+            //Grafico della ur
+            quickUrGraph = Highcharts.chart('urGraph', {
+                chart: {
+                    type: 'spline',
+                    height: 160,
+                    width: null
+                },
+                title:
+                    {
+                        text: null
+                    },
+                xAxis: {
+                    type: 'datetime',
+                    dateTimeLabelFormats: {
+                        week: '%Y-%m-%d',
+                        month: '%Y-%m-%d',
+                        year: '%Y-%m-%d',
+                        day: '<b style="font-weight: 900; color:#000000 !important; fill:#000000 !important; font-size:12px;">%d/%m</b>',
+                        minute: '%H:%M',
+                        hour: '%H:%M',
+                    },
+                    labels:
+                        {
+                            enabled: true,
+                            style: '{"fontSize": "5px"}',
+                            rotation: 0
+                        }
+                },
+                yAxis: {
+                    title: {
+                        text: '[\%]'
+                    },
+                    labels: {
+                        enabled: true,
+                        formatter: function () {
+                            return this.value;
+                        }
+                    }
+                },
+                legend: {
+                    enabled: false
+                },
+                tooltip: {
+                    crosshairs: true,
+                    shared: true,
+                    formatter: function () {
+                        var data = new Date(this.x);
+                        return '' + Highcharts.dateFormat('%d-%m-%Y %H:%M', this.x) + ', <b>' + Highcharts.numberFormat(this.y, 2) + ' % </b>';
+                    }
+                },
+                plotOptions: {
+                    spline: {
+                        marker: {
+                            radius: 4,
+                            lineColor: '#666666',
+                            lineWidth: 1
+                        }
+                    }
+                },
+                series: [{
+                    name: 'Panoramica - Soverato',
+                    marker: {
+                        symbol: 'square',
+                        enabled: true
+                    },
+                    data: [
+                        [Date.UTC(2022,09-1,25,18,39),58],[Date.UTC(2022,09-1,25,18,44),59],[Date.UTC(2022,09-1,25,18,49),60],[Date.UTC(2022,09-1,25,18,54),61],[Date.UTC(2022,09-1,25,18,59),61],[Date.UTC(2022,09-1,25,19,04),61],[Date.UTC(2022,09-1,25,19,09),62],[Date.UTC(2022,09-1,25,19,14),62],[Date.UTC(2022,09-1,25,19,19),63],[Date.UTC(2022,09-1,25,19,24),63],[Date.UTC(2022,09-1,25,19,29),64],[Date.UTC(2022,09-1,25,19,34),64],
+                    ]
+
+                }]
+            });
+
+            //Grafico della temperaturaa
+            quickTempGraph = Highcharts.chart('tempGraph', {
+                chart: {
+                    type: 'spline',
+                    height: 160,
+                    width: null
+                },
+                title:
+                    {
+                        text: null
+                    },
+                xAxis: {
+                    type: 'datetime',
+                    dateTimeLabelFormats: {
+                        week: '%Y-%m-%d',
+                        month: '%Y-%m-%d',
+                        year: '%Y-%m-%d',
+                        day: '<b style="font-weight: 900; color:#000000 !important; fill:#000000 !important; font-size:12px;">%d/%m</b>',
+                        minute: '%H:%M',
+                        hour: '%H:%M',
+                    },
+                    labels:
+                        {
+                            enabled: true,
+                            style: '{"fontSize": "5px"}',
+                            rotation: 0
+                        }
+                },
+                yAxis: {
+                    title: {
+                        text: '[°C] '
+                    },
+                    labels: {
+                        enabled: true,
+                        formatter: function () {
+                            return this.value;
+                        }
+                    }
+                },
+                legend: {
+                    enabled: false
+                },
+                tooltip: {
+                    crosshairs: true,
+                    shared: true,
+                    formatter: function () {
+                        var data = new Date(this.x);
+                        return '' + Highcharts.dateFormat('%d-%m-%Y %H:%M', this.x) + ', <b>' + Highcharts.numberFormat(this.y, 2) + ' °C </b>';
+                    }
+                },
+                plotOptions: {
+                    spline: {
+                        marker: {
+                            radius: 4,
+                            lineColor: '#666666',
+                            lineWidth: 1
+                        }
+                    }
+                },
+                series: [{
+                    name: 'Panoramica - Soverato',
+                    marker: {
+                        symbol: 'square',
+                        enabled: true
+                    },
+                    data: [
+                        [Date.UTC(2022,09-1,25,18,39),23.5],[Date.UTC(2022,09-1,25,18,44),23.3],[Date.UTC(2022,09-1,25,18,49),23.1],[Date.UTC(2022,09-1,25,18,54),23.2],[Date.UTC(2022,09-1,25,18,59),23.2],[Date.UTC(2022,09-1,25,19,04),23.2],[Date.UTC(2022,09-1,25,19,09),23],[Date.UTC(2022,09-1,25,19,14),22.8],[Date.UTC(2022,09-1,25,19,19),22.7],[Date.UTC(2022,09-1,25,19,24),22.5],[Date.UTC(2022,09-1,25,19,29),22.5],[Date.UTC(2022,09-1,25,19,34),22.4],
+                    ]
+
+                }]
+            });
+        });
+
+        /*
+         * FUNZIONI PER LA TAB DELLE TABELLE
+         */
+        function tableGraph(x_field,y_field,graph_kind,data_source,title,serie_name,graph_variable,target_div)
+        {
+            if(typeof(graph_kind)!=='undefined' && graph_kind!==null) {
+                var data_array=new Array();
+                if(data_source.length>0)
+                {
+                    for(var j=0;j<data_source.length;j++)
+                    {
+                        var currentElement=new Array();
+                        var currentDato = data_source[j];
+                        var data = currentDato[x_field];
+
+                        currentElement.push(createUtcDateFromString(data));
+                        currentElement.push(parseFloat(currentDato[y_field]));
+                        data_array.push(currentElement);
+                    }
+                }
+                else
+                {
+                    return;
+                }
+
+                if(graph_kind==='SPLINE') {
+                    graph_variable=createSplineTimeGraph(data_array,title,serie_name,graph_variable,target_div);
+                }
+                else if(graph_kind==='HISTO')
+                {
+                    graph_variable=createHistogramTimeGraph(data_array,title,serie_name,graph_variable,target_div);
+                }
+
+                $('#grafico_tabella_modal').modal('show');
+            }
+        }
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            //Qui inizializzare la cosa dell'ultima data in last_data_div
+            let localOffset=  new Date().getTimezoneOffset();
+            let hours = parseInt(localOffset/60);
+            let minutes =-(localOffset%60);
+            minutes=parseInt(minutes*60);
+
+            while (minutes>60){
+                minutes-=60;
+            }
+
+                        let maxTHour=19 -hours;
+            let maxTMin=34 - parseInt(minutes);
+
+            let string= 'Ultimo rilevamento alle '+(maxTHour).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false}) +
+                ':'+(maxTMin).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false}) + ' del ' + '2022-09-25' +  ' (' + Intl.DateTimeFormat().resolvedOptions().timeZone + ")";
+
+            $('#last_data_div').html(string);
+            ;
+        });
+    </script>
+
+        <script type="text/javascript">
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+        </script>
+
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172409-9"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-172409-3');
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="csrf-token" content="nyhqdC52oWQGLxUWHyPQcgvWRUql3I3UCcLh4mgO">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/bootstrap-daterangepicker/daterangepicker.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/toastr/toastr.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/fancybox/jquery.fancybox.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/datatables/css/jquery.dataTables.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/dropzone/dropzone.css">
+        
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/leaflet/leaflet.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/leaflet-markercluster/MarkerCluster.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/leaflet-markercluster/MarkerCluster.Default.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/bootstrap-toggle/css/bootstrap-toggle.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/bootstrap-select/css/bootstrap-select.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/mapbox/mapbox-gl.css">
+
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/css/app.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/css/style.css?v=1">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/css/custom.css?v=1">
+
+                
+        <meta name="robots" content="noindex, nofollow" />
+        <meta name="author" content="Luca Cerri" />
+    </head>
+    <body class="app">
+        <wrapper class="d-flex flex-column">
+            <!--header -->
+            <div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <a class="navbar-brand" href="http://www.meteonetwork.it">meteonetwork<span class="square"></span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Associazione
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="http://www.meteonetwork.it/chisiamo/">Chi siamo</a>
+                        <a class="dropdown-item" href="http://www.meteonetwork.it/iscrizioni-e-donazioni/">Iscrizioni e donazioni</a>
+                        <a class="dropdown-item" href="http://www.meteonetwork.it/partners/">Partners</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Rete Stazioni Meteo
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="https://www.meteonetwork.it/rete">Dati e Mappe</a>
+                        <a class="dropdown-item" href="https://www.meteonetwork.it/rete/livemap/">LiveMap</a>
+                        <a class="dropdown-item" href="http://my.meteonetwork.it">myMeteoNetwork</a>
+                        <a class="dropdown-item" href="https://www.meteonetwork.it/supporto/meteonetwork-api/">MeteoNetwork API</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Progetti
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="http://www.meteonetwork.it/webcam-venezia/">Webcam Venezia</a>
+                        <a class="dropdown-item" href="http://www.meteonetwork.it/radiosondaggi/">Radiosondaggi</a>
+                        <a class="dropdown-item" href="http://www.meteonetwork.it/tt/stormreport/">Storm report</a>
+                        <a class="dropdown-item" href="http://www.meteonetwork.it/models/mjo/">MJO</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://www.meteonetwork.it/didattica-2/">Didattica</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://www.meteonetwork.it/blog/">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://www.meteonetwork.it/models/">Modelli</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://forum.meteonetwork.it/">Forum</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contatti</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        Lingua
+                        <img src="https://meteonetwork.eu/img/flags/it.png">
+                    </a>
+                    <div class="dropdown-menu">
+                        
+                        <a class="dropdown-item tabs" href="https://meteonetwork.eu/it/weather-station/clb305-stazione-meteorologica-di-panoramica/graphs" ><img src="https://meteonetwork.eu/img/flags/it.png"> Italiano</a>
+                        <a class="dropdown-item tabs" href="https://meteonetwork.eu/en/weather-station/clb305-stazione-meteorologica-di-panoramica/graphs" ><img src="https://meteonetwork.eu/img/flags/en.png"> English</a>
+                        <a class="dropdown-item tabs" href="https://meteonetwork.eu/de/weather-station/clb305-stazione-meteorologica-di-panoramica/graphs" ><img src="https://meteonetwork.eu/img/flags/de.png"> Deutsch</a>
+                        <a class="dropdown-item tabs" href="https://meteonetwork.eu/fr/weather-station/clb305-stazione-meteorologica-di-panoramica/graphs" ><img src="https://meteonetwork.eu/img/flags/fr.png"> Français</a>
+                        <a class="dropdown-item tabs" href="https://meteonetwork.eu/el/weather-station/clb305-stazione-meteorologica-di-panoramica/graphs" ><img src="https://meteonetwork.eu/img/flags/el.png"> Ελληνικά</a>
+                        <a class="dropdown-item tabs" href="https://meteonetwork.eu/no/weather-station/clb305-stazione-meteorologica-di-panoramica/graphs" ><img src="https://meteonetwork.eu/img/flags/no.png"> Norsk</a>
+                    </div>
+                </li>
+
+                                
+                
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<!--
+TODO: ELIMINARE QUESTA PARTE COMMENTATA
+<div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light no_padding">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://meteonetwork.eu/it"><i class="fa fa-home"></i></a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Meteogrammi</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        Mappe
+    </a>
+    <div class="dropdown-menu">
+                       LUCA: RIMOSSI LINK NON PIÙ UTILI
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+-->
+
+
+
+            <main class="flex-fill">
+                
+                    <div class="col dx_breadc station">
+    <a class="extreme breadc" href="https://meteonetwork.eu/it">
+        myMNW
+    </a> ›
+    Stazione di Soverato (IT)
+    
+    /
+                <button type="button" class="btn btn-success">online</button>
+        
+    <!--offline
+    <button type="button" class="btn btn-danger">Offline</button>
+    -->
+</div>
+
+                <!-- Titolo: può essere sovrascritto -->
+                    <div class="row no-gutters">
+    <div class="col dx">
+        <h1 class="d-inline">
+            Stazione di Panoramica - Soverato (CZ)
+
+        </h1>
+                                    <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                    
+
+        <br/>
+                    <span class="subtitle_st">Stazione meteorologica a norma MeteoNetwork -
+                    <a class="extreme" href="#">Rete MeteoNetwork</a>
+                                        - <a class="extreme" href="https://www.meteonetwork.it/supporto/termini-di-licenza-dei-dati-meteorologici-odbl/">CC-BY 4.0</a></span><br>
+                
+        
+    </div>
+</div>
+
+                
+                    <div class="container-fluid">
+    <ul class="nav nav-tabs" role="tablist">
+                    
+            <li class="nav-item">
+                <a class="nav-link px-3" href="https://meteonetwork.eu/it">
+                    <i class="fa fa-home"></i>
+                </a>
+            </li>
+
+
+                            <li class="nav-item ">
+    <a class="nav-link px-3 station_context " href="https://meteonetwork.eu/it/weather-station/clb305-stazione-meteorologica-di-panoramica">
+        Stazione di Soverato (IT)
+    </a>
+</li>
+<li class="nav-item ">
+    <a class="nav-link  px-3 station_context active " href="https://meteonetwork.eu/it/weather-station/clb305-stazione-meteorologica-di-panoramica/graphs">
+        Grafici (24/48h)
+    </a>
+</li>
+<li class="nav-item">
+    <a class="nav-link px-3 station_context " href="https://meteonetwork.eu/it/weather-station/clb305-stazione-meteorologica-di-panoramica/reports">
+        Estremi
+    </a>
+</li>
+<li class="nav-item ">
+    <a class="nav-link px-3  station_context " href="https://meteonetwork.eu/it/weather-station/clb305-stazione-meteorologica-di-panoramica/archive">
+        Archivio
+    </a>
+</li>
+
+
+<li class="nav-item">
+    <a class="nav-link px-3 station_context " href="https://meteonetwork.eu/it/weather-station/clb305-stazione-meteorologica-di-panoramica/details">
+        Dettagli e Webcam
+    </a>
+</li>
+
+
+
+<li class="nav-item d-none">
+    <a class="nav-link px-3" href="https://meteonetwork.eu/it/weather-station/clb305-stazione-meteorologica-di-panoramica/meteogram">
+        Meteogrammi
+    </a>
+</li>
+
+            
+            
+            
+                            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                Mappe
+            </a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item tabs" href="https://meteonetwork.eu/it/models" >Modelli</a>
+                <a class="dropdown-item tabs" href="https://meteonetwork.eu/it/mappe-realtime" >Mappe Realtime</a>
+                
+                <a class="dropdown-item tabs" href="https://meteonetwork.eu/it/mappe-periodiche" >Mappe Riepilogative</a>
+                <a class="dropdown-item tabs" href="https://meteonetwork.eu/it/mappe-internazionali" >Mappe Internazionali</a>
+                <a class="dropdown-item tabs" href="https://meteonetwork.eu/it/mappa-fulmini" >Mappa Fulminazioni</a>
+                                    <a class="dropdown-item tabs" href="https://meteonetwork.eu/it/mappa-stazioni" >Mappa Stazioni</a>
+                            </div>
+        </li>
+                <li class="nav-item">
+            <a class="nav-link px-3" href="#faq">FAQ</a>
+        </li>
+
+    </ul>
+
+    </div>
+
+                
+                    <div class="tab-content">
+        <div class="container-fluid active tab-pane">
+            <div class="row no-gutters justify-content-center">
+                <div class="col-12">
+                    <h3 class="sub config"><i class="fas fa-chevron-right"></i> Grafici ultime 24/48 h</h3>
+                </div>
+
+                
+                <div class="col-lg-5 col-md-5 col-sm-12 bg-white shadow-sm p-3 mb-5 ml-3 mr-3 text-center">
+                    <div class="card-header"><span class="c_head align-baseline">Estremi giornalieri</span></div>
+                    <div class="tab-card config table-responsive">
+                        <table class="table table-hover table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">
+                                        Variabile
+                                    </th>
+                                    <th>
+                                        <i class="fa fa2x fa-arrow-up text-danger"></i>
+                                    </th>
+                                    <th>
+                                        <i class="fa fa2x fa-arrow-down text-info"></i>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-left">
+                                
+                                <tr>
+                                    <td class="p-0 pl-2 align-middle text-center">
+                                        <img src="https://meteonetwork.eu/img/icons/cold.svg">
+                                    </td>
+                                    <td>Temperatura</td>
+                                    <td class="p-0 pl-2 align-middle">15.3 &deg;C <span id="tmaxspan"></span></td>
+                                    <td class="p-0 pl-2 align-middle">12.9 &deg;C <span id="tminspan"></span></td>
+                                </tr>
+
+                                
+                                <tr>
+                                    <td class="p-0 pl-2 align-middle text-center">
+                                        <img src="https://meteonetwork.eu/img/icons/rain2.svg">
+                                    </td>
+                                    <td>Pioggia</td>
+                                    <td class="p-0 pl-2 align-middle">0 mm</td>
+                                    <td class="p-0 pl-2 align-middle"></td>
+                                </tr>
+
+                                
+                                <tr>
+                                    <td class="p-0 pl-2 align-middle text-center">
+                                        <img src="https://meteonetwork.eu/img/icons/wind2.svg">
+                                    </td>
+                                    <td>Vento</td>
+                                    <td class="p-0 pl-2 align-middle">
+                                        Gust: 25.6 km/h <span id="wgspan"></span>
+                                        <br>
+                                        Speed: 20.9 km/h <span id="wsspan"></span>
+                                    </td>
+                                    <td class="p-0 pl-2 align-middle"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                
+                <div class="col-lg-5 col-md-5 col-sm-12 bg-white shadow-sm p-3 mb-5 ml-3 mr-3 text-center">
+                    <div class="card-header"><span class="c_head align-baseline">Temperatura</span></div>
+                    <div class="tab-card config " id="24h_graph_div_t">
+
+                    </div>
+                </div>
+                
+                <div class="col-lg-5 col-md-5 col-sm-12 bg-white shadow-sm p-3 mb-5 ml-3 mr-3 text-center">
+                    <div class="card-header"><span class="c_head align-baseline">Umidità</span></div>
+                    <div class="tab-card config" id="24h_graph_div_rh">
+
+                    </div>
+                </div>
+                
+                <div class="col-lg-5 col-md-5 col-sm-12 bg-white shadow-sm p-3 mb-5 ml-3 mr-3 text-center">
+                    <div class="card-header"><span class="c_head align-baseline">Temp. di rugiada</span></div>
+                    <div class="tab-card config" id="24h_graph_div_dp">
+
+                    </div>
+                </div>
+                
+                <div class="col-lg-5 col-md-5 col-sm-12 bg-white shadow-sm p-3 mb-5 ml-3 mr-3 text-center">
+                    <div class="card-header"><span class="c_head align-baseline">Pressione</span></div>
+                    <div class="tab-card config " id="24h_graph_div_slmp">
+
+                    </div>
+                </div>
+                
+                <div class="col-lg-5 col-md-5 col-sm-12 bg-white shadow-sm p-3 mb-5 ml-3 mr-3 text-center">
+                    <div class="card-header"><span class="c_head align-baseline">Pioggia</span></div>
+                    <div class="tab-card config " id="24h_graph_div_rain">
+
+                    </div>
+                </div>
+                
+                <div class="col-lg-5 col-md-5 col-sm-12 bg-white shadow-sm p-3 mb-5 ml-3 mr-3 text-center">
+                    <div class="card-header"><span class="c_head align-baseline">Vento</span></div>
+                    <div class="tab-card config " id="24h_graph_div_wind_main">
+
+                    </div>
+                </div>
+                
+                <div class="col-lg-5 col-md-12 bg-white shadow-sm p-3 mb-5 ml-3 mr-3 text-center">
+                    <div class="card-header"><span class="c_head align-baseline">Vento</span></div>
+                    <div class="tab-card config " id="24h_wind_rose">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                            </main>
+
+            <!--Footer -->
+            <footer>
+    <div class="wrapper-top-footer">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="mail"><a class="mail" href="mailto:info@meteonetwork.it">info@meteonetwork.it</a></div>
+            </div>
+            <div class="col-lg-4">
+                <div class="social">Follow us <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    <a class="social" href="https://www.facebook.com/meteonetwork/?fref=ts" target="_blank">FB</a> / <a class="social" href="https://twitter.com/meteonetwork" target="_blank">TW</a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <h6 class="claim">Always looking at the sky</h6>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 credits">
+                Associazione MeteoNetwork OdV - Via Cascina Bianca, 9/5 20142 Milano (MI) - CF 03968320964 - Licenza <a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.it">CC-BY 4.0</a> – <a href="/supporto" target="_blank">Supporto</a> - <a href="https://www.meteonetwork.it/informative/informativa-privacy-ai-sensi-del-regolamento-generale-per-la-protezione-dei-dati-personali/" target="_blank">Informativa privacy</a> - <a href="https://www.meteonetwork.it/informative/" target="_blank">Altre informative</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        </wrapper>
+
+
+        <!--Modali -->
+                    <!-- placeholder per le modali -->
+        
+        <!-- Loader -->
+        <div id="loaders">
+    <div id="full_loader" style="display: none;">
+        <h1>
+            <i class="fas fa-cog fa-spin"></i>
+            <span id="full_loader_message"></span>
+        </h1>
+    </div>
+</div>
+
+        <!-- Scripts -->
+        <script src="https://meteonetwork.eu/js/app.js"></script>
+        <script src="https://meteonetwork.eu/plugins/moment/moment.min.js"></script>
+        <script src="https://meteonetwork.eu/plugins/moment-timezone/moment-timezone-with-data.js"></script>
+
+        <script src="https://meteonetwork.eu/plugins/highcharts/highcharts.js"></script>
+        <script src="https://meteonetwork.eu/plugins/highcharts/highcharts-more.js"></script>
+        <script src="https://meteonetwork.eu/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+        <script src="https://meteonetwork.eu/plugins/bootstrap-3-typeahead/bootstrap3-typeahead.min.js"></script>
+        <script src="https://meteonetwork.eu/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+        <script src="https://meteonetwork.eu/plugins/block-ui/jquery.blockUI.js"></script>
+        <script src="https://meteonetwork.eu/plugins/toastr/toastr.min.js"></script>
+        <script src="https://meteonetwork.eu/plugins/datatables/js/jquery.dataTables.js"></script>
+        <script src="https://meteonetwork.eu/plugins/dropzone/min/dropzone.min.js"></script>
+        <script src="https://meteonetwork.eu/plugins/sly/sly.min.js"></script>
+        <script src="https://meteonetwork.eu/plugins/leaflet/leaflet.js"></script>
+        <script src="https://meteonetwork.eu/plugins/leaflet-markercluster/leaflet.markercluster.js"></script>
+        <script src="https://meteonetwork.eu/plugins/fancybox/jquery.fancybox.js"></script>
+        <script src="https://meteonetwork.eu/plugins/jquery-touchswipe/jquery.touchSwipe.js"></script>
+        <script src="https://meteonetwork.eu/plugins/bootstrap-toggle/js/bootstrap-toggle.js"></script>
+        <script src="https://meteonetwork.eu/plugins/bootstrap-select/js/bootstrap-select.js"></script>
+        <script src="https://meteonetwork.eu/plugins/mapbox/mapbox-gl.js"></script>
+        <script src="https://meteonetwork.eu/plugins/deck.gl/dist.dev.js"></script>
+
+
+        <script src="https://meteonetwork.eu/js/custom.js"></script>
+
+	 <script data-ad-client="ca-pub-7296075361209517" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+        <!-- AddThis -->
+        <script type="text/javascript" src="https://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4e12f0576c06d0e7"></script>
+
+        <!-- Scripts di pagina dopo tutti i plugins -->
+        
+    
+    <script type="text/javascript">
+
+        /*Variabili per i grafici*/
+        var last_24_48_graph_t;
+        var last_24_48_graph_rh;
+        var last_24_48_graph_dp;
+        var last_24_48_graph_slmp;
+        var last_24_rain;
+        var last_24_wind;
+        var last_24_windrose;
+
+        //Variabili di controllo
+        var bigGraphHeight=200;
+        var windRoseHeight=250;
+        var bigGraphWidth=500;
+
+        /**
+         * Funzione di utilità per rinfescare i grafici
+         */
+        function reflowLast24hGraphs()
+        {
+
+        }
+
+        function setAndShowExtremesLocalTimeHour(){
+            let localOffset=  new Date().getTimezoneOffset();
+            let minutes =-(localOffset%60);
+            minutes=parseInt(minutes*60);
+
+            while (minutes>60){
+                minutes-=60;
+            }
+
+                        let maxTHour=14 - parseInt(localOffset/60);
+            let maxTMin=5 - parseInt(minutes);
+            $('#tmaxspan').html('@ '+(maxTHour).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})
+                +':'+(maxTMin).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false}))
+            
+                        let minTHour=16 - parseInt(localOffset/60);
+            let minTMin=24 - parseInt(minutes);
+            $('#tminspan').html('@ '+(minTHour).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})
+                +':'+(minTMin).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false}))
+            
+                        let maxWSHour=15 - parseInt(localOffset/60);
+            let maxWSMin=39 - parseInt(minutes);
+            $('#wsspan').html('@ '+(maxWSHour).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})
+                +':'+(maxWSMin).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false}))
+            
+                        let maxWGHour=14 - parseInt(localOffset/60);
+            let maxWGMin=14 - parseInt(minutes);
+            $('#wgspan').html('@ '+(maxWGHour).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})
+                +':'+(maxWGMin).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false}))
+                    }
+
+        /**
+         * Offset con la data di sistema
+         * @type  {number}
+         */
+        let offset=  new Date().getTimezoneOffset();
+        Highcharts.setOptions({
+            time: {
+                timezoneOffset: offset
+            }
+        });
+
+        $(document).ready(function(){
+
+            setAndShowExtremesLocalTimeHour();
+
+            //Grafico della rosa dei venti
+            last_24_windrose=Highcharts.chart('24h_wind_rose',{
+                chart : {
+                    polar : true,
+                    height : windRoseHeight,
+                    width: null
+                },
+                title : {
+                    text : null
+                },
+                tooltip : {
+                    formatter : function() {
+                        value = '';
+                        if ((this.x >= 348.75) && (this.x <= 11.25)) {
+                            value = 'N';
+                        }
+                        if ((this.x > 11.25) && (this.x <= 33.75)) {
+                            value = 'NNE';
+                        }
+                        if ((this.x > 33.75) && (this.x <= 56.25)) {
+                            value = 'NE';
+                        }
+                        if ((this.x > 56.25) && (this.x <= 78.75)) {
+                            value = 'ENE';
+                        }
+                        if ((this.x > 78.75) && (this.x <= 101.25)) {
+                            value = 'E';
+                        }
+                        if ((this.x > 101.25) && (this.x <= 123.75)) {
+                            value = 'ESE';
+                        }
+                        if ((this.x > 123.75) && (this.x <= 146.25)) {
+                            value = 'SE';
+                        }
+                        if ((this.x > 146.25) && (this.x <= 168.75)) {
+                            value = 'SSE';
+                        }
+                        if ((this.x > 168.75) && (this.x <= 191.25)) {
+                            value = 'S';
+                        }
+                        if ((this.x > 191.25) && (this.x <= 213.75)) {
+                            value = 'SSW';
+                        }
+                        if ((this.x > 213.75) && (this.x <= 236.25)) {
+                            value = 'SW';
+                        }
+                        if ((this.x > 236.25) && (this.x <= 258.75)) {
+                            value = 'WSW';
+                        }
+                        if ((this.x > 258.75) && (this.x <= 281.25)) {
+                            value = 'W';
+                        }
+                        if ((this.x > 281.25) && (this.x <= 303.75)) {
+                            value = 'WNW';
+                        }
+                        if ((this.x > 303.75) && (this.x <= 326.25)) {
+                            value = 'NW';
+                        }
+                        if ((this.x > 326.75) && (this.x <= 348.75)) {
+                            value = 'NNW';
+                        }
+                        return '<b>' + this.series.name + '</b><br/>'
+                            + 'Velocità ' + this.y + ' km/h Dir. '
+                            + value;
+                    }
+                },
+                pane : {
+                    startAngle : 0,
+                    endAngle : 360
+                },
+                legend: {
+                    enabled: false
+                },
+                yAxis : {
+                    min : 0
+                },
+                xAxis : {
+                    tickmarkPlacement : 'on',
+                    tickInterval : 22.5,
+                    min : 0,
+                    max : 360,
+                    labels : {
+                        formatter : function() {
+                            // return this.value + '°';
+                            value = '';
+                            if (this.value == 0) {
+                                value = 'N';
+                            }
+                            if (this.value == 22.5) {
+                                value = 'NNE';
+                            }
+                            if (this.value == 45) {
+                                value = 'NE';
+                            }
+                            if (this.value == 67.5) {
+                                value = 'ENE';
+                            }
+                            if (this.value == 90) {
+                                value = 'E';
+                            }
+                            if (this.value == 112.5) {
+                                value = 'ESE';
+                            }
+                            if (this.value == 135) {
+                                value = 'SE';
+                            }
+                            if (this.value == 157.5) {
+                                value = 'SSE';
+                            }
+                            if (this.value == 180) {
+                                value = 'S';
+                            }
+                            if (this.value == 202.5) {
+                                value = 'SSW';
+                            }
+                            if (this.value == 225) {
+                                value = 'SW';
+                            }
+                            if (this.value == 247.5) {
+                                value = 'WSW';
+                            }
+                            if (this.value == 270) {
+                                value = 'W';
+                            }
+                            if (this.value == 292.5) {
+                                value = 'WNW';
+                            }
+                            if (this.value == 315) {
+                                value = 'NW';
+                            }
+                            if (this.value == 337.5) {
+                                value = 'NNW';
+                            }
+                            if (this.value == 360) {
+                                value = 'N';
+                            }
+                            return value;
+                        }
+                    }
+                },
+                plotOptions : {
+                    TurboThreshold : 0,
+                    scatter : {
+                        marker : {
+                            radius : 3,
+                            states : {
+                                hover : {
+                                    enabled : true,
+                                    lineColor : 'rgb(100,100,100)'
+                                }
+                            }
+                        },
+
+                        tooltip : {
+                            formatter : function() {
+                                return '<b>'
+                                    + Highcharts.numberFormat(
+                                        this.y, 0)
+                                    + '</b><br/>' + 'in year: '
+                                    + this.x;
+                            }
+                        }
+                    }
+
+                },
+                series : [{
+                    name: 'Panoramica - Soverato',
+                    marker: {
+                        symbol: 'square',
+                        enabled: true
+                    },
+                    type:'scatter',
+                    data: [
+                        [252.00,15.10],[236.00,13.00],[245.00,20.60],[278.00,15.40],[265.00,9.30],[273.00,17.20],[242.00,9.30],[269.00,15.10],[273.00,9.00],[269.00,10.80],[247.00,8.70],[250.00,8.20],[275.00,9.70],[244.00,6.90],[275.00,5.80],[250.00,8.70],[274.00,10.80],[277.00,5.00],[280.00,6.90],[250.00,20.90],[223.00,10.10],[254.00,7.20],[269.00,6.10],[304.00,12.20],[223.00,13.00],[257.00,13.00],[238.00,5.80],[244.00,4.70],[271.00,12.60],[239.00,11.60],[247.00,12.20],[266.00,8.70],[250.00,13.00],
+                    ]
+
+                }]
+            });
+
+            //Grafico della pressione
+            last_24_wind=Highcharts.chart('24h_graph_div_wind_main', {
+                chart: {
+                    type: 'spline',
+                    height: bigGraphHeight,
+                    width: null
+                },
+                title:
+                    {
+                        text: null
+                    },
+                xAxis: {
+                    type: 'datetime',
+                    dateTimeLabelFormats: {
+                        week: '%Y-%m-%d',
+                        month: '%Y-%m-%d',
+                        year: '%Y-%m-%d',
+                        day: '<b style="font-weight: 900; color:#000000 !important; fill:#000000 !important; font-size:12px;">%d/%m</b>',
+                        minute: '%H:%M',
+                        hour: '%H:%M',
+                    },
+                    labels:
+                        {
+                            enabled: true,
+                            style: '{"fontSize": "5px"}',
+                            rotation: 0
+                        }
+                },
+                yAxis: {
+                    title: {
+                        text:'[km/h]'
+                    },
+                    labels: {
+                        enabled: true,
+                        formatter: function () {
+                            return this.value;
+                        }
+                    }
+                },
+                legend: {
+                    enabled: true,
+                    align: 'center',
+                    verticalAlign: 'bottom',
+                    layout: 'horizontal'
+
+                },
+                tooltip: {
+                    crosshairs: true,
+                    shared: true,
+                    formatter: function() {
+                        var datastring='';
+
+                        $.each(this.points, function(i, point) {
+                            console.log(point);
+                            datastring+=('<span style="color:'+point.series.color+';font-weight:bold;">'+ point.series.name +' : '+
+                                Highcharts.numberFormat(point.y,1) +' km/h '+ point.point.cardinalPoint + ' ('+point.point.windDirection+'°)' +'<span><br>');
+                        });
+
+                        //return '' + Highcharts.dateFormat('%H:%M', this.x ) + ', <b>' + Highcharts.numberFormat(this.y, 1) +' °C </b>';
+                        return '' + Highcharts.dateFormat('%H:%M', this.x )+'<br>' + datastring;
+                    }
+                },
+                plotOptions: {
+                    spline: {
+                        marker: {
+                            radius: 4,
+                            lineColor: '#666666',
+                            lineWidth: 1
+                        }
+                    }
+                },
+                series: [{
+                    name: 'Ultime 24h',
+                    marker: {
+                        enabled: false,
+                        width: 64,
+                        height: 64
+                    },
+                    color: 'rgba(59,157,215,0.94)',
+                    data: [
+                        { x: Date.UTC(2022,01-1,16,14,05), y: 15.10, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'252.00' },{ x: Date.UTC(2022,01-1,16,14,09), y: 13.00, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SW.png)'},'cardinalPoint': 'SW', 'windDirection':'236.00' },{ x: Date.UTC(2022,01-1,16,14,14), y: 20.60, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'245.00' },{ x: Date.UTC(2022,01-1,16,14,19), y: 15.40, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_W.png)'},'cardinalPoint': 'W', 'windDirection':'278.00' },{ x: Date.UTC(2022,01-1,16,14,24), y: 9.30, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_W.png)'},'cardinalPoint': 'W', 'windDirection':'265.00' },{ x: Date.UTC(2022,01-1,16,14,29), y: 17.20, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_W.png)'},'cardinalPoint': 'W', 'windDirection':'273.00' },{ x: Date.UTC(2022,01-1,16,14,34), y: 9.30, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'242.00' },{ x: Date.UTC(2022,01-1,16,14,39), y: 15.10, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_W.png)'},'cardinalPoint': 'W', 'windDirection':'269.00' },{ x: Date.UTC(2022,01-1,16,14,44), y: 9.00, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_W.png)'},'cardinalPoint': 'W', 'windDirection':'273.00' },{ x: Date.UTC(2022,01-1,16,14,49), y: 10.80, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_W.png)'},'cardinalPoint': 'W', 'windDirection':'269.00' },{ x: Date.UTC(2022,01-1,16,14,54), y: 8.70, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'247.00' },{ x: Date.UTC(2022,01-1,16,14,59), y: 8.20, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'250.00' },{ x: Date.UTC(2022,01-1,16,15,04), y: 9.70, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_W.png)'},'cardinalPoint': 'W', 'windDirection':'275.00' },{ x: Date.UTC(2022,01-1,16,15,09), y: 6.90, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'244.00' },{ x: Date.UTC(2022,01-1,16,15,14), y: 5.80, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_W.png)'},'cardinalPoint': 'W', 'windDirection':'275.00' },{ x: Date.UTC(2022,01-1,16,15,19), y: 8.70, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'250.00' },{ x: Date.UTC(2022,01-1,16,15,24), y: 10.80, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_W.png)'},'cardinalPoint': 'W', 'windDirection':'274.00' },{ x: Date.UTC(2022,01-1,16,15,29), y: 5.00, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_W.png)'},'cardinalPoint': 'W', 'windDirection':'277.00' },{ x: Date.UTC(2022,01-1,16,15,34), y: 6.90, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_W.png)'},'cardinalPoint': 'W', 'windDirection':'280.00' },{ x: Date.UTC(2022,01-1,16,15,39), y: 20.90, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'250.00' },{ x: Date.UTC(2022,01-1,16,15,44), y: 10.10, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SW.png)'},'cardinalPoint': 'SW', 'windDirection':'223.00' },{ x: Date.UTC(2022,01-1,16,15,49), y: 7.20, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'254.00' },{ x: Date.UTC(2022,01-1,16,15,54), y: 6.10, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_W.png)'},'cardinalPoint': 'W', 'windDirection':'269.00' },{ x: Date.UTC(2022,01-1,16,15,59), y: 12.20, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_NW.png)'},'cardinalPoint': 'NW', 'windDirection':'304.00' },{ x: Date.UTC(2022,01-1,16,16,04), y: 13.00, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SW.png)'},'cardinalPoint': 'SW', 'windDirection':'223.00' },{ x: Date.UTC(2022,01-1,16,16,09), y: 13.00, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'257.00' },{ x: Date.UTC(2022,01-1,16,16,14), y: 5.80, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'238.00' },{ x: Date.UTC(2022,01-1,16,16,19), y: 4.70, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'244.00' },{ x: Date.UTC(2022,01-1,16,16,24), y: 12.60, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_W.png)'},'cardinalPoint': 'W', 'windDirection':'271.00' },{ x: Date.UTC(2022,01-1,16,16,29), y: 11.60, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'239.00' },{ x: Date.UTC(2022,01-1,16,16,34), y: 12.20, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'247.00' },{ x: Date.UTC(2022,01-1,16,16,39), y: 8.70, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_W.png)'},'cardinalPoint': 'W', 'windDirection':'266.00' },{ x: Date.UTC(2022,01-1,16,16,44), y: 13.00, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'250.00' },
+                    ]
+                }]
+            });
+
+            //Grafico delle precipitazioni ultime 24h
+            last_24_rain=Highcharts.chart('24h_graph_div_rain', {
+                chart: {
+                    type: 'area',
+                    height: bigGraphHeight,
+                    width: null
+                },
+                title:
+                    {
+                        text: null
+                    },
+                xAxis: {
+                    type: 'datetime',
+                    dateTimeLabelFormats: {
+                        week: '%Y-%m-%d',
+                        month: '%Y-%m-%d',
+                        year: '%Y-%m-%d',
+                        day: '<b style="font-weight: 900; color:#000000 !important; fill:#000000 !important; font-size:12px;">%d/%m</b>',
+                        minute: '%H:%M',
+                        hour: '%H:%M',
+                    },
+                    labels:
+                        {
+                            enabled: true,
+                            style: '{"fontSize": "5px"}',
+                            rotation: 0
+                        }
+                },
+                yAxis: [{
+                    title: {
+                        text:'[mm]'
+                    },
+                    labels: {
+                        enabled: true,
+                        formatter: function () {
+                            return this.value;
+                        }
+                    }
+                },{
+                    title: {
+                        text: '[mm]'
+                    },
+                    labels: {
+                        enabled: true,
+                        formatter: function () {
+                            return this.value;
+                        }
+                    },
+                    opposite: true
+                }],
+                legend: {
+                    enabled: true,
+                    align: 'center',
+                    verticalAlign: 'bottom',
+                    layout: 'horizontal'
+
+                },
+                tooltip: {
+                    crosshairs: true,
+                    shared: true,
+                    formatter: function() {
+                        var datastring='';
+
+                        $.each(this.points, function(i, point) {
+                            datastring+=('<span style="color:'+point.series.color+';font-weight:bold;">'+ point.series.name +' : '+
+                                Highcharts.numberFormat(point.y,1) +' mm<span><br>');
+                        });
+
+                        //return '' + Highcharts.dateFormat('%H:%M', this.x ) + ', <b>' + Highcharts.numberFormat(this.y, 1) +' °C </b>';
+                        return '' + Highcharts.dateFormat('%H:%M', this.x )+'<br>' + datastring;
+                    }
+                },
+                plotOptions: {
+                    spline: {
+                        marker: {
+                            radius: 4,
+                            lineColor: '#666666',
+                            lineWidth: 1
+                        }
+                    }
+                },
+                series: [{
+                    name: 'pioggia cumulata',
+                    marker: {
+                        symbol: 'square',
+                        enabled: false
+                    },
+                    data: [
+                        [Date.UTC(2022,01-1,16,14,05),0],[Date.UTC(2022,01-1,16,14,09),0],[Date.UTC(2022,01-1,16,14,14),0],[Date.UTC(2022,01-1,16,14,19),0],[Date.UTC(2022,01-1,16,14,24),0],[Date.UTC(2022,01-1,16,14,29),0],[Date.UTC(2022,01-1,16,14,34),0],[Date.UTC(2022,01-1,16,14,39),0],[Date.UTC(2022,01-1,16,14,44),0],[Date.UTC(2022,01-1,16,14,49),0],[Date.UTC(2022,01-1,16,14,54),0],[Date.UTC(2022,01-1,16,14,59),0],[Date.UTC(2022,01-1,16,15,04),0],[Date.UTC(2022,01-1,16,15,09),0],[Date.UTC(2022,01-1,16,15,14),0],[Date.UTC(2022,01-1,16,15,19),0],[Date.UTC(2022,01-1,16,15,24),0],[Date.UTC(2022,01-1,16,15,29),0],[Date.UTC(2022,01-1,16,15,34),0],[Date.UTC(2022,01-1,16,15,39),0],[Date.UTC(2022,01-1,16,15,44),0],[Date.UTC(2022,01-1,16,15,49),0],[Date.UTC(2022,01-1,16,15,54),0],[Date.UTC(2022,01-1,16,15,59),0],[Date.UTC(2022,01-1,16,16,04),0],[Date.UTC(2022,01-1,16,16,09),0],[Date.UTC(2022,01-1,16,16,14),0],[Date.UTC(2022,01-1,16,16,19),0],[Date.UTC(2022,01-1,16,16,24),0],[Date.UTC(2022,01-1,16,16,29),0],[Date.UTC(2022,01-1,16,16,34),0],[Date.UTC(2022,01-1,16,16,39),0],[Date.UTC(2022,01-1,16,16,44),0],
+                    ]
+
+                },
+                    {
+                        type: 'column',
+                        name: 'pioggia istantanea',
+                        yAxis: 1,
+                        marker: {
+                            symbol: 'square',
+                            enabled: false
+                        },
+                        data: [
+                            [Date.UTC(2022,01-1,16,14,05),0],[Date.UTC(2022,01-1,16,14,09),0],[Date.UTC(2022,01-1,16,14,14),0],[Date.UTC(2022,01-1,16,14,19),0],[Date.UTC(2022,01-1,16,14,24),0],[Date.UTC(2022,01-1,16,14,29),0],[Date.UTC(2022,01-1,16,14,34),0],[Date.UTC(2022,01-1,16,14,39),0],[Date.UTC(2022,01-1,16,14,44),0],[Date.UTC(2022,01-1,16,14,49),0],[Date.UTC(2022,01-1,16,14,54),0],[Date.UTC(2022,01-1,16,14,59),0],[Date.UTC(2022,01-1,16,15,04),0],[Date.UTC(2022,01-1,16,15,09),0],[Date.UTC(2022,01-1,16,15,14),0],[Date.UTC(2022,01-1,16,15,19),0],[Date.UTC(2022,01-1,16,15,24),0],[Date.UTC(2022,01-1,16,15,29),0],[Date.UTC(2022,01-1,16,15,34),0],[Date.UTC(2022,01-1,16,15,39),0],[Date.UTC(2022,01-1,16,15,44),0],[Date.UTC(2022,01-1,16,15,49),0],[Date.UTC(2022,01-1,16,15,54),0],[Date.UTC(2022,01-1,16,15,59),0],[Date.UTC(2022,01-1,16,16,04),0],[Date.UTC(2022,01-1,16,16,09),0],[Date.UTC(2022,01-1,16,16,14),0],[Date.UTC(2022,01-1,16,16,19),0],[Date.UTC(2022,01-1,16,16,24),0],[Date.UTC(2022,01-1,16,16,29),0],[Date.UTC(2022,01-1,16,16,34),0],[Date.UTC(2022,01-1,16,16,39),0],[Date.UTC(2022,01-1,16,16,44),0],
+                        ]
+
+                    }]
+            });
+
+            //Grafico della pressione
+            last_24_48_graph_slmp=Highcharts.chart('24h_graph_div_slmp', {
+                chart: {
+                    type: 'spline',
+                    height: bigGraphHeight,
+                    width: null
+                },
+                title:
+                    {
+                        text: null
+                    },
+                xAxis: {
+                    type: 'datetime',
+                    dateTimeLabelFormats: {
+                        week: '%Y-%m-%d',
+                        month: '%Y-%m-%d',
+                        year: '%Y-%m-%d',
+                        day: '<b style="font-weight: 900; color:#000000 !important; fill:#000000 !important; font-size:12px;">%d/%m</b>',
+                        minute: '%H:%M',
+                        hour: '%H:%M',
+                    },
+                    labels:
+                        {
+                            enabled: true,
+                            style: '{"fontSize": "5px"}',
+                            rotation: 0
+                        }
+                },
+                yAxis: {
+                    title: {
+                        text: '[hPa]'
+                    },
+                    labels: {
+                        enabled: true,
+                        formatter: function () {
+                            return this.value;
+                        }
+                    }
+                },
+                legend: {
+                    enabled: true,
+                    align: 'center',
+                    verticalAlign: 'bottom',
+                    layout: 'horizontal'
+
+                },
+                tooltip: {
+                    crosshairs: true,
+                    shared: true,
+                    formatter: function() {
+                        var datastring='';
+
+                        $.each(this.points, function(i, point) {
+                            datastring+=('<span style="color:'+point.series.color+';font-weight:bold;">'+ point.series.name +' : '+
+                                Highcharts.numberFormat(point.y,1) +' hPa<span><br>');
+                        });
+
+                        //return '' + Highcharts.dateFormat('%H:%M', this.x ) + ', <b>' + Highcharts.numberFormat(this.y, 1) +' °C </b>';
+                        return '' + Highcharts.dateFormat('%H:%M', this.x )+'<br>' + datastring;
+                    }
+                },
+                plotOptions: {
+                    spline: {
+                        marker: {
+                            radius: 4,
+                            lineColor: '#666666',
+                            lineWidth: 1
+                        }
+                    }
+                },
+                series: [{
+                    name: 'Ultime 24h',
+                    marker: {
+                        symbol: 'square',
+                        enabled: false
+                    },
+                    color: 'rgba(215,75,58,0.94)',
+                    data: [
+                        [Date.UTC(2022,01-1,16,14,05),1024.7],[Date.UTC(2022,01-1,16,14,09),1024.9],[Date.UTC(2022,01-1,16,14,14),1024.7],[Date.UTC(2022,01-1,16,14,19),1024.5],[Date.UTC(2022,01-1,16,14,24),1024.8],[Date.UTC(2022,01-1,16,14,29),1024.6],[Date.UTC(2022,01-1,16,14,34),1024.9],[Date.UTC(2022,01-1,16,14,39),1024.6],[Date.UTC(2022,01-1,16,14,44),1024.6],[Date.UTC(2022,01-1,16,14,49),1024.8],[Date.UTC(2022,01-1,16,14,54),1024.9],[Date.UTC(2022,01-1,16,14,59),1024.7],[Date.UTC(2022,01-1,16,15,04),1024.8],[Date.UTC(2022,01-1,16,15,09),1024.7],[Date.UTC(2022,01-1,16,15,14),1024.7],[Date.UTC(2022,01-1,16,15,19),1024.8],[Date.UTC(2022,01-1,16,15,24),1024.9],[Date.UTC(2022,01-1,16,15,29),1024.7],[Date.UTC(2022,01-1,16,15,34),1024.8],[Date.UTC(2022,01-1,16,15,39),1024.8],[Date.UTC(2022,01-1,16,15,44),1025.1],[Date.UTC(2022,01-1,16,15,49),1025],[Date.UTC(2022,01-1,16,15,54),1025.1],[Date.UTC(2022,01-1,16,15,59),1025],[Date.UTC(2022,01-1,16,16,04),1025],[Date.UTC(2022,01-1,16,16,09),1025.2],[Date.UTC(2022,01-1,16,16,14),1025.2],[Date.UTC(2022,01-1,16,16,19),1025],[Date.UTC(2022,01-1,16,16,24),1025],[Date.UTC(2022,01-1,16,16,29),1025.1],[Date.UTC(2022,01-1,16,16,34),1025.4],[Date.UTC(2022,01-1,16,16,39),1025.1],[Date.UTC(2022,01-1,16,16,44),1025.5],
+                    ]
+
+                },
+                    {
+                        name: 'Da 48 a 24h fa',
+                        marker: {
+                            symbol: 'square',
+                            enabled: false
+                        },
+                        color: '#c0c3bf',
+                        data: [
+                            [Date.UTC(2022,01-1,15,16,49),1025.8],[Date.UTC(2022,01-1,15,16,54),1025.6],[Date.UTC(2022,01-1,15,16,59),1025.8],[Date.UTC(2022,01-1,15,17,04),1025.7],[Date.UTC(2022,01-1,15,17,09),1025.6],[Date.UTC(2022,01-1,15,17,14),1025.5],[Date.UTC(2022,01-1,15,17,19),1025.3],[Date.UTC(2022,01-1,15,17,24),1025.1],[Date.UTC(2022,01-1,15,17,29),1025.2],[Date.UTC(2022,01-1,15,17,34),1025.1],[Date.UTC(2022,01-1,15,17,39),1025.3],[Date.UTC(2022,01-1,15,17,44),1025.1],[Date.UTC(2022,01-1,15,17,49),1025.1],[Date.UTC(2022,01-1,15,17,54),1025.2],[Date.UTC(2022,01-1,15,17,59),1025.3],[Date.UTC(2022,01-1,15,18,04),1025.1],[Date.UTC(2022,01-1,15,18,09),1025.5],[Date.UTC(2022,01-1,15,18,14),1025.6],[Date.UTC(2022,01-1,15,18,19),1025.3],[Date.UTC(2022,01-1,15,18,24),1025.2],[Date.UTC(2022,01-1,15,18,29),1025.6],[Date.UTC(2022,01-1,15,18,34),1025.3],[Date.UTC(2022,01-1,15,18,39),1025.2],[Date.UTC(2022,01-1,15,18,44),1025.3],[Date.UTC(2022,01-1,15,18,49),1025.3],[Date.UTC(2022,01-1,15,18,54),1025],[Date.UTC(2022,01-1,15,18,59),1025.1],[Date.UTC(2022,01-1,15,19,04),1025.2],[Date.UTC(2022,01-1,15,19,09),1024.8],[Date.UTC(2022,01-1,15,19,14),1024.9],[Date.UTC(2022,01-1,15,19,19),1024.6],[Date.UTC(2022,01-1,15,19,24),1024.6],[Date.UTC(2022,01-1,15,19,29),1024.6],[Date.UTC(2022,01-1,15,19,34),1024.4],[Date.UTC(2022,01-1,15,19,39),1024],[Date.UTC(2022,01-1,15,19,44),1024.3],[Date.UTC(2022,01-1,15,19,49),1024.2],[Date.UTC(2022,01-1,15,19,54),1024],[Date.UTC(2022,01-1,15,19,59),1024.3],[Date.UTC(2022,01-1,15,20,04),1024.1],[Date.UTC(2022,01-1,15,20,09),1024.2],[Date.UTC(2022,01-1,15,20,14),1024.3],[Date.UTC(2022,01-1,15,20,19),1024.1],[Date.UTC(2022,01-1,15,20,24),1024.1],[Date.UTC(2022,01-1,15,20,29),1024.3],[Date.UTC(2022,01-1,15,20,34),1024],[Date.UTC(2022,01-1,15,20,39),1024.2],[Date.UTC(2022,01-1,15,20,44),1024],[Date.UTC(2022,01-1,15,20,49),1024.2],[Date.UTC(2022,01-1,15,20,54),1023.9],[Date.UTC(2022,01-1,15,20,58),1023.8],[Date.UTC(2022,01-1,15,21,04),1023.9],[Date.UTC(2022,01-1,15,21,09),1023.9],[Date.UTC(2022,01-1,15,21,14),1023.9],[Date.UTC(2022,01-1,15,21,19),1023.6],[Date.UTC(2022,01-1,15,21,24),1023.8],[Date.UTC(2022,01-1,15,21,29),1023.7],[Date.UTC(2022,01-1,15,21,34),1023.6],[Date.UTC(2022,01-1,15,21,39),1023.7],[Date.UTC(2022,01-1,15,21,44),1023.7],[Date.UTC(2022,01-1,15,21,49),1023.5],[Date.UTC(2022,01-1,15,21,54),1023.6],[Date.UTC(2022,01-1,15,21,59),1023.7],[Date.UTC(2022,01-1,15,22,04),1023.4],[Date.UTC(2022,01-1,15,22,09),1023.7],[Date.UTC(2022,01-1,15,22,14),1023.7],[Date.UTC(2022,01-1,15,22,19),1023.5],[Date.UTC(2022,01-1,15,22,24),1023.6],[Date.UTC(2022,01-1,15,22,29),1023.9],[Date.UTC(2022,01-1,15,22,34),1023.2],[Date.UTC(2022,01-1,15,22,39),1023.5],[Date.UTC(2022,01-1,15,22,44),1023.5],[Date.UTC(2022,01-1,15,22,49),1023.5],[Date.UTC(2022,01-1,15,22,54),1023.5],[Date.UTC(2022,01-1,15,22,59),1023.3],[Date.UTC(2022,01-1,15,23,04),1023.2],[Date.UTC(2022,01-1,15,23,09),1023.1],[Date.UTC(2022,01-1,15,23,14),1023.2],[Date.UTC(2022,01-1,15,23,19),1023.2],[Date.UTC(2022,01-1,15,23,24),1023],[Date.UTC(2022,01-1,15,23,29),1023],[Date.UTC(2022,01-1,15,23,34),1022.4],[Date.UTC(2022,01-1,15,23,39),1022.4],[Date.UTC(2022,01-1,15,23,44),1022.4],[Date.UTC(2022,01-1,15,23,49),1022.3],[Date.UTC(2022,01-1,15,23,54),1022.3],[Date.UTC(2022,01-1,15,23,59),1022.1],[Date.UTC(2022,01-1,16,00,04),1022.3],[Date.UTC(2022,01-1,16,00,09),1022.3],[Date.UTC(2022,01-1,16,00,14),1022.2],[Date.UTC(2022,01-1,16,00,19),1022.1],[Date.UTC(2022,01-1,16,00,24),1022.2],[Date.UTC(2022,01-1,16,00,29),1022],[Date.UTC(2022,01-1,16,00,34),1022.1],[Date.UTC(2022,01-1,16,00,39),1022.2],[Date.UTC(2022,01-1,16,00,44),1022.2],[Date.UTC(2022,01-1,16,00,49),1022.4],[Date.UTC(2022,01-1,16,00,54),1022.7],[Date.UTC(2022,01-1,16,00,59),1022.7],[Date.UTC(2022,01-1,16,01,04),1022.8],[Date.UTC(2022,01-1,16,01,09),1022.8],[Date.UTC(2022,01-1,16,01,14),1022.6],[Date.UTC(2022,01-1,16,01,19),1022.8],[Date.UTC(2022,01-1,16,01,24),1022.6],[Date.UTC(2022,01-1,16,01,29),1022.2],[Date.UTC(2022,01-1,16,01,34),1022.3],[Date.UTC(2022,01-1,16,01,39),1022.4],[Date.UTC(2022,01-1,16,01,44),1022.3],[Date.UTC(2022,01-1,16,01,49),1022.2],[Date.UTC(2022,01-1,16,01,54),1021.9],[Date.UTC(2022,01-1,16,01,59),1021.9],[Date.UTC(2022,01-1,16,02,04),1021.9],[Date.UTC(2022,01-1,16,02,09),1021.6],[Date.UTC(2022,01-1,16,02,14),1022],[Date.UTC(2022,01-1,16,02,19),1021.8],[Date.UTC(2022,01-1,16,02,24),1021.8],[Date.UTC(2022,01-1,16,02,29),1021.9],[Date.UTC(2022,01-1,16,02,34),1021.7],[Date.UTC(2022,01-1,16,02,39),1021.6],[Date.UTC(2022,01-1,16,02,44),1021.9],[Date.UTC(2022,01-1,16,02,49),1021.9],[Date.UTC(2022,01-1,16,02,54),1022.1],[Date.UTC(2022,01-1,16,02,59),1021.9],[Date.UTC(2022,01-1,16,03,04),1021.9],[Date.UTC(2022,01-1,16,03,09),1021.8],
+                        ]
+                    }],
+            });
+
+            //Grafico della dp
+            last_24_48_graph_dp=Highcharts.chart('24h_graph_div_dp', {
+                chart: {
+                    type: 'spline',
+                    height: bigGraphHeight,
+                    width: null
+                },
+                title:
+                    {
+                        text: null
+                    },
+                xAxis: {
+                    type: 'datetime',
+                    dateTimeLabelFormats: {
+                        week: '%Y-%m-%d',
+                        month: '%Y-%m-%d',
+                        year: '%Y-%m-%d',
+                        day: '<b style="font-weight: 900; color:#000000 !important; fill:#000000 !important; font-size:12px;">%d/%m</b>',
+                        minute: '%H:%M',
+                        hour: '%H:%M',
+                    },
+                    labels:
+                        {
+                            enabled: true,
+                            style: '{"fontSize": "5px"}',
+                            rotation: 0
+                        }
+                },
+                yAxis: {
+                    title: {
+                        text: '[°C] '
+                    },
+                    labels: {
+                        enabled: true,
+                        formatter: function () {
+                            return this.value ;
+                        }
+                    }
+                },
+                legend: {
+                    enabled: true,
+                    align: 'center',
+                    verticalAlign: 'bottom',
+                    layout: 'horizontal'
+
+                },
+                tooltip: {
+                    crosshairs: true,
+                    shared: true,
+                    formatter: function() {
+                        var datastring='';
+
+                        $.each(this.points, function(i, point) {
+                            datastring+=('<span style="color:'+point.series.color+';font-weight:bold;">'+ point.series.name +' : '+
+                                Highcharts.numberFormat(point.y,1) +' °C<span><br>');
+                        });
+
+                        //return '' + Highcharts.dateFormat('%H:%M', this.x ) + ', <b>' + Highcharts.numberFormat(this.y, 1) +' °C </b>';
+                        return '' + Highcharts.dateFormat('%H:%M', this.x )+'<br>' + datastring;
+                    }
+                },
+                plotOptions: {
+                    spline: {
+                        marker: {
+                            radius: 4,
+                            lineColor: '#666666',
+                            lineWidth: 1
+                        }
+                    }
+                },
+                series: [{
+                    name: 'Ultime 24h',
+                    marker: {
+                        symbol: 'square',
+                        enabled: false
+                    },
+                    color: 'rgba(215,75,58,0.94)',
+                    data: [
+                        [Date.UTC(2022,01-1,16,14,05),7.6],[Date.UTC(2022,01-1,16,14,09),7.4],[Date.UTC(2022,01-1,16,14,14),7.4],[Date.UTC(2022,01-1,16,14,19),7.6],[Date.UTC(2022,01-1,16,14,24),7.8],[Date.UTC(2022,01-1,16,14,29),7.9],[Date.UTC(2022,01-1,16,14,34),7.8],[Date.UTC(2022,01-1,16,14,39),7.8],[Date.UTC(2022,01-1,16,14,44),7.9],[Date.UTC(2022,01-1,16,14,49),7.8],[Date.UTC(2022,01-1,16,14,54),8.1],[Date.UTC(2022,01-1,16,14,59),7.9],[Date.UTC(2022,01-1,16,15,04),7.9],[Date.UTC(2022,01-1,16,15,09),7.9],[Date.UTC(2022,01-1,16,15,14),7.9],[Date.UTC(2022,01-1,16,15,19),8],[Date.UTC(2022,01-1,16,15,24),7.8],[Date.UTC(2022,01-1,16,15,29),7.9],[Date.UTC(2022,01-1,16,15,34),7.7],[Date.UTC(2022,01-1,16,15,39),7.6],[Date.UTC(2022,01-1,16,15,44),7.8],[Date.UTC(2022,01-1,16,15,49),7.8],[Date.UTC(2022,01-1,16,15,54),7.7],[Date.UTC(2022,01-1,16,15,59),7.6],[Date.UTC(2022,01-1,16,16,04),7.6],[Date.UTC(2022,01-1,16,16,09),7.6],[Date.UTC(2022,01-1,16,16,14),7.7],[Date.UTC(2022,01-1,16,16,19),7.8],[Date.UTC(2022,01-1,16,16,24),7.8],[Date.UTC(2022,01-1,16,16,29),7.8],[Date.UTC(2022,01-1,16,16,34),7.8],[Date.UTC(2022,01-1,16,16,39),7.9],[Date.UTC(2022,01-1,16,16,44),8],
+                    ]
+
+                },
+                    {
+                        name: 'Da 48 a 24h fa',
+                        marker: {
+                            symbol: 'square',
+                            enabled: false
+                        },
+                        color: '#c0c3bf',
+                        data: [
+                            [Date.UTC(2022,01-1,15,16,49),1.7],[Date.UTC(2022,01-1,15,16,54),1.8],[Date.UTC(2022,01-1,15,16,59),2],[Date.UTC(2022,01-1,15,17,04),1.9],[Date.UTC(2022,01-1,15,17,09),1.8],[Date.UTC(2022,01-1,15,17,14),2],[Date.UTC(2022,01-1,15,17,19),2],[Date.UTC(2022,01-1,15,17,24),1.7],[Date.UTC(2022,01-1,15,17,29),1.8],[Date.UTC(2022,01-1,15,17,34),1.8],[Date.UTC(2022,01-1,15,17,39),2.1],[Date.UTC(2022,01-1,15,17,44),2.1],[Date.UTC(2022,01-1,15,17,49),1.8],[Date.UTC(2022,01-1,15,17,54),1.8],[Date.UTC(2022,01-1,15,17,59),1.9],[Date.UTC(2022,01-1,15,18,04),1.8],[Date.UTC(2022,01-1,15,18,09),1.9],[Date.UTC(2022,01-1,15,18,14),1.8],[Date.UTC(2022,01-1,15,18,19),1.7],[Date.UTC(2022,01-1,15,18,24),1.6],[Date.UTC(2022,01-1,15,18,29),1.5],[Date.UTC(2022,01-1,15,18,34),1.7],[Date.UTC(2022,01-1,15,18,39),1.7],[Date.UTC(2022,01-1,15,18,44),1.6],[Date.UTC(2022,01-1,15,18,49),1.9],[Date.UTC(2022,01-1,15,18,54),1.9],[Date.UTC(2022,01-1,15,18,59),2],[Date.UTC(2022,01-1,15,19,04),2.1],[Date.UTC(2022,01-1,15,19,09),2.1],[Date.UTC(2022,01-1,15,19,14),2.1],[Date.UTC(2022,01-1,15,19,19),2.1],[Date.UTC(2022,01-1,15,19,24),2.3],[Date.UTC(2022,01-1,15,19,29),2.3],[Date.UTC(2022,01-1,15,19,34),2.4],[Date.UTC(2022,01-1,15,19,39),2.6],[Date.UTC(2022,01-1,15,19,44),2.6],[Date.UTC(2022,01-1,15,19,49),2.9],[Date.UTC(2022,01-1,15,19,54),3],[Date.UTC(2022,01-1,15,19,59),2.9],[Date.UTC(2022,01-1,15,20,04),3.2],[Date.UTC(2022,01-1,15,20,09),3.2],[Date.UTC(2022,01-1,15,20,14),3.5],[Date.UTC(2022,01-1,15,20,19),3.6],[Date.UTC(2022,01-1,15,20,24),3.6],[Date.UTC(2022,01-1,15,20,29),3.7],[Date.UTC(2022,01-1,15,20,34),3.8],[Date.UTC(2022,01-1,15,20,39),3.7],[Date.UTC(2022,01-1,15,20,44),3.7],[Date.UTC(2022,01-1,15,20,49),3.9],[Date.UTC(2022,01-1,15,20,54),3.9],[Date.UTC(2022,01-1,15,20,58),4],[Date.UTC(2022,01-1,15,21,04),4.1],[Date.UTC(2022,01-1,15,21,09),4],[Date.UTC(2022,01-1,15,21,14),4.1],[Date.UTC(2022,01-1,15,21,19),4.1],[Date.UTC(2022,01-1,15,21,24),4],[Date.UTC(2022,01-1,15,21,29),4.1],[Date.UTC(2022,01-1,15,21,34),4.3],[Date.UTC(2022,01-1,15,21,39),4.3],[Date.UTC(2022,01-1,15,21,44),4.3],[Date.UTC(2022,01-1,15,21,49),4.3],[Date.UTC(2022,01-1,15,21,54),4.2],[Date.UTC(2022,01-1,15,21,59),4.3],[Date.UTC(2022,01-1,15,22,04),4.3],[Date.UTC(2022,01-1,15,22,09),4.2],[Date.UTC(2022,01-1,15,22,14),4.3],[Date.UTC(2022,01-1,15,22,19),4.3],[Date.UTC(2022,01-1,15,22,24),4.2],[Date.UTC(2022,01-1,15,22,29),4.2],[Date.UTC(2022,01-1,15,22,34),4.4],[Date.UTC(2022,01-1,15,22,39),4.4],[Date.UTC(2022,01-1,15,22,44),4.4],[Date.UTC(2022,01-1,15,22,49),4.4],[Date.UTC(2022,01-1,15,22,54),4.4],[Date.UTC(2022,01-1,15,22,59),4.4],[Date.UTC(2022,01-1,15,23,04),4.3],[Date.UTC(2022,01-1,15,23,09),4.4],[Date.UTC(2022,01-1,15,23,14),4.5],[Date.UTC(2022,01-1,15,23,19),4.5],[Date.UTC(2022,01-1,15,23,24),4.6],[Date.UTC(2022,01-1,15,23,29),4.7],[Date.UTC(2022,01-1,15,23,34),4.7],[Date.UTC(2022,01-1,15,23,39),4.7],[Date.UTC(2022,01-1,15,23,44),4.7],[Date.UTC(2022,01-1,15,23,49),4.4],[Date.UTC(2022,01-1,15,23,54),4.5],[Date.UTC(2022,01-1,15,23,59),4.6],[Date.UTC(2022,01-1,16,00,04),4.6],[Date.UTC(2022,01-1,16,00,09),4.4],[Date.UTC(2022,01-1,16,00,14),4.3],[Date.UTC(2022,01-1,16,00,19),4.3],[Date.UTC(2022,01-1,16,00,24),4.5],[Date.UTC(2022,01-1,16,00,29),4.3],[Date.UTC(2022,01-1,16,00,34),4.4],[Date.UTC(2022,01-1,16,00,39),4.3],[Date.UTC(2022,01-1,16,00,44),4.4],[Date.UTC(2022,01-1,16,00,49),4.4],[Date.UTC(2022,01-1,16,00,54),4.3],[Date.UTC(2022,01-1,16,00,59),4.4],[Date.UTC(2022,01-1,16,01,04),4.4],[Date.UTC(2022,01-1,16,01,09),4.4],[Date.UTC(2022,01-1,16,01,14),4.3],[Date.UTC(2022,01-1,16,01,19),4.4],[Date.UTC(2022,01-1,16,01,24),4.5],[Date.UTC(2022,01-1,16,01,29),4.5],[Date.UTC(2022,01-1,16,01,34),4.5],[Date.UTC(2022,01-1,16,01,39),4.5],[Date.UTC(2022,01-1,16,01,44),4.4],[Date.UTC(2022,01-1,16,01,49),4.6],[Date.UTC(2022,01-1,16,01,54),4.5],[Date.UTC(2022,01-1,16,01,59),4.4],[Date.UTC(2022,01-1,16,02,04),4.3],[Date.UTC(2022,01-1,16,02,09),4.4],[Date.UTC(2022,01-1,16,02,14),4.3],[Date.UTC(2022,01-1,16,02,19),4.4],[Date.UTC(2022,01-1,16,02,24),4.5],[Date.UTC(2022,01-1,16,02,29),4.6],[Date.UTC(2022,01-1,16,02,34),4.6],[Date.UTC(2022,01-1,16,02,39),4.6],[Date.UTC(2022,01-1,16,02,44),4.5],[Date.UTC(2022,01-1,16,02,49),4.7],[Date.UTC(2022,01-1,16,02,54),4.8],[Date.UTC(2022,01-1,16,02,59),4.7],[Date.UTC(2022,01-1,16,03,04),4.8],[Date.UTC(2022,01-1,16,03,09),4.9],
+                        ]
+                    }],
+            });
+
+            //Grafico della ur
+            last_24_48_graph_rh=Highcharts.chart('24h_graph_div_rh', {
+                chart: {
+                    type: 'spline',
+                    height: bigGraphHeight,
+                    width: null
+                },
+                title:
+                    {
+                        text: null
+                    },
+                xAxis: {
+                    type: 'datetime',
+                    dateTimeLabelFormats: {
+                        week: '%Y-%m-%d',
+                        month: '%Y-%m-%d',
+                        year: '%Y-%m-%d',
+                        day: '<b style="font-weight: 900; color:#000000 !important; fill:#000000 !important; font-size:12px;">%d/%m</b>',
+                        minute: '%H:%M',
+                        hour: '%H:%M',
+                    },
+                    labels:
+                        {
+                            enabled: true,
+                            style: '{"fontSize": "5px"}',
+                            rotation: 0
+                        }
+                },
+                yAxis: {
+                    title: {
+                        text: '[\%]'
+                    },
+                    labels: {
+                        enabled: true,
+                        formatter: function () {
+                            return this.value;
+                        }
+                    },
+                    max:100
+                },
+                legend: {
+                    enabled: true,
+                    align: 'center',
+                    verticalAlign: 'bottom',
+                    layout: 'horizontal'
+                },
+                tooltip: {
+                    crosshairs: true,
+                    shared: true,
+                    formatter: function() {
+                        var datastring='';
+
+                        $.each(this.points, function(i, point) {
+                            datastring+=('<span style="color:'+point.series.color+';font-weight:bold;">'+ point.series.name +' : '+
+                                Highcharts.numberFormat(point.y,1) +' %<span><br>');
+                        });
+
+                        //return '' + Highcharts.dateFormat('%H:%M', this.x ) + ', <b>' + Highcharts.numberFormat(this.y, 1) +' °C </b>';
+                        return '' + Highcharts.dateFormat('%H:%M', this.x )+'<br>' + datastring;
+                    }
+                },
+                plotOptions: {
+                    spline: {
+                        marker: {
+                            radius: 4,
+                            lineColor: '#666666',
+                            lineWidth: 1
+                        }
+                    }
+                },
+                series: [{
+                    name: 'Ultime 24h',
+                    marker: {
+                        symbol: 'square',
+                        enabled: false
+                    },
+                    color: 'rgba(215,75,58,0.94)',
+                    data: [
+                        [Date.UTC(2022,01-1,16,14,05),60],[Date.UTC(2022,01-1,16,14,09),60],[Date.UTC(2022,01-1,16,14,14),60],[Date.UTC(2022,01-1,16,14,19),61],[Date.UTC(2022,01-1,16,14,24),62],[Date.UTC(2022,01-1,16,14,29),63],[Date.UTC(2022,01-1,16,14,34),62],[Date.UTC(2022,01-1,16,14,39),62],[Date.UTC(2022,01-1,16,14,44),63],[Date.UTC(2022,01-1,16,14,49),63],[Date.UTC(2022,01-1,16,14,54),65],[Date.UTC(2022,01-1,16,14,59),65],[Date.UTC(2022,01-1,16,15,04),65],[Date.UTC(2022,01-1,16,15,09),65],[Date.UTC(2022,01-1,16,15,14),65],[Date.UTC(2022,01-1,16,15,19),66],[Date.UTC(2022,01-1,16,15,24),67],[Date.UTC(2022,01-1,16,15,29),68],[Date.UTC(2022,01-1,16,15,34),68],[Date.UTC(2022,01-1,16,15,39),67],[Date.UTC(2022,01-1,16,15,44),68],[Date.UTC(2022,01-1,16,15,49),69],[Date.UTC(2022,01-1,16,15,54),69],[Date.UTC(2022,01-1,16,15,59),69],[Date.UTC(2022,01-1,16,16,04),69],[Date.UTC(2022,01-1,16,16,09),69],[Date.UTC(2022,01-1,16,16,14),69],[Date.UTC(2022,01-1,16,16,19),70],[Date.UTC(2022,01-1,16,16,24),71],[Date.UTC(2022,01-1,16,16,29),71],[Date.UTC(2022,01-1,16,16,34),71],[Date.UTC(2022,01-1,16,16,39),72],[Date.UTC(2022,01-1,16,16,44),73],
+                    ]
+
+                },
+                    {
+                        name: 'Da 48 a 24h fa',
+                        marker: {
+                            symbol: 'square',
+                            enabled: false
+                        },
+                        color: '#c0c3bf',
+                        data: [
+                            [Date.UTC(2022,01-1,15,16,49),55],[Date.UTC(2022,01-1,15,16,54),56],[Date.UTC(2022,01-1,15,16,59),57],[Date.UTC(2022,01-1,15,17,04),57],[Date.UTC(2022,01-1,15,17,09),56],[Date.UTC(2022,01-1,15,17,14),58],[Date.UTC(2022,01-1,15,17,19),58],[Date.UTC(2022,01-1,15,17,24),56],[Date.UTC(2022,01-1,15,17,29),56],[Date.UTC(2022,01-1,15,17,34),56],[Date.UTC(2022,01-1,15,17,39),57],[Date.UTC(2022,01-1,15,17,44),57],[Date.UTC(2022,01-1,15,17,49),56],[Date.UTC(2022,01-1,15,17,54),56],[Date.UTC(2022,01-1,15,17,59),56],[Date.UTC(2022,01-1,15,18,04),56],[Date.UTC(2022,01-1,15,18,09),56],[Date.UTC(2022,01-1,15,18,14),56],[Date.UTC(2022,01-1,15,18,19),56],[Date.UTC(2022,01-1,15,18,24),56],[Date.UTC(2022,01-1,15,18,29),55],[Date.UTC(2022,01-1,15,18,34),56],[Date.UTC(2022,01-1,15,18,39),56],[Date.UTC(2022,01-1,15,18,44),56],[Date.UTC(2022,01-1,15,18,49),57],[Date.UTC(2022,01-1,15,18,54),57],[Date.UTC(2022,01-1,15,18,59),57],[Date.UTC(2022,01-1,15,19,04),57],[Date.UTC(2022,01-1,15,19,09),57],[Date.UTC(2022,01-1,15,19,14),57],[Date.UTC(2022,01-1,15,19,19),57],[Date.UTC(2022,01-1,15,19,24),58],[Date.UTC(2022,01-1,15,19,29),58],[Date.UTC(2022,01-1,15,19,34),58],[Date.UTC(2022,01-1,15,19,39),59],[Date.UTC(2022,01-1,15,19,44),59],[Date.UTC(2022,01-1,15,19,49),60],[Date.UTC(2022,01-1,15,19,54),60],[Date.UTC(2022,01-1,15,19,59),60],[Date.UTC(2022,01-1,15,20,04),61],[Date.UTC(2022,01-1,15,20,09),61],[Date.UTC(2022,01-1,15,20,14),62],[Date.UTC(2022,01-1,15,20,19),63],[Date.UTC(2022,01-1,15,20,24),63],[Date.UTC(2022,01-1,15,20,29),63],[Date.UTC(2022,01-1,15,20,34),63],[Date.UTC(2022,01-1,15,20,39),63],[Date.UTC(2022,01-1,15,20,44),63],[Date.UTC(2022,01-1,15,20,49),64],[Date.UTC(2022,01-1,15,20,54),64],[Date.UTC(2022,01-1,15,20,58),64],[Date.UTC(2022,01-1,15,21,04),65],[Date.UTC(2022,01-1,15,21,09),64],[Date.UTC(2022,01-1,15,21,14),65],[Date.UTC(2022,01-1,15,21,19),65],[Date.UTC(2022,01-1,15,21,24),64],[Date.UTC(2022,01-1,15,21,29),64],[Date.UTC(2022,01-1,15,21,34),65],[Date.UTC(2022,01-1,15,21,39),65],[Date.UTC(2022,01-1,15,21,44),65],[Date.UTC(2022,01-1,15,21,49),65],[Date.UTC(2022,01-1,15,21,54),64],[Date.UTC(2022,01-1,15,21,59),65],[Date.UTC(2022,01-1,15,22,04),65],[Date.UTC(2022,01-1,15,22,09),65],[Date.UTC(2022,01-1,15,22,14),65],[Date.UTC(2022,01-1,15,22,19),66],[Date.UTC(2022,01-1,15,22,24),65],[Date.UTC(2022,01-1,15,22,29),65],[Date.UTC(2022,01-1,15,22,34),66],[Date.UTC(2022,01-1,15,22,39),66],[Date.UTC(2022,01-1,15,22,44),66],[Date.UTC(2022,01-1,15,22,49),66],[Date.UTC(2022,01-1,15,22,54),66],[Date.UTC(2022,01-1,15,22,59),66],[Date.UTC(2022,01-1,15,23,04),66],[Date.UTC(2022,01-1,15,23,09),66],[Date.UTC(2022,01-1,15,23,14),67],[Date.UTC(2022,01-1,15,23,19),67],[Date.UTC(2022,01-1,15,23,24),67],[Date.UTC(2022,01-1,15,23,29),67],[Date.UTC(2022,01-1,15,23,34),67],[Date.UTC(2022,01-1,15,23,39),67],[Date.UTC(2022,01-1,15,23,44),67],[Date.UTC(2022,01-1,15,23,49),66],[Date.UTC(2022,01-1,15,23,54),66],[Date.UTC(2022,01-1,15,23,59),66],[Date.UTC(2022,01-1,16,00,04),66],[Date.UTC(2022,01-1,16,00,09),65],[Date.UTC(2022,01-1,16,00,14),65],[Date.UTC(2022,01-1,16,00,19),65],[Date.UTC(2022,01-1,16,00,24),66],[Date.UTC(2022,01-1,16,00,29),65],[Date.UTC(2022,01-1,16,00,34),65],[Date.UTC(2022,01-1,16,00,39),65],[Date.UTC(2022,01-1,16,00,44),65],[Date.UTC(2022,01-1,16,00,49),65],[Date.UTC(2022,01-1,16,00,54),65],[Date.UTC(2022,01-1,16,00,59),66],[Date.UTC(2022,01-1,16,01,04),66],[Date.UTC(2022,01-1,16,01,09),66],[Date.UTC(2022,01-1,16,01,14),66],[Date.UTC(2022,01-1,16,01,19),66],[Date.UTC(2022,01-1,16,01,24),67],[Date.UTC(2022,01-1,16,01,29),67],[Date.UTC(2022,01-1,16,01,34),66],[Date.UTC(2022,01-1,16,01,39),66],[Date.UTC(2022,01-1,16,01,44),66],[Date.UTC(2022,01-1,16,01,49),66],[Date.UTC(2022,01-1,16,01,54),66],[Date.UTC(2022,01-1,16,01,59),65],[Date.UTC(2022,01-1,16,02,04),64],[Date.UTC(2022,01-1,16,02,09),65],[Date.UTC(2022,01-1,16,02,14),64],[Date.UTC(2022,01-1,16,02,19),65],[Date.UTC(2022,01-1,16,02,24),65],[Date.UTC(2022,01-1,16,02,29),66],[Date.UTC(2022,01-1,16,02,34),66],[Date.UTC(2022,01-1,16,02,39),66],[Date.UTC(2022,01-1,16,02,44),66],[Date.UTC(2022,01-1,16,02,49),66],[Date.UTC(2022,01-1,16,02,54),67],[Date.UTC(2022,01-1,16,02,59),66],[Date.UTC(2022,01-1,16,03,04),66],[Date.UTC(2022,01-1,16,03,09),67],
+                        ]
+                    }],
+            });
+
+            //Grafico della temperaturaa
+            last_24_48_graph_t=Highcharts.chart('24h_graph_div_t', {
+                chart: {
+                    type: 'spline',
+                    height: bigGraphHeight,
+                    width: null
+                },
+                title:
+                    {
+                        text: null
+                    },
+                xAxis: {
+                    type: 'datetime',
+                    dateTimeLabelFormats: {
+                        week: '%Y-%m-%d',
+                        month: '%Y-%m-%d',
+                        year: '%Y-%m-%d',
+                        day: '<b style="font-weight: 900; color:#000000 !important; fill:#000000 !important; font-size:12px;">%d/%m</b>',
+                        minute: '%H:%M',
+                        hour: '%H:%M',
+                    },
+                    labels:
+                        {
+                            enabled: true,
+                            style: '{"fontSize": "5px"}',
+                            rotation: 0
+                        }
+                },
+                yAxis: {
+                    title: {
+                        text: '[°C]'
+                    },
+                    labels: {
+                        enabled: true,
+                        formatter: function () {
+                            return this.value;
+                        }
+                    }
+                },
+                legend: {
+                    enabled: true,
+                    align: 'center',
+                    verticalAlign: 'bottom',
+                    layout: 'horizontal'
+                },
+                tooltip: {
+                    crosshairs: true,
+                    shared: true,
+                    formatter: function() {
+                        var data = new Date(this.x);
+                        var datastring='';
+
+                        $.each(this.points, function(i, point) {
+                            datastring+=('<span style="color:'+point.series.color+';font-weight:bold;">'+ point.series.name +' : '+
+                                Highcharts.numberFormat(point.y,1) +' °C<span><br>');
+                        });
+
+                        //return '' + Highcharts.dateFormat('%H:%M', this.x ) + ', <b>' + Highcharts.numberFormat(this.y, 1) +' °C </b>';
+                        return '' + Highcharts.dateFormat('%H:%M', this.x )+'<br>' + datastring;
+                    }
+                },
+                plotOptions: {
+                    spline: {
+                        marker: {
+                            radius: 4,
+                            lineColor: '#666666',
+                            lineWidth: 1
+                        }
+                    }
+                },
+                series: [{
+                    name: 'Ultime 24h',
+                    marker: {
+                        symbol: 'square',
+                        enabled: false
+                    },
+                    color: 'rgba(215,75,58,0.94)',
+                    data: [
+                        [Date.UTC(2022,01-1,16,14,05),15.3],[Date.UTC(2022,01-1,16,14,09),15.1],[Date.UTC(2022,01-1,16,14,14),15.1],[Date.UTC(2022,01-1,16,14,19),15.1],[Date.UTC(2022,01-1,16,14,24),15],[Date.UTC(2022,01-1,16,14,29),14.9],[Date.UTC(2022,01-1,16,14,34),15],[Date.UTC(2022,01-1,16,14,39),15],[Date.UTC(2022,01-1,16,14,44),14.9],[Date.UTC(2022,01-1,16,14,49),14.8],[Date.UTC(2022,01-1,16,14,54),14.6],[Date.UTC(2022,01-1,16,14,59),14.4],[Date.UTC(2022,01-1,16,15,04),14.4],[Date.UTC(2022,01-1,16,15,09),14.4],[Date.UTC(2022,01-1,16,15,14),14.4],[Date.UTC(2022,01-1,16,15,19),14.2],[Date.UTC(2022,01-1,16,15,24),13.8],[Date.UTC(2022,01-1,16,15,29),13.7],[Date.UTC(2022,01-1,16,15,34),13.5],[Date.UTC(2022,01-1,16,15,39),13.6],[Date.UTC(2022,01-1,16,15,44),13.6],[Date.UTC(2022,01-1,16,15,49),13.4],[Date.UTC(2022,01-1,16,15,54),13.3],[Date.UTC(2022,01-1,16,15,59),13.2],[Date.UTC(2022,01-1,16,16,04),13.2],[Date.UTC(2022,01-1,16,16,09),13.2],[Date.UTC(2022,01-1,16,16,14),13.3],[Date.UTC(2022,01-1,16,16,19),13.1],[Date.UTC(2022,01-1,16,16,24),12.9],[Date.UTC(2022,01-1,16,16,29),12.9],[Date.UTC(2022,01-1,16,16,34),12.9],[Date.UTC(2022,01-1,16,16,39),12.8],[Date.UTC(2022,01-1,16,16,44),12.7],
+                    ]
+
+                },
+                    {
+                        name: 'Da 48 a 24h fa',
+                        marker: {
+                            symbol: 'square',
+                            enabled: false
+                        },
+                        color: '#c0c3bf',
+                        data: [
+                            [Date.UTC(2022,01-1,15,16,49),10.3],[Date.UTC(2022,01-1,15,16,54),10.2],[Date.UTC(2022,01-1,15,16,59),10.1],[Date.UTC(2022,01-1,15,17,04),10],[Date.UTC(2022,01-1,15,17,09),10.2],[Date.UTC(2022,01-1,15,17,14),9.9],[Date.UTC(2022,01-1,15,17,19),9.9],[Date.UTC(2022,01-1,15,17,24),10.1],[Date.UTC(2022,01-1,15,17,29),10.2],[Date.UTC(2022,01-1,15,17,34),10.2],[Date.UTC(2022,01-1,15,17,39),10.2],[Date.UTC(2022,01-1,15,17,44),10.2],[Date.UTC(2022,01-1,15,17,49),10.2],[Date.UTC(2022,01-1,15,17,54),10.2],[Date.UTC(2022,01-1,15,17,59),10.3],[Date.UTC(2022,01-1,15,18,04),10.2],[Date.UTC(2022,01-1,15,18,09),10.3],[Date.UTC(2022,01-1,15,18,14),10.2],[Date.UTC(2022,01-1,15,18,19),10.1],[Date.UTC(2022,01-1,15,18,24),10],[Date.UTC(2022,01-1,15,18,29),10.1],[Date.UTC(2022,01-1,15,18,34),10.1],[Date.UTC(2022,01-1,15,18,39),10.1],[Date.UTC(2022,01-1,15,18,44),10],[Date.UTC(2022,01-1,15,18,49),10],[Date.UTC(2022,01-1,15,18,54),10],[Date.UTC(2022,01-1,15,18,59),10.1],[Date.UTC(2022,01-1,15,19,04),10.2],[Date.UTC(2022,01-1,15,19,09),10.2],[Date.UTC(2022,01-1,15,19,14),10.2],[Date.UTC(2022,01-1,15,19,19),10.2],[Date.UTC(2022,01-1,15,19,24),10.2],[Date.UTC(2022,01-1,15,19,29),10.2],[Date.UTC(2022,01-1,15,19,34),10.3],[Date.UTC(2022,01-1,15,19,39),10.3],[Date.UTC(2022,01-1,15,19,44),10.3],[Date.UTC(2022,01-1,15,19,49),10.3],[Date.UTC(2022,01-1,15,19,54),10.4],[Date.UTC(2022,01-1,15,19,59),10.3],[Date.UTC(2022,01-1,15,20,04),10.4],[Date.UTC(2022,01-1,15,20,09),10.4],[Date.UTC(2022,01-1,15,20,14),10.5],[Date.UTC(2022,01-1,15,20,19),10.3],[Date.UTC(2022,01-1,15,20,24),10.3],[Date.UTC(2022,01-1,15,20,29),10.4],[Date.UTC(2022,01-1,15,20,34),10.5],[Date.UTC(2022,01-1,15,20,39),10.4],[Date.UTC(2022,01-1,15,20,44),10.4],[Date.UTC(2022,01-1,15,20,49),10.4],[Date.UTC(2022,01-1,15,20,54),10.4],[Date.UTC(2022,01-1,15,20,58),10.5],[Date.UTC(2022,01-1,15,21,04),10.4],[Date.UTC(2022,01-1,15,21,09),10.5],[Date.UTC(2022,01-1,15,21,14),10.4],[Date.UTC(2022,01-1,15,21,19),10.4],[Date.UTC(2022,01-1,15,21,24),10.5],[Date.UTC(2022,01-1,15,21,29),10.6],[Date.UTC(2022,01-1,15,21,34),10.6],[Date.UTC(2022,01-1,15,21,39),10.6],[Date.UTC(2022,01-1,15,21,44),10.6],[Date.UTC(2022,01-1,15,21,49),10.6],[Date.UTC(2022,01-1,15,21,54),10.7],[Date.UTC(2022,01-1,15,21,59),10.6],[Date.UTC(2022,01-1,15,22,04),10.6],[Date.UTC(2022,01-1,15,22,09),10.5],[Date.UTC(2022,01-1,15,22,14),10.6],[Date.UTC(2022,01-1,15,22,19),10.4],[Date.UTC(2022,01-1,15,22,24),10.5],[Date.UTC(2022,01-1,15,22,29),10.5],[Date.UTC(2022,01-1,15,22,34),10.5],[Date.UTC(2022,01-1,15,22,39),10.5],[Date.UTC(2022,01-1,15,22,44),10.5],[Date.UTC(2022,01-1,15,22,49),10.5],[Date.UTC(2022,01-1,15,22,54),10.5],[Date.UTC(2022,01-1,15,22,59),10.5],[Date.UTC(2022,01-1,15,23,04),10.4],[Date.UTC(2022,01-1,15,23,09),10.5],[Date.UTC(2022,01-1,15,23,14),10.4],[Date.UTC(2022,01-1,15,23,19),10.4],[Date.UTC(2022,01-1,15,23,24),10.5],[Date.UTC(2022,01-1,15,23,29),10.6],[Date.UTC(2022,01-1,15,23,34),10.6],[Date.UTC(2022,01-1,15,23,39),10.6],[Date.UTC(2022,01-1,15,23,44),10.6],[Date.UTC(2022,01-1,15,23,49),10.5],[Date.UTC(2022,01-1,15,23,54),10.6],[Date.UTC(2022,01-1,15,23,59),10.7],[Date.UTC(2022,01-1,16,00,04),10.7],[Date.UTC(2022,01-1,16,00,09),10.7],[Date.UTC(2022,01-1,16,00,14),10.6],[Date.UTC(2022,01-1,16,00,19),10.6],[Date.UTC(2022,01-1,16,00,24),10.6],[Date.UTC(2022,01-1,16,00,29),10.6],[Date.UTC(2022,01-1,16,00,34),10.7],[Date.UTC(2022,01-1,16,00,39),10.6],[Date.UTC(2022,01-1,16,00,44),10.7],[Date.UTC(2022,01-1,16,00,49),10.7],[Date.UTC(2022,01-1,16,00,54),10.6],[Date.UTC(2022,01-1,16,00,59),10.5],[Date.UTC(2022,01-1,16,01,04),10.5],[Date.UTC(2022,01-1,16,01,09),10.5],[Date.UTC(2022,01-1,16,01,14),10.4],[Date.UTC(2022,01-1,16,01,19),10.5],[Date.UTC(2022,01-1,16,01,24),10.4],[Date.UTC(2022,01-1,16,01,29),10.4],[Date.UTC(2022,01-1,16,01,34),10.6],[Date.UTC(2022,01-1,16,01,39),10.6],[Date.UTC(2022,01-1,16,01,44),10.5],[Date.UTC(2022,01-1,16,01,49),10.7],[Date.UTC(2022,01-1,16,01,54),10.6],[Date.UTC(2022,01-1,16,01,59),10.7],[Date.UTC(2022,01-1,16,02,04),10.8],[Date.UTC(2022,01-1,16,02,09),10.7],[Date.UTC(2022,01-1,16,02,14),10.8],[Date.UTC(2022,01-1,16,02,19),10.7],[Date.UTC(2022,01-1,16,02,24),10.8],[Date.UTC(2022,01-1,16,02,29),10.7],[Date.UTC(2022,01-1,16,02,34),10.7],[Date.UTC(2022,01-1,16,02,39),10.7],[Date.UTC(2022,01-1,16,02,44),10.6],[Date.UTC(2022,01-1,16,02,49),10.8],[Date.UTC(2022,01-1,16,02,54),10.7],[Date.UTC(2022,01-1,16,02,59),10.8],[Date.UTC(2022,01-1,16,03,04),10.9],[Date.UTC(2022,01-1,16,03,09),10.8],
+                        ]
+                    }]
+            });
+
+            reflowLast24hGraphs();
+        });
+    </script>
+
+        <script type="text/javascript">
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+        </script>
+
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172409-9"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-172409-3');
+        </script>
+
+    </body>
+</html>

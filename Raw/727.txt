@@ -1,0 +1,1599 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="csrf-token" content="Sxf7qDi24MB2tVwT5U93vn2FcGa4ODTINKw3Vdsh">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/bootstrap-daterangepicker/daterangepicker.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/toastr/toastr.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/fancybox/jquery.fancybox.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/datatables/css/jquery.dataTables.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/dropzone/dropzone.css">
+        
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/leaflet/leaflet.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/leaflet-markercluster/MarkerCluster.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/leaflet-markercluster/MarkerCluster.Default.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/bootstrap-toggle/css/bootstrap-toggle.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/bootstrap-select/css/bootstrap-select.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/plugins/mapbox/mapbox-gl.css">
+
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/css/app.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/css/style.css?v=1">
+        <link media="all" type="text/css" rel="stylesheet" href="https://meteonetwork.eu/css/custom.css?v=1">
+
+                
+        <meta name="robots" content="noindex, nofollow" />
+        <meta name="author" content="Luca Cerri" />
+    </head>
+    <body class="app">
+        <wrapper class="d-flex flex-column">
+            <!--header -->
+            <div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <a class="navbar-brand" href="http://www.meteonetwork.it">meteonetwork<span class="square"></span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Associazione
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="http://www.meteonetwork.it/chisiamo/">Chi siamo</a>
+                        <a class="dropdown-item" href="http://www.meteonetwork.it/iscrizioni-e-donazioni/">Iscrizioni e donazioni</a>
+                        <a class="dropdown-item" href="http://www.meteonetwork.it/partners/">Partners</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Rete Stazioni Meteo
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="https://www.meteonetwork.it/rete">Dati e Mappe</a>
+                        <a class="dropdown-item" href="https://www.meteonetwork.it/rete/livemap/">LiveMap</a>
+                        <a class="dropdown-item" href="http://my.meteonetwork.it">myMeteoNetwork</a>
+                        <a class="dropdown-item" href="https://www.meteonetwork.it/supporto/meteonetwork-api/">MeteoNetwork API</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Progetti
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="http://www.meteonetwork.it/webcam-venezia/">Webcam Venezia</a>
+                        <a class="dropdown-item" href="http://www.meteonetwork.it/radiosondaggi/">Radiosondaggi</a>
+                        <a class="dropdown-item" href="http://www.meteonetwork.it/tt/stormreport/">Storm report</a>
+                        <a class="dropdown-item" href="http://www.meteonetwork.it/models/mjo/">MJO</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://www.meteonetwork.it/didattica-2/">Didattica</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://www.meteonetwork.it/blog/">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://www.meteonetwork.it/models/">Modelli</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://forum.meteonetwork.it/">Forum</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contatti</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        Lingua
+                        <img src="https://meteonetwork.eu/img/flags/it.png">
+                    </a>
+                    <div class="dropdown-menu">
+                        
+                        <a class="dropdown-item tabs" href="https://meteonetwork.eu/it/weather-station/clb305-stazione-meteorologica-di-panoramica/graphs" ><img src="https://meteonetwork.eu/img/flags/it.png"> Italiano</a>
+                        <a class="dropdown-item tabs" href="https://meteonetwork.eu/en/weather-station/clb305-stazione-meteorologica-di-panoramica/graphs" ><img src="https://meteonetwork.eu/img/flags/en.png"> English</a>
+                        <a class="dropdown-item tabs" href="https://meteonetwork.eu/de/weather-station/clb305-stazione-meteorologica-di-panoramica/graphs" ><img src="https://meteonetwork.eu/img/flags/de.png"> Deutsch</a>
+                        <a class="dropdown-item tabs" href="https://meteonetwork.eu/fr/weather-station/clb305-stazione-meteorologica-di-panoramica/graphs" ><img src="https://meteonetwork.eu/img/flags/fr.png"> Français</a>
+                        <a class="dropdown-item tabs" href="https://meteonetwork.eu/el/weather-station/clb305-stazione-meteorologica-di-panoramica/graphs" ><img src="https://meteonetwork.eu/img/flags/el.png"> Ελληνικά</a>
+                        <a class="dropdown-item tabs" href="https://meteonetwork.eu/no/weather-station/clb305-stazione-meteorologica-di-panoramica/graphs" ><img src="https://meteonetwork.eu/img/flags/no.png"> Norsk</a>
+                    </div>
+                </li>
+
+                                
+                
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<!--
+TODO: ELIMINARE QUESTA PARTE COMMENTATA
+<div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light no_padding">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://meteonetwork.eu/it"><i class="fa fa-home"></i></a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Meteogrammi</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        Mappe
+    </a>
+    <div class="dropdown-menu">
+                       LUCA: RIMOSSI LINK NON PIÙ UTILI
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+-->
+
+
+
+            <main class="flex-fill">
+                
+                    <div class="col dx_breadc station">
+    <a class="extreme breadc" href="https://meteonetwork.eu/it">
+        myMNW
+    </a> ›
+    Stazione di Soverato (IT)
+    
+    /
+                <button type="button" class="btn btn-success">online</button>
+        
+    <!--offline
+    <button type="button" class="btn btn-danger">Offline</button>
+    -->
+</div>
+
+                <!-- Titolo: può essere sovrascritto -->
+                    <div class="row no-gutters">
+    <div class="col dx">
+        <h1 class="d-inline">
+            Stazione di Panoramica - Soverato (CZ)
+
+        </h1>
+        
+            Rating: 
+
+           
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+            
+            
+
+                            <i class="far fa-star"></i>
+            
+
+            (89.1 %)
+        
+
+        <br/>
+                    <span class="subtitle_st">Stazione meteorologica a norma MeteoNetwork -
+                    <a class="extreme" href="#">Rete MeteoNetwork</a>
+                                        - <a class="extreme" href="https://www.meteonetwork.it/supporto/termini-di-licenza-dei-dati-meteorologici-odbl/">CC-BY 4.0</a></span><br>
+                
+        
+    </div>
+</div>
+
+                
+                    <div class="container-fluid">
+    <ul class="nav nav-tabs" role="tablist">
+                    
+            <li class="nav-item">
+                <a class="nav-link px-3" href="https://meteonetwork.eu/it">
+                    <i class="fa fa-home"></i>
+                </a>
+            </li>
+
+
+                            <li class="nav-item ">
+    <a class="nav-link px-3 station_context " href="https://meteonetwork.eu/it/weather-station/clb305-stazione-meteorologica-di-panoramica">
+        Stazione di Soverato (IT)
+    </a>
+</li>
+<li class="nav-item ">
+    <a class="nav-link  px-3 station_context active " href="https://meteonetwork.eu/it/weather-station/clb305-stazione-meteorologica-di-panoramica/graphs">
+        Grafici (24/48h)
+    </a>
+</li>
+<li class="nav-item">
+    <a class="nav-link px-3 station_context " href="https://meteonetwork.eu/it/weather-station/clb305-stazione-meteorologica-di-panoramica/reports">
+        Estremi
+    </a>
+</li>
+<li class="nav-item ">
+    <a class="nav-link px-3  station_context " href="https://meteonetwork.eu/it/weather-station/clb305-stazione-meteorologica-di-panoramica/archive">
+        Archivio
+    </a>
+</li>
+
+
+<li class="nav-item">
+    <a class="nav-link px-3 station_context " href="https://meteonetwork.eu/it/weather-station/clb305-stazione-meteorologica-di-panoramica/details">
+        Dettagli e Webcam
+    </a>
+</li>
+
+
+
+<li class="nav-item d-none">
+    <a class="nav-link px-3" href="https://meteonetwork.eu/it/weather-station/clb305-stazione-meteorologica-di-panoramica/meteogram">
+        Meteogrammi
+    </a>
+</li>
+
+            
+            
+            
+                            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                Mappe
+            </a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item tabs" href="https://meteonetwork.eu/it/models" >Modelli</a>
+                <a class="dropdown-item tabs" href="https://meteonetwork.eu/it/mappe-realtime" >Mappe Realtime</a>
+                
+                <a class="dropdown-item tabs" href="https://meteonetwork.eu/it/mappe-periodiche" >Mappe Riepilogative</a>
+                <a class="dropdown-item tabs" href="https://meteonetwork.eu/it/mappe-internazionali" >Mappe Internazionali</a>
+                <a class="dropdown-item tabs" href="https://meteonetwork.eu/it/mappa-fulmini" >Mappa Fulminazioni</a>
+                <a class="dropdown-item tabs" href="https://meteonetwork.eu/it/mappa-radar" >Mappa Radar</a>
+                <a class="dropdown-item tabs" href="https://meteonetwork.eu/it/mappa-estremi" >Mappa Estremi</a>
+                                    <a class="dropdown-item tabs" href="https://meteonetwork.eu/it/mappa-stazioni" >Mappa Stazioni</a>
+                    <a class="dropdown-item tabs" href="https://meteonetwork.eu/it/stations-list" >Elenco Stazioni</a>
+                            </div>
+        </li>
+                <li class="nav-item">
+            <a class="nav-link px-3" href="#faq">FAQ</a>
+        </li>
+
+    </ul>
+
+    </div>
+
+                
+                    <div class="tab-content">
+        <div class="container-fluid active tab-pane">
+            <div class="row no-gutters justify-content-center">
+                <div class="col-12">
+                    <h3 class="sub config"><i class="fas fa-chevron-right"></i> Grafici ultime 24/48 h</h3>
+                </div>
+
+                
+                <div class="col-lg-5 col-md-5 col-sm-12 bg-white shadow-sm p-3 mb-5 ml-3 mr-3 text-center">
+                    <div class="card-header"><span class="c_head align-baseline">Estremi giornalieri</span></div>
+                    <div class="tab-card config table-responsive">
+                        <table class="table table-hover table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">
+                                        Variabile
+                                    </th>
+                                    <th>
+                                        <i class="fa fa2x fa-arrow-up text-danger"></i>
+                                    </th>
+                                    <th>
+                                        <i class="fa fa2x fa-arrow-down text-info"></i>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-left">
+                                
+                                <tr>
+                                    <td class="p-0 pl-2 align-middle text-center">
+                                        <img src="https://meteonetwork.eu/img/icons/cold.svg">
+                                    </td>
+                                    <td>Temperatura</td>
+                                    <td class="p-0 pl-2 align-middle">16.6 &deg;C <span id="tmaxspan"></span></td>
+                                    <td class="p-0 pl-2 align-middle">9.3 &deg;C <span id="tminspan"></span></td>
+                                </tr>
+
+                                
+                                <tr>
+                                    <td class="p-0 pl-2 align-middle text-center">
+                                        <img src="https://meteonetwork.eu/img/icons/rain2.svg">
+                                    </td>
+                                    <td>Pioggia</td>
+                                    <td class="p-0 pl-2 align-middle">0 mm</td>
+                                    <td class="p-0 pl-2 align-middle"></td>
+                                </tr>
+
+                                
+                                <tr>
+                                    <td class="p-0 pl-2 align-middle text-center">
+                                        <img src="https://meteonetwork.eu/img/icons/wind2.svg">
+                                    </td>
+                                    <td>Vento</td>
+                                    <td class="p-0 pl-2 align-middle">
+                                        Gust: 36.7 km/h <span id="wgspan"></span>
+                                        <br>
+                                        Speed: 30.6 km/h <span id="wsspan"></span>
+                                    </td>
+                                    <td class="p-0 pl-2 align-middle"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                
+                <div class="col-lg-5 col-md-5 col-sm-12 bg-white shadow-sm p-3 mb-5 ml-3 mr-3 text-center">
+                    <div class="card-header"><span class="c_head align-baseline">Temperatura</span></div>
+                    <div class="tab-card config " id="24h_graph_div_t">
+
+                    </div>
+                </div>
+                
+                <div class="col-lg-5 col-md-5 col-sm-12 bg-white shadow-sm p-3 mb-5 ml-3 mr-3 text-center">
+                    <div class="card-header"><span class="c_head align-baseline">Umidità</span></div>
+                    <div class="tab-card config" id="24h_graph_div_rh">
+
+                    </div>
+                </div>
+                
+                <div class="col-lg-5 col-md-5 col-sm-12 bg-white shadow-sm p-3 mb-5 ml-3 mr-3 text-center">
+                    <div class="card-header"><span class="c_head align-baseline">Temp. di rugiada</span></div>
+                    <div class="tab-card config" id="24h_graph_div_dp">
+
+                    </div>
+                </div>
+                
+                <div class="col-lg-5 col-md-5 col-sm-12 bg-white shadow-sm p-3 mb-5 ml-3 mr-3 text-center">
+                    <div class="card-header"><span class="c_head align-baseline">Pressione</span></div>
+                    <div class="tab-card config " id="24h_graph_div_slmp">
+
+                    </div>
+                </div>
+                
+                <div class="col-lg-5 col-md-5 col-sm-12 bg-white shadow-sm p-3 mb-5 ml-3 mr-3 text-center">
+                    <div class="card-header"><span class="c_head align-baseline">Pioggia</span></div>
+                    <div class="tab-card config " id="24h_graph_div_rain">
+
+                    </div>
+                </div>
+
+                
+                <div class="col-lg-5 col-md-12 bg-white shadow-sm p-3 mb-5 ml-3 mr-3 text-center">
+                    <div class="card-header"><span class="c_head align-baseline">Vento</span></div>
+                    <div class="tab-card config " id="24h_wind_rose_frequencies">
+
+                    </div>
+                </div>
+
+                
+                <div class="col-lg-5 col-md-12 bg-white shadow-sm p-3 mb-5 ml-3 mr-3 text-center">
+                    <div class="card-header"><span class="c_head align-baseline">Vento</span></div>
+                    <div class="tab-card config " id="24h_wind_rose">
+
+                    </div>
+                </div>
+
+                
+                <div class="col-lg-12 col-md-12 col-sm-12 bg-white shadow-sm p-3 mb-5 ml-3 mr-3 text-center">
+                    <div class="card-header"><span class="c_head align-baseline">Vento</span></div>
+                    <div class="tab-card config " id="24h_graph_div_wind_main">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                            </main>
+
+            <!--Footer -->
+            <footer>
+    <div class="wrapper-top-footer">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="mail"><a class="mail" href="mailto:info@meteonetwork.it">info@meteonetwork.it</a></div>
+            </div>
+            <div class="col-lg-4">
+                <div class="social">Follow us <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    <a class="social" href="https://www.facebook.com/meteonetwork/?fref=ts" target="_blank">FB</a> / <a class="social" href="https://twitter.com/meteonetwork" target="_blank">TW</a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <h6 class="claim">Always looking at the sky</h6>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 credits">
+                Associazione MeteoNetwork OdV - Via Cascina Bianca, 9/5 20142 Milano (MI) - CF 03968320964 - Licenza <a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.it">CC-BY 4.0</a> – <a href="/supporto" target="_blank">Supporto</a> - <a href="https://www.meteonetwork.it/informative/informativa-privacy-ai-sensi-del-regolamento-generale-per-la-protezione-dei-dati-personali/" target="_blank">Informativa privacy</a> - <a href="https://www.meteonetwork.it/informative/" target="_blank">Altre informative</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        </wrapper>
+
+
+        <!--Modali -->
+                    <!-- placeholder per le modali -->
+        
+        <!-- Loader -->
+        <div id="loaders">
+    <div id="full_loader" style="display: none;">
+        <h1>
+            <i class="fas fa-cog fa-spin"></i>
+            <span id="full_loader_message"></span>
+        </h1>
+    </div>
+</div>
+
+        <!-- Scripts -->
+        <script src="https://meteonetwork.eu/js/app.js"></script>
+        <script src="https://meteonetwork.eu/plugins/moment/moment.min.js"></script>
+        <script src="https://meteonetwork.eu/plugins/moment-timezone/moment-timezone-with-data.js"></script>
+
+        <script src="https://meteonetwork.eu/plugins/highcharts/highcharts.js"></script>
+        <script src="https://meteonetwork.eu/plugins/highcharts/highcharts-more.js"></script>
+        <script src="https://meteonetwork.eu/plugins/highcharts/modules/windbarb.js"></script>
+        <script src="https://meteonetwork.eu/plugins/highcharts/modules/heatmap.js"></script>
+        <script src="https://meteonetwork.eu/plugins/highcharts/modules/data.js"></script>
+        <script src="https://meteonetwork.eu/plugins/highcharts/modules/boost-canvas.js"></script>
+        <script src="https://meteonetwork.eu/plugins/highcharts/modules/boost.js"></script>
+        <script src="https://meteonetwork.eu/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+        <script src="https://meteonetwork.eu/plugins/bootstrap-3-typeahead/bootstrap3-typeahead.min.js"></script>
+        <script src="https://meteonetwork.eu/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+        <script src="https://meteonetwork.eu/plugins/block-ui/jquery.blockUI.js"></script>
+        <script src="https://meteonetwork.eu/plugins/toastr/toastr.min.js"></script>
+        <script src="https://meteonetwork.eu/plugins/datatables/js/jquery.dataTables.js"></script>
+        <script src="https://meteonetwork.eu/plugins/dropzone/min/dropzone.min.js"></script>
+        <script src="https://meteonetwork.eu/plugins/sly/sly.min.js"></script>
+        <script src="https://meteonetwork.eu/plugins/leaflet/leaflet.js"></script>
+        <script src="https://meteonetwork.eu/plugins/leaflet-markercluster/leaflet.markercluster-src.js"></script>
+        <script src="https://meteonetwork.eu/plugins/fancybox/jquery.fancybox.js"></script>
+        <script src="https://meteonetwork.eu/plugins/jquery-touchswipe/jquery.touchSwipe.js"></script>
+        <script src="https://meteonetwork.eu/plugins/bootstrap-toggle/js/bootstrap-toggle.js"></script>
+        <script src="https://meteonetwork.eu/plugins/bootstrap-select/js/bootstrap-select.js"></script>
+        <script src="https://meteonetwork.eu/plugins/mapbox/mapbox-gl.js"></script>
+        <script src="https://meteonetwork.eu/plugins/deck.gl/dist.dev.js"></script>
+
+
+        <script src="https://meteonetwork.eu/js/custom.js"></script>
+
+	 <script data-ad-client="ca-pub-7296075361209517" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+        <!-- AddThis -->
+        <script type="text/javascript" src="https://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4e12f0576c06d0e7"></script>
+
+        <!-- Scripts di pagina dopo tutti i plugins -->
+        
+    
+    <script type="text/javascript">
+
+        /*Variabili per i grafici*/
+        let last_24_48_graph_t=null;
+        let last_24_48_graph_rh=null;
+        let last_24_48_graph_dp=null;
+        let last_24_48_graph_slmp=null;
+        let last_24_rain=null;
+        let last_24_wind=null;
+        let last_24_windrose=null;
+        let last_24_windrose_frequencies=null;
+
+        //Variabili di controllo
+        let bigGraphHeight=200;
+        let windGraphHeight=280;
+        let windRoseHeight=280;
+        let bigGraphWidth=500;
+
+        /**
+         * Funzione di utilità per rinfescare i grafici
+         */
+        function reflowLast24hGraphs()
+        {
+
+        }
+
+        function setAndShowExtremesLocalTimeHour(){
+            let localOffset=  new Date().getTimezoneOffset();
+            let minutes =-(localOffset%60);
+            minutes=parseInt(minutes*60);
+
+            while (minutes>60){
+                minutes-=60;
+            }
+
+                        let maxTHour=14 - parseInt(localOffset/60);
+            let maxTMin=29 - parseInt(minutes);
+            $('#tmaxspan').html('@ '+(maxTHour).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})
+                +':'+(maxTMin).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false}))
+            
+                        let minTHour=2 - parseInt(localOffset/60);
+            let minTMin=44 - parseInt(minutes);
+            $('#tminspan').html('@ '+(minTHour).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})
+                +':'+(minTMin).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false}))
+            
+                        let maxWSHour=15 - parseInt(localOffset/60);
+            let maxWSMin=49 - parseInt(minutes);
+            $('#wsspan').html('@ '+(maxWSHour).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})
+                +':'+(maxWSMin).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false}))
+            
+                        let maxWGHour=15 - parseInt(localOffset/60);
+            let maxWGMin=49 - parseInt(minutes);
+            $('#wgspan').html('@ '+(maxWGHour).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})
+                +':'+(maxWGMin).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false}))
+                    }
+
+        /**
+         * Offset con la data di sistema
+         * @type  {number}
+         */
+        let offset=  new Date().getTimezoneOffset();
+        Highcharts.setOptions({
+            time: {
+                timezoneOffset: offset
+            }
+        });
+
+        let originalDataWindPerc=null;
+        let valuesMap = new Map();
+
+        //Variabili per le serioline
+        let d05 = [];
+        let d510 = [];
+        let d1020 = [];
+        let d2030 = [];
+        let d3050 = [];
+        let d50inf = [];
+
+        let roseWindCorrectSerie = [];
+
+        $(document).ready(function(){
+
+            setAndShowExtremesLocalTimeHour();
+
+            
+            let coordinatesArray = ["N","NNE","NE","ENE","E","ESE","SE","SSE","S","SSW","SW","WSW","W","WNW","NW","NNW"];
+            originalDataWindPerc=[{
+          "ord" : 1 ,
+          "nome": "N",
+          "0-5": 0,
+          "5-10":  0,
+          "10-20":0,
+          "20-30":0,
+          "30-50":0,
+          "50-9999":0,
+        },{
+          "ord" : 2 ,
+          "nome": "NNE",
+          "0-5": 0.53191489361702,
+          "5-10":  0,
+          "10-20":0,
+          "20-30":0,
+          "30-50":0,
+          "50-9999":0,
+        },{
+          "ord" : 3 ,
+          "nome": "NE",
+          "0-5": 0,
+          "5-10":  0.53191489361702,
+          "10-20":0,
+          "20-30":0,
+          "30-50":0,
+          "50-9999":0,
+        },{
+          "ord" : 4 ,
+          "nome": "ENE",
+          "0-5": 0.53191489361702,
+          "5-10":  2.6595744680851,
+          "10-20":0,
+          "20-30":0,
+          "30-50":0,
+          "50-9999":0,
+        },{
+          "ord" : 5 ,
+          "nome": "E",
+          "0-5": 0,
+          "5-10":  2.1276595744681,
+          "10-20":0.53191489361702,
+          "20-30":0,
+          "30-50":0,
+          "50-9999":0,
+        },{
+          "ord" : 6 ,
+          "nome": "ESE",
+          "0-5": 0.53191489361702,
+          "5-10":  1.5957446808511,
+          "10-20":1.063829787234,
+          "20-30":0,
+          "30-50":0,
+          "50-9999":0,
+        },{
+          "ord" : 7 ,
+          "nome": "SE",
+          "0-5": 1.5957446808511,
+          "5-10":  3.7234042553191,
+          "10-20":0.53191489361702,
+          "20-30":0,
+          "30-50":0,
+          "50-9999":0,
+        },{
+          "ord" : 8 ,
+          "nome": "SSE",
+          "0-5": 0.53191489361702,
+          "5-10":  3.7234042553191,
+          "10-20":1.063829787234,
+          "20-30":0,
+          "30-50":0,
+          "50-9999":0,
+        },{
+          "ord" : 9 ,
+          "nome": "S",
+          "0-5": 1.063829787234,
+          "5-10":  3.7234042553191,
+          "10-20":1.5957446808511,
+          "20-30":0,
+          "30-50":0,
+          "50-9999":0,
+        },{
+          "ord" : 10 ,
+          "nome": "SSW",
+          "0-5": 1.063829787234,
+          "5-10":  3.1914893617021,
+          "10-20":0,
+          "20-30":0.53191489361702,
+          "30-50":0,
+          "50-9999":0,
+        },{
+          "ord" : 11 ,
+          "nome": "SW",
+          "0-5": 0,
+          "5-10":  4.2553191489362,
+          "10-20":6.9148936170213,
+          "20-30":1.5957446808511,
+          "30-50":0,
+          "50-9999":0,
+        },{
+          "ord" : 12 ,
+          "nome": "WSW",
+          "0-5": 0.53191489361702,
+          "5-10":  3.7234042553191,
+          "10-20":20.744680851064,
+          "20-30":8.5106382978723,
+          "30-50":0.53191489361702,
+          "50-9999":0,
+        },{
+          "ord" : 13 ,
+          "nome": "W",
+          "0-5": 0.53191489361702,
+          "5-10":  2.6595744680851,
+          "10-20":8.5106382978723,
+          "20-30":1.5957446808511,
+          "30-50":0,
+          "50-9999":0,
+        },{
+          "ord" : 14 ,
+          "nome": "WNW",
+          "0-5": 1.063829787234,
+          "5-10":  0,
+          "10-20":3.1914893617021,
+          "20-30":1.063829787234,
+          "30-50":0,
+          "50-9999":0,
+        },{
+          "ord" : 15 ,
+          "nome": "NW",
+          "0-5": 0.53191489361702,
+          "5-10":  0,
+          "10-20":0.53191489361702,
+          "20-30":0,
+          "30-50":0,
+          "50-9999":0,
+        },{
+          "ord" : 16 ,
+          "nome": "NNW",
+          "0-5": 0.53191489361702,
+          "5-10":  0,
+          "10-20":0,
+          "20-30":0,
+          "30-50":0,
+          "50-9999":0,
+        }];
+
+            if(Array.isArray(originalDataWindPerc)){
+                for (let i = 0; i < originalDataWindPerc.length; i++) {
+                    let currentSerie = originalDataWindPerc[i];
+                    let currentSerieName = currentSerie.nome;
+
+                    d05.push([currentSerieName, currentSerie["0-5"]]);
+                    d510.push([currentSerieName, currentSerie["5-10"]]);
+                    d1020.push([currentSerieName, currentSerie["10-20"]]);
+                    d2030.push([currentSerieName, currentSerie["20-30"]]);
+                    d3050.push([currentSerieName, currentSerie["30-50"]]);
+                    d50inf.push([currentSerieName, currentSerie["50-9999"]]);
+                }
+            }
+
+            valuesMap.set("&lt; 5 [km/h]", d05);
+            valuesMap.set("5-10 [km/h]", d510);
+            valuesMap.set("10-20 [km/h]", d1020);
+            valuesMap.set("20-30 [km/h]", d2030);
+            valuesMap.set("30-50 [km/h]", d3050);
+            valuesMap.set("&gt; 50 [km/h]", d50inf);
+
+            for (let [key, value] of valuesMap.entries()) {
+                let arrData = valuesMap.get(key);
+                roseWindCorrectSerie.push({
+                    name: key,
+                    data: arrData
+                });
+            }
+
+            last_24_windrose_frequencies=Highcharts.chart('24h_wind_rose_frequencies',{
+                chart: {
+                    polar: true,
+                    type: 'column',
+                    height: windRoseHeight,
+                },
+
+                title: {
+                    text: null
+                },
+
+                pane: {
+                    size: '85%'
+                },
+
+                legend: {
+                    reversed: true,
+                    align: 'right',
+                    verticalAlign: 'top',
+                    y: 100,
+                    layout: 'vertical'
+                },
+
+                xAxis: {
+                    tickInterval : 1,
+                    tickmarkPlacement: 'on',
+                    labels: {
+                        formatter: function () {
+                            return coordinatesArray[this.value];
+                        }
+                    }
+                },
+
+                yAxis: {
+                    min: 0,
+                    endOnTick: false,
+                    showLastLabel: true,
+                    title: {
+                        text: 'Frequency (%)'
+                    },
+                    labels: {
+                        formatter: function () {
+                            return this.value + '%';
+                        }
+                    },
+                    reversedStacks: false,
+                    color: '#ffffff'
+                },
+
+                tooltip: {
+                    valueSuffix: '%',
+                    followPointer: true,
+                    valueDecimals: 1,
+                },
+
+                plotOptions: {
+                    series: {
+                        stacking: 'normal',
+                        shadow: false,
+                        groupPadding: 0,
+                        pointPlacement: 'on'
+                    }
+                },
+                series:roseWindCorrectSerie
+            });
+
+            //Grafico della rosa dei venti
+            last_24_windrose=Highcharts.chart('24h_wind_rose',{
+                chart : {
+                    polar : true,
+                    width: null,
+                    height: windRoseHeight,
+                },
+                title : {
+                    text : null
+                },
+                pane: {
+                    size: '85%'
+                },
+                tooltip : {
+                    formatter : function() {
+                        value = '';
+                        if ((this.x >= 348.75) && (this.x <= 11.25)) {
+                            value = 'N';
+                        }
+                        if ((this.x > 11.25) && (this.x <= 33.75)) {
+                            value = 'NNE';
+                        }
+                        if ((this.x > 33.75) && (this.x <= 56.25)) {
+                            value = 'NE';
+                        }
+                        if ((this.x > 56.25) && (this.x <= 78.75)) {
+                            value = 'ENE';
+                        }
+                        if ((this.x > 78.75) && (this.x <= 101.25)) {
+                            value = 'E';
+                        }
+                        if ((this.x > 101.25) && (this.x <= 123.75)) {
+                            value = 'ESE';
+                        }
+                        if ((this.x > 123.75) && (this.x <= 146.25)) {
+                            value = 'SE';
+                        }
+                        if ((this.x > 146.25) && (this.x <= 168.75)) {
+                            value = 'SSE';
+                        }
+                        if ((this.x > 168.75) && (this.x <= 191.25)) {
+                            value = 'S';
+                        }
+                        if ((this.x > 191.25) && (this.x <= 213.75)) {
+                            value = 'SSW';
+                        }
+                        if ((this.x > 213.75) && (this.x <= 236.25)) {
+                            value = 'SW';
+                        }
+                        if ((this.x > 236.25) && (this.x <= 258.75)) {
+                            value = 'WSW';
+                        }
+                        if ((this.x > 258.75) && (this.x <= 281.25)) {
+                            value = 'W';
+                        }
+                        if ((this.x > 281.25) && (this.x <= 303.75)) {
+                            value = 'WNW';
+                        }
+                        if ((this.x > 303.75) && (this.x <= 326.25)) {
+                            value = 'NW';
+                        }
+                        if ((this.x > 326.75) && (this.x <= 348.75)) {
+                            value = 'NNW';
+                        }
+                        return '<b>' + this.series.name + '</b><br/>'
+                            + 'Velocità ' + this.y + ' km/h Dir. '
+                            + value;
+                    }
+                },
+                pane : {
+                    startAngle : 0,
+                    endAngle : 360
+                },
+                legend: {
+                    enabled: false
+                },
+                yAxis : {
+                    min : 0
+                },
+                xAxis : {
+                    tickmarkPlacement : 'on',
+                    tickInterval : 22.5,
+                    min : 0,
+                    max : 360,
+                    labels : {
+                        formatter : function() {
+                            // return this.value + '°';
+                            value = '';
+                            if (this.value == 0) {
+                                value = 'N';
+                            }
+                            if (this.value == 22.5) {
+                                value = 'NNE';
+                            }
+                            if (this.value == 45) {
+                                value = 'NE';
+                            }
+                            if (this.value == 67.5) {
+                                value = 'ENE';
+                            }
+                            if (this.value == 90) {
+                                value = 'E';
+                            }
+                            if (this.value == 112.5) {
+                                value = 'ESE';
+                            }
+                            if (this.value == 135) {
+                                value = 'SE';
+                            }
+                            if (this.value == 157.5) {
+                                value = 'SSE';
+                            }
+                            if (this.value == 180) {
+                                value = 'S';
+                            }
+                            if (this.value == 202.5) {
+                                value = 'SSW';
+                            }
+                            if (this.value == 225) {
+                                value = 'SW';
+                            }
+                            if (this.value == 247.5) {
+                                value = 'WSW';
+                            }
+                            if (this.value == 270) {
+                                value = 'W';
+                            }
+                            if (this.value == 292.5) {
+                                value = 'WNW';
+                            }
+                            if (this.value == 315) {
+                                value = 'NW';
+                            }
+                            if (this.value == 337.5) {
+                                value = 'NNW';
+                            }
+                            if (this.value == 360) {
+                                value = 'N';
+                            }
+                            return value;
+                        }
+                    }
+                },
+                plotOptions : {
+                    TurboThreshold : 0,
+                    scatter : {
+                        marker : {
+                            radius : 3,
+                            states : {
+                                hover : {
+                                    enabled : true,
+                                    lineColor : 'rgb(100,100,100)'
+                                }
+                            }
+                        },
+
+                        tooltip : {
+                            formatter : function() {
+                                return '<b>'
+                                    + Highcharts.numberFormat(
+                                        this.y, 0)
+                                    + '</b><br/>' + 'in year: '
+                                    + this.x;
+                            }
+                        }
+                    }
+
+                },
+                series : [{
+                    name: 'Panoramica - Soverato',
+                    marker: {
+                        symbol: 'square',
+                        enabled: true
+                    },
+                    type:'scatter',
+                    data: [
+                        [234.00,7.90],[248.00,10.50],[243.00,10.10],[242.00,9.00],[263.00,9.00],[257.00,8.70],[247.00,10.10],[235.00,12.20],[246.00,11.60],[242.00,12.20],[238.00,13.00],[253.00,13.40],[229.00,13.70],[242.00,11.90],[242.00,16.60],[247.00,17.20],[261.00,13.40],[246.00,17.20],[2.00,14.80],[250.00,14.30],[257.00,15.80],[256.00,13.70],[248.00,12.20],[247.00,13.40],[249.00,15.10],[285.00,11.90],[263.00,15.80],[233.00,11.10],[241.00,11.90],[235.00,17.70],[245.00,17.70],[219.00,15.10],[243.00,18.00],[260.00,16.60],[286.00,13.70],[263.00,15.40],[262.00,16.30],[247.00,17.20],[269.00,17.20],[261.00,13.00],[236.00,16.30],[260.00,17.20],[234.00,17.70],[253.00,17.70],[242.00,15.80],[250.00,9.00],[252.00,18.00],[238.00,14.80],[251.00,11.10],[230.00,14.30],[245.00,11.10],[249.00,6.40],[218.00,9.00],[222.00,10.80],[241.00,6.40],[239.00,8.20],[335.00,5.00],[228.00,6.40],[229.00,7.90],[224.00,8.70],[229.00,6.10],[284.00,4.30],[204.00,4.00],[262.00,6.90],[202.00,8.70],[169.00,7.90],[196.00,4.70],[171.00,7.20],[206.00,9.30],[194.00,5.80],[302.00,4.30],[231.00,14.80],[244.00,11.60],[289.00,10.50],[281.00,9.30],[271.00,10.50],[260.00,8.70],[259.00,12.60],[277.00,11.10],[325.00,3.50],[263.00,8.20],[216.00,9.30],[271.00,1.40],[122.00,7.90],[173.00,2.90],[96.00,6.10],[125.00,5.50],[116.00,6.40],[142.00,3.50],[156.00,6.10],[66.00,9.30],[60.00,7.90],[179.00,11.10],[137.00,9.00],[82.00,5.50],[69.00,7.90],[134.00,5.50],[137.00,6.40],[176.00,7.90],[151.00,6.90],[74.00,3.50],[138.00,9.70],[27.00,4.30],[120.00,10.10],[138.00,3.20],[62.00,8.20],[202.00,6.40],[132.00,12.20],[170.00,8.20],[101.00,11.60],[121.00,12.20],[153.00,7.20],[152.00,4.70],[160.00,11.10],[41.00,6.40],[96.00,5.50],[248.00,4.30],[204.00,8.70],[143.00,7.20],[184.00,5.50],[74.00,5.50],[115.00,9.70],[225.00,6.40],[79.00,7.20],[163.00,9.00],[122.00,5.00],[170.00,6.40],[174.00,9.70],[198.00,5.50],[146.00,4.70],[180.00,3.50],[152.00,8.20],[156.00,8.20],[136.00,7.60],[148.00,9.30],[191.00,15.10],[244.00,7.90],[161.00,10.50],[290.00,11.90],[257.00,18.30],[266.00,10.50],[298.00,19.50],[259.00,16.90],[249.00,22.40],[262.00,16.90],[241.00,19.50],[246.00,17.70],[228.00,18.30],[252.00,25.60],[248.00,22.40],[242.00,15.40],[304.00,16.90],[239.00,30.60],[251.00,17.20],[237.00,21.20],[251.00,22.40],[285.00,16.60],[253.00,25.60],[232.00,25.90],[250.00,16.90],[253.00,24.50],[291.00,21.90],[178.00,18.70],[299.00,20.60],[241.00,24.50],[229.00,13.70],[238.00,24.50],[259.00,23.30],[196.00,20.90],[261.00,24.10],[254.00,23.80],[249.00,13.70],[232.00,25.60],[254.00,14.00],[250.00,20.90],[239.00,27.70],[261.00,25.60],[253.00,19.20],[263.00,19.80],[241.00,23.30],[232.00,18.00],[262.00,17.70],[253.00,27.40],[237.00,15.40],[217.00,24.50],[242.00,19.20],[243.00,24.80],[258.00,22.40],
+                    ]
+
+                }]
+            });
+
+            //Grafico del vento, ultime 24 h
+            last_24_wind=Highcharts.chart('24h_graph_div_wind_main', {
+                chart: {
+                    height: windGraphHeight,
+                    width: null,
+                    zoomType: 'x'
+                },
+                title:
+                {
+                    text: null
+                },
+                xAxis: {
+                    type: 'datetime',
+                    dateTimeLabelFormats: {
+                        week: '%Y-%m-%d',
+                        month: '%Y-%m-%d',
+                        year: '%Y-%m-%d',
+                        day: '<b style="font-weight: 900; color:#000000 !important; fill:#000000 !important; font-size:12px;">%d/%m</b>',
+                        minute: '%H:%M',
+                        hour: '%H:%M',
+                    },
+                    labels:
+                    {
+                        enabled: true,
+                        style: '{"fontSize": "5px"}',
+                        rotation: 0
+                    },
+                    offset: 40
+                },
+                yAxis: {
+                    title: {
+                        text:'[km/h]'
+                    },
+                    labels: {
+                        enabled: true,
+                        formatter: function () {
+                            return this.value;
+                        }
+                    }
+                },
+                legend: {
+                    enabled: true,
+                    align: 'center',
+                    verticalAlign: 'bottom',
+                    layout: 'horizontal'
+
+                },
+                tooltip: {
+                    crosshairs: true,
+                    shared: true,
+                    formatter: function() {
+                        var datastring='';
+
+                        $.each(this.points, function(i, point) {
+                            console.log(point);
+                            datastring+=('<span style="color:'+point.series.color+';font-weight:bold;">'+ point.series.name +' : '+
+                                Highcharts.numberFormat(point.y,1) +' km/h '+ point.point.cardinalPoint + ' ('+point.point.windDirection+'°)' +'<span><br>');
+                        });
+
+                        //return '' + Highcharts.dateFormat('%H:%M', this.x ) + ', <b>' + Highcharts.numberFormat(this.y, 1) +' °C </b>';
+                        return '' + Highcharts.dateFormat('%H:%M', this.x )+'<br>' + datastring;
+                    }
+                },
+                plotOptions: {
+                    series:{
+                        turboThreshold : 0,
+                    },
+                    spline: {
+                        marker: {
+                            radius: 4,
+                            lineColor: '#666666',
+                            lineWidth: 1
+                        }
+                    }
+                },
+                series: [{
+                    name: 'Ultime 24h',
+                    marker: {
+                        enabled: false,
+                        width: 64,
+                        height: 64
+                    },
+                    type: 'area',
+                    color: 'rgba(59,157,215,0.94)',
+                    data: [
+                        { x: Date.UTC(2023,02-1,15,19,32), y: 7.90, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SW.png)'},'cardinalPoint': 'SW', 'windDirection':'234.00' },{ x: Date.UTC(2023,02-1,15,20,19), y: 10.50, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'248.00' },{ x: Date.UTC(2023,02-1,15,20,24), y: 10.10, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'243.00' },{ x: Date.UTC(2023,02-1,15,20,29), y: 9.00, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'242.00' },{ x: Date.UTC(2023,02-1,15,21,39), y: 9.00, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_W.png)'},'cardinalPoint': 'W', 'windDirection':'263.00' },{ x: Date.UTC(2023,02-1,15,22,05), y: 8.70, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'257.00' },{ x: Date.UTC(2023,02-1,15,22,07), y: 10.10, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'247.00' },{ x: Date.UTC(2023,02-1,15,22,50), y: 12.20, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SW.png)'},'cardinalPoint': 'SW', 'windDirection':'235.00' },{ x: Date.UTC(2023,02-1,15,23,44), y: 11.60, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'246.00' },{ x: Date.UTC(2023,02-1,15,23,46), y: 12.20, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'242.00' },{ x: Date.UTC(2023,02-1,16,00,24), y: 13.00, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'238.00' },{ x: Date.UTC(2023,02-1,16,00,29), y: 13.40, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'253.00' },{ x: Date.UTC(2023,02-1,16,00,34), y: 13.70, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SW.png)'},'cardinalPoint': 'SW', 'windDirection':'229.00' },{ x: Date.UTC(2023,02-1,16,00,37), y: 11.90, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'242.00' },{ x: Date.UTC(2023,02-1,16,01,29), y: 16.60, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'242.00' },{ x: Date.UTC(2023,02-1,16,01,34), y: 17.20, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'247.00' },{ x: Date.UTC(2023,02-1,16,01,37), y: 13.40, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_W.png)'},'cardinalPoint': 'W', 'windDirection':'261.00' },{ x: Date.UTC(2023,02-1,16,02,09), y: 17.20, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'246.00' },{ x: Date.UTC(2023,02-1,16,02,14), y: 14.80, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_N.png)'},'cardinalPoint': 'N', 'windDirection':'2.00' },{ x: Date.UTC(2023,02-1,16,02,29), y: 14.30, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'250.00' },{ x: Date.UTC(2023,02-1,16,02,34), y: 15.80, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'257.00' },{ x: Date.UTC(2023,02-1,16,02,39), y: 13.70, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'256.00' },{ x: Date.UTC(2023,02-1,16,02,44), y: 12.20, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'248.00' },{ x: Date.UTC(2023,02-1,16,02,47), y: 13.40, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'247.00' },{ x: Date.UTC(2023,02-1,16,03,14), y: 15.10, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'249.00' },{ x: Date.UTC(2023,02-1,16,03,19), y: 11.90, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WNW.png)'},'cardinalPoint': 'WNW', 'windDirection':'285.00' },{ x: Date.UTC(2023,02-1,16,03,24), y: 15.80, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_W.png)'},'cardinalPoint': 'W', 'windDirection':'263.00' },{ x: Date.UTC(2023,02-1,16,03,34), y: 11.10, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SW.png)'},'cardinalPoint': 'SW', 'windDirection':'233.00' },{ x: Date.UTC(2023,02-1,16,03,39), y: 11.90, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'241.00' },{ x: Date.UTC(2023,02-1,16,03,44), y: 17.70, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SW.png)'},'cardinalPoint': 'SW', 'windDirection':'235.00' },{ x: Date.UTC(2023,02-1,16,03,49), y: 17.70, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'245.00' },{ x: Date.UTC(2023,02-1,16,03,50), y: 15.10, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SW.png)'},'cardinalPoint': 'SW', 'windDirection':'219.00' },{ x: Date.UTC(2023,02-1,16,04,11), y: 18.00, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'243.00' },{ x: Date.UTC(2023,02-1,16,04,29), y: 16.60, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_W.png)'},'cardinalPoint': 'W', 'windDirection':'260.00' },{ x: Date.UTC(2023,02-1,16,04,34), y: 13.70, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WNW.png)'},'cardinalPoint': 'WNW', 'windDirection':'286.00' },{ x: Date.UTC(2023,02-1,16,04,38), y: 15.40, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_W.png)'},'cardinalPoint': 'W', 'windDirection':'263.00' },{ x: Date.UTC(2023,02-1,16,04,44), y: 16.30, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_W.png)'},'cardinalPoint': 'W', 'windDirection':'262.00' },{ x: Date.UTC(2023,02-1,16,04,46), y: 17.20, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'247.00' },{ x: Date.UTC(2023,02-1,16,05,09), y: 17.20, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_W.png)'},'cardinalPoint': 'W', 'windDirection':'269.00' },{ x: Date.UTC(2023,02-1,16,05,14), y: 13.00, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_W.png)'},'cardinalPoint': 'W', 'windDirection':'261.00' },{ x: Date.UTC(2023,02-1,16,05,19), y: 16.30, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SW.png)'},'cardinalPoint': 'SW', 'windDirection':'236.00' },{ x: Date.UTC(2023,02-1,16,05,23), y: 17.20, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_W.png)'},'cardinalPoint': 'W', 'windDirection':'260.00' },{ x: Date.UTC(2023,02-1,16,05,34), y: 17.70, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SW.png)'},'cardinalPoint': 'SW', 'windDirection':'234.00' },{ x: Date.UTC(2023,02-1,16,05,39), y: 17.70, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'253.00' },{ x: Date.UTC(2023,02-1,16,05,49), y: 15.80, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'242.00' },{ x: Date.UTC(2023,02-1,16,05,54), y: 9.00, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'250.00' },{ x: Date.UTC(2023,02-1,16,05,58), y: 18.00, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'252.00' },{ x: Date.UTC(2023,02-1,16,06,13), y: 14.80, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'238.00' },{ x: Date.UTC(2023,02-1,16,06,39), y: 11.10, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'251.00' },{ x: Date.UTC(2023,02-1,16,06,42), y: 14.30, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SW.png)'},'cardinalPoint': 'SW', 'windDirection':'230.00' },{ x: Date.UTC(2023,02-1,16,07,09), y: 11.10, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'245.00' },{ x: Date.UTC(2023,02-1,16,07,14), y: 6.40, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'249.00' },{ x: Date.UTC(2023,02-1,16,07,29), y: 9.00, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SW.png)'},'cardinalPoint': 'SW', 'windDirection':'218.00' },{ x: Date.UTC(2023,02-1,16,07,34), y: 10.80, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SW.png)'},'cardinalPoint': 'SW', 'windDirection':'222.00' },{ x: Date.UTC(2023,02-1,16,07,39), y: 6.40, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'241.00' },{ x: Date.UTC(2023,02-1,16,07,44), y: 8.20, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'239.00' },{ x: Date.UTC(2023,02-1,16,07,49), y: 5.00, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_NNW.png)'},'cardinalPoint': 'NNW', 'windDirection':'335.00' },{ x: Date.UTC(2023,02-1,16,07,54), y: 6.40, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SW.png)'},'cardinalPoint': 'SW', 'windDirection':'228.00' },{ x: Date.UTC(2023,02-1,16,07,59), y: 7.90, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SW.png)'},'cardinalPoint': 'SW', 'windDirection':'229.00' },{ x: Date.UTC(2023,02-1,16,08,04), y: 8.70, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SW.png)'},'cardinalPoint': 'SW', 'windDirection':'224.00' },{ x: Date.UTC(2023,02-1,16,08,09), y: 6.10, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SW.png)'},'cardinalPoint': 'SW', 'windDirection':'229.00' },{ x: Date.UTC(2023,02-1,16,08,14), y: 4.30, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WNW.png)'},'cardinalPoint': 'WNW', 'windDirection':'284.00' },{ x: Date.UTC(2023,02-1,16,08,19), y: 4.00, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SSW.png)'},'cardinalPoint': 'SSW', 'windDirection':'204.00' },{ x: Date.UTC(2023,02-1,16,08,25), y: 6.90, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_W.png)'},'cardinalPoint': 'W', 'windDirection':'262.00' },{ x: Date.UTC(2023,02-1,16,08,29), y: 8.70, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SSW.png)'},'cardinalPoint': 'SSW', 'windDirection':'202.00' },{ x: Date.UTC(2023,02-1,16,08,34), y: 7.90, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_S.png)'},'cardinalPoint': 'S', 'windDirection':'169.00' },{ x: Date.UTC(2023,02-1,16,08,39), y: 4.70, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SSW.png)'},'cardinalPoint': 'SSW', 'windDirection':'196.00' },{ x: Date.UTC(2023,02-1,16,08,44), y: 7.20, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_S.png)'},'cardinalPoint': 'S', 'windDirection':'171.00' },{ x: Date.UTC(2023,02-1,16,08,49), y: 9.30, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SSW.png)'},'cardinalPoint': 'SSW', 'windDirection':'206.00' },{ x: Date.UTC(2023,02-1,16,08,54), y: 5.80, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SSW.png)'},'cardinalPoint': 'SSW', 'windDirection':'194.00' },{ x: Date.UTC(2023,02-1,16,08,59), y: 4.30, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WNW.png)'},'cardinalPoint': 'WNW', 'windDirection':'302.00' },{ x: Date.UTC(2023,02-1,16,09,04), y: 14.80, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SW.png)'},'cardinalPoint': 'SW', 'windDirection':'231.00' },{ x: Date.UTC(2023,02-1,16,09,09), y: 11.60, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'244.00' },{ x: Date.UTC(2023,02-1,16,09,14), y: 10.50, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WNW.png)'},'cardinalPoint': 'WNW', 'windDirection':'289.00' },{ x: Date.UTC(2023,02-1,16,09,19), y: 9.30, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_W.png)'},'cardinalPoint': 'W', 'windDirection':'281.00' },{ x: Date.UTC(2023,02-1,16,09,24), y: 10.50, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_W.png)'},'cardinalPoint': 'W', 'windDirection':'271.00' },{ x: Date.UTC(2023,02-1,16,09,29), y: 8.70, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_W.png)'},'cardinalPoint': 'W', 'windDirection':'260.00' },{ x: Date.UTC(2023,02-1,16,09,34), y: 12.60, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_W.png)'},'cardinalPoint': 'W', 'windDirection':'259.00' },{ x: Date.UTC(2023,02-1,16,09,39), y: 11.10, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_W.png)'},'cardinalPoint': 'W', 'windDirection':'277.00' },{ x: Date.UTC(2023,02-1,16,09,45), y: 3.50, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_NW.png)'},'cardinalPoint': 'NW', 'windDirection':'325.00' },{ x: Date.UTC(2023,02-1,16,09,49), y: 8.20, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_W.png)'},'cardinalPoint': 'W', 'windDirection':'263.00' },{ x: Date.UTC(2023,02-1,16,09,54), y: 9.30, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SW.png)'},'cardinalPoint': 'SW', 'windDirection':'216.00' },{ x: Date.UTC(2023,02-1,16,09,59), y: 1.40, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_W.png)'},'cardinalPoint': 'W', 'windDirection':'271.00' },{ x: Date.UTC(2023,02-1,16,10,04), y: 7.90, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_ESE.png)'},'cardinalPoint': 'ESE', 'windDirection':'122.00' },{ x: Date.UTC(2023,02-1,16,10,09), y: 2.90, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_S.png)'},'cardinalPoint': 'S', 'windDirection':'173.00' },{ x: Date.UTC(2023,02-1,16,10,14), y: 6.10, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_E.png)'},'cardinalPoint': 'E', 'windDirection':'96.00' },{ x: Date.UTC(2023,02-1,16,10,19), y: 5.50, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SE.png)'},'cardinalPoint': 'SE', 'windDirection':'125.00' },{ x: Date.UTC(2023,02-1,16,10,25), y: 6.40, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_ESE.png)'},'cardinalPoint': 'ESE', 'windDirection':'116.00' },{ x: Date.UTC(2023,02-1,16,10,29), y: 3.50, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SE.png)'},'cardinalPoint': 'SE', 'windDirection':'142.00' },{ x: Date.UTC(2023,02-1,16,10,34), y: 6.10, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SSE.png)'},'cardinalPoint': 'SSE', 'windDirection':'156.00' },{ x: Date.UTC(2023,02-1,16,10,39), y: 9.30, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_ENE.png)'},'cardinalPoint': 'ENE', 'windDirection':'66.00' },{ x: Date.UTC(2023,02-1,16,10,45), y: 7.90, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_ENE.png)'},'cardinalPoint': 'ENE', 'windDirection':'60.00' },{ x: Date.UTC(2023,02-1,16,10,49), y: 11.10, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_S.png)'},'cardinalPoint': 'S', 'windDirection':'179.00' },{ x: Date.UTC(2023,02-1,16,10,54), y: 9.00, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SE.png)'},'cardinalPoint': 'SE', 'windDirection':'137.00' },{ x: Date.UTC(2023,02-1,16,10,59), y: 5.50, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_E.png)'},'cardinalPoint': 'E', 'windDirection':'82.00' },{ x: Date.UTC(2023,02-1,16,11,05), y: 7.90, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_ENE.png)'},'cardinalPoint': 'ENE', 'windDirection':'69.00' },{ x: Date.UTC(2023,02-1,16,11,09), y: 5.50, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SE.png)'},'cardinalPoint': 'SE', 'windDirection':'134.00' },{ x: Date.UTC(2023,02-1,16,11,14), y: 6.40, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SE.png)'},'cardinalPoint': 'SE', 'windDirection':'137.00' },{ x: Date.UTC(2023,02-1,16,11,19), y: 7.90, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_S.png)'},'cardinalPoint': 'S', 'windDirection':'176.00' },{ x: Date.UTC(2023,02-1,16,11,25), y: 6.90, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SSE.png)'},'cardinalPoint': 'SSE', 'windDirection':'151.00' },{ x: Date.UTC(2023,02-1,16,11,29), y: 3.50, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_ENE.png)'},'cardinalPoint': 'ENE', 'windDirection':'74.00' },{ x: Date.UTC(2023,02-1,16,11,34), y: 9.70, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SE.png)'},'cardinalPoint': 'SE', 'windDirection':'138.00' },{ x: Date.UTC(2023,02-1,16,11,39), y: 4.30, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_NNE.png)'},'cardinalPoint': 'NNE', 'windDirection':'27.00' },{ x: Date.UTC(2023,02-1,16,11,44), y: 10.10, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_ESE.png)'},'cardinalPoint': 'ESE', 'windDirection':'120.00' },{ x: Date.UTC(2023,02-1,16,11,49), y: 3.20, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SE.png)'},'cardinalPoint': 'SE', 'windDirection':'138.00' },{ x: Date.UTC(2023,02-1,16,11,54), y: 8.20, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_ENE.png)'},'cardinalPoint': 'ENE', 'windDirection':'62.00' },{ x: Date.UTC(2023,02-1,16,11,59), y: 6.40, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SSW.png)'},'cardinalPoint': 'SSW', 'windDirection':'202.00' },{ x: Date.UTC(2023,02-1,16,12,04), y: 12.20, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SE.png)'},'cardinalPoint': 'SE', 'windDirection':'132.00' },{ x: Date.UTC(2023,02-1,16,12,09), y: 8.20, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_S.png)'},'cardinalPoint': 'S', 'windDirection':'170.00' },{ x: Date.UTC(2023,02-1,16,12,14), y: 11.60, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_E.png)'},'cardinalPoint': 'E', 'windDirection':'101.00' },{ x: Date.UTC(2023,02-1,16,12,19), y: 12.20, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_ESE.png)'},'cardinalPoint': 'ESE', 'windDirection':'121.00' },{ x: Date.UTC(2023,02-1,16,12,25), y: 7.20, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SSE.png)'},'cardinalPoint': 'SSE', 'windDirection':'153.00' },{ x: Date.UTC(2023,02-1,16,12,29), y: 4.70, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SSE.png)'},'cardinalPoint': 'SSE', 'windDirection':'152.00' },{ x: Date.UTC(2023,02-1,16,12,34), y: 11.10, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SSE.png)'},'cardinalPoint': 'SSE', 'windDirection':'160.00' },{ x: Date.UTC(2023,02-1,16,12,39), y: 6.40, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_NE.png)'},'cardinalPoint': 'NE', 'windDirection':'41.00' },{ x: Date.UTC(2023,02-1,16,12,45), y: 5.50, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_E.png)'},'cardinalPoint': 'E', 'windDirection':'96.00' },{ x: Date.UTC(2023,02-1,16,12,49), y: 4.30, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'248.00' },{ x: Date.UTC(2023,02-1,16,12,54), y: 8.70, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SSW.png)'},'cardinalPoint': 'SSW', 'windDirection':'204.00' },{ x: Date.UTC(2023,02-1,16,12,59), y: 7.20, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SE.png)'},'cardinalPoint': 'SE', 'windDirection':'143.00' },{ x: Date.UTC(2023,02-1,16,13,04), y: 5.50, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_S.png)'},'cardinalPoint': 'S', 'windDirection':'184.00' },{ x: Date.UTC(2023,02-1,16,13,09), y: 5.50, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_ENE.png)'},'cardinalPoint': 'ENE', 'windDirection':'74.00' },{ x: Date.UTC(2023,02-1,16,13,14), y: 9.70, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_ESE.png)'},'cardinalPoint': 'ESE', 'windDirection':'115.00' },{ x: Date.UTC(2023,02-1,16,13,19), y: 6.40, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SW.png)'},'cardinalPoint': 'SW', 'windDirection':'225.00' },{ x: Date.UTC(2023,02-1,16,13,24), y: 7.20, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_E.png)'},'cardinalPoint': 'E', 'windDirection':'79.00' },{ x: Date.UTC(2023,02-1,16,13,29), y: 9.00, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SSE.png)'},'cardinalPoint': 'SSE', 'windDirection':'163.00' },{ x: Date.UTC(2023,02-1,16,13,34), y: 5.00, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_ESE.png)'},'cardinalPoint': 'ESE', 'windDirection':'122.00' },{ x: Date.UTC(2023,02-1,16,13,39), y: 6.40, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_S.png)'},'cardinalPoint': 'S', 'windDirection':'170.00' },{ x: Date.UTC(2023,02-1,16,13,44), y: 9.70, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_S.png)'},'cardinalPoint': 'S', 'windDirection':'174.00' },{ x: Date.UTC(2023,02-1,16,13,49), y: 5.50, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SSW.png)'},'cardinalPoint': 'SSW', 'windDirection':'198.00' },{ x: Date.UTC(2023,02-1,16,13,54), y: 4.70, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SE.png)'},'cardinalPoint': 'SE', 'windDirection':'146.00' },{ x: Date.UTC(2023,02-1,16,13,59), y: 3.50, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_S.png)'},'cardinalPoint': 'S', 'windDirection':'180.00' },{ x: Date.UTC(2023,02-1,16,14,05), y: 8.20, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SSE.png)'},'cardinalPoint': 'SSE', 'windDirection':'152.00' },{ x: Date.UTC(2023,02-1,16,14,09), y: 8.20, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SSE.png)'},'cardinalPoint': 'SSE', 'windDirection':'156.00' },{ x: Date.UTC(2023,02-1,16,14,14), y: 7.60, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SE.png)'},'cardinalPoint': 'SE', 'windDirection':'136.00' },{ x: Date.UTC(2023,02-1,16,14,19), y: 9.30, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SSE.png)'},'cardinalPoint': 'SSE', 'windDirection':'148.00' },{ x: Date.UTC(2023,02-1,16,14,24), y: 15.10, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_S.png)'},'cardinalPoint': 'S', 'windDirection':'191.00' },{ x: Date.UTC(2023,02-1,16,14,29), y: 7.90, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'244.00' },{ x: Date.UTC(2023,02-1,16,14,34), y: 10.50, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SSE.png)'},'cardinalPoint': 'SSE', 'windDirection':'161.00' },{ x: Date.UTC(2023,02-1,16,14,39), y: 11.90, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WNW.png)'},'cardinalPoint': 'WNW', 'windDirection':'290.00' },{ x: Date.UTC(2023,02-1,16,14,45), y: 18.30, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'257.00' },{ x: Date.UTC(2023,02-1,16,14,49), y: 10.50, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_W.png)'},'cardinalPoint': 'W', 'windDirection':'266.00' },{ x: Date.UTC(2023,02-1,16,14,54), y: 19.50, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WNW.png)'},'cardinalPoint': 'WNW', 'windDirection':'298.00' },{ x: Date.UTC(2023,02-1,16,14,59), y: 16.90, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_W.png)'},'cardinalPoint': 'W', 'windDirection':'259.00' },{ x: Date.UTC(2023,02-1,16,15,05), y: 22.40, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'249.00' },{ x: Date.UTC(2023,02-1,16,15,09), y: 16.90, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_W.png)'},'cardinalPoint': 'W', 'windDirection':'262.00' },{ x: Date.UTC(2023,02-1,16,15,14), y: 19.50, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'241.00' },{ x: Date.UTC(2023,02-1,16,15,19), y: 17.70, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'246.00' },{ x: Date.UTC(2023,02-1,16,15,24), y: 18.30, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SW.png)'},'cardinalPoint': 'SW', 'windDirection':'228.00' },{ x: Date.UTC(2023,02-1,16,15,29), y: 25.60, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'252.00' },{ x: Date.UTC(2023,02-1,16,15,34), y: 22.40, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'248.00' },{ x: Date.UTC(2023,02-1,16,15,39), y: 15.40, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'242.00' },{ x: Date.UTC(2023,02-1,16,15,45), y: 16.90, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_NW.png)'},'cardinalPoint': 'NW', 'windDirection':'304.00' },{ x: Date.UTC(2023,02-1,16,15,49), y: 30.60, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'239.00' },{ x: Date.UTC(2023,02-1,16,15,54), y: 17.20, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'251.00' },{ x: Date.UTC(2023,02-1,16,15,59), y: 21.20, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'237.00' },{ x: Date.UTC(2023,02-1,16,16,05), y: 22.40, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'251.00' },{ x: Date.UTC(2023,02-1,16,16,09), y: 16.60, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WNW.png)'},'cardinalPoint': 'WNW', 'windDirection':'285.00' },{ x: Date.UTC(2023,02-1,16,16,14), y: 25.60, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'253.00' },{ x: Date.UTC(2023,02-1,16,16,19), y: 25.90, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SW.png)'},'cardinalPoint': 'SW', 'windDirection':'232.00' },{ x: Date.UTC(2023,02-1,16,16,25), y: 16.90, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'250.00' },{ x: Date.UTC(2023,02-1,16,16,29), y: 24.50, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'253.00' },{ x: Date.UTC(2023,02-1,16,16,34), y: 21.90, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WNW.png)'},'cardinalPoint': 'WNW', 'windDirection':'291.00' },{ x: Date.UTC(2023,02-1,16,16,39), y: 18.70, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_S.png)'},'cardinalPoint': 'S', 'windDirection':'178.00' },{ x: Date.UTC(2023,02-1,16,16,45), y: 20.60, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WNW.png)'},'cardinalPoint': 'WNW', 'windDirection':'299.00' },{ x: Date.UTC(2023,02-1,16,16,49), y: 24.50, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'241.00' },{ x: Date.UTC(2023,02-1,16,16,54), y: 13.70, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SW.png)'},'cardinalPoint': 'SW', 'windDirection':'229.00' },{ x: Date.UTC(2023,02-1,16,16,59), y: 24.50, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'238.00' },{ x: Date.UTC(2023,02-1,16,17,05), y: 23.30, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_W.png)'},'cardinalPoint': 'W', 'windDirection':'259.00' },{ x: Date.UTC(2023,02-1,16,17,09), y: 20.90, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SSW.png)'},'cardinalPoint': 'SSW', 'windDirection':'196.00' },{ x: Date.UTC(2023,02-1,16,17,14), y: 24.10, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_W.png)'},'cardinalPoint': 'W', 'windDirection':'261.00' },{ x: Date.UTC(2023,02-1,16,17,19), y: 23.80, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'254.00' },{ x: Date.UTC(2023,02-1,16,17,24), y: 13.70, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'249.00' },{ x: Date.UTC(2023,02-1,16,17,29), y: 25.60, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SW.png)'},'cardinalPoint': 'SW', 'windDirection':'232.00' },{ x: Date.UTC(2023,02-1,16,17,34), y: 14.00, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'254.00' },{ x: Date.UTC(2023,02-1,16,17,39), y: 20.90, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'250.00' },{ x: Date.UTC(2023,02-1,16,17,45), y: 27.70, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'239.00' },{ x: Date.UTC(2023,02-1,16,17,49), y: 25.60, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_W.png)'},'cardinalPoint': 'W', 'windDirection':'261.00' },{ x: Date.UTC(2023,02-1,16,17,54), y: 19.20, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'253.00' },{ x: Date.UTC(2023,02-1,16,17,59), y: 19.80, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_W.png)'},'cardinalPoint': 'W', 'windDirection':'263.00' },{ x: Date.UTC(2023,02-1,16,18,05), y: 23.30, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'241.00' },{ x: Date.UTC(2023,02-1,16,18,09), y: 18.00, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SW.png)'},'cardinalPoint': 'SW', 'windDirection':'232.00' },{ x: Date.UTC(2023,02-1,16,18,14), y: 17.70, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_W.png)'},'cardinalPoint': 'W', 'windDirection':'262.00' },{ x: Date.UTC(2023,02-1,16,18,19), y: 27.40, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'253.00' },{ x: Date.UTC(2023,02-1,16,18,24), y: 15.40, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'237.00' },{ x: Date.UTC(2023,02-1,16,18,29), y: 24.50, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_SW.png)'},'cardinalPoint': 'SW', 'windDirection':'217.00' },{ x: Date.UTC(2023,02-1,16,18,34), y: 19.20, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'242.00' },{ x: Date.UTC(2023,02-1,16,18,39), y: 24.80, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'243.00' },{ x: Date.UTC(2023,02-1,16,18,44), y: 22.40, marker: { width:64, height:64, symbol: 'url(/img/imagechart/windDirection_WSW.png)'},'cardinalPoint': 'WSW', 'windDirection':'258.00' },
+                    ]
+                },{
+                    type: 'windbarb',
+                    data: [{x: Date.UTC(2023,02-1,15,19,32), value: 2.1944444444444, direction:234.00,'cardinalPoint':'SW','windDirection':'234.00'},{x: Date.UTC(2023,02-1,15,20,19), value: 2.9166666666667, direction:248.00,'cardinalPoint':'WSW','windDirection':'248.00'},{x: Date.UTC(2023,02-1,15,22,05), value: 2.4166666666667, direction:257.00,'cardinalPoint':'WSW','windDirection':'257.00'},{x: Date.UTC(2023,02-1,15,22,50), value: 3.3888888888889, direction:235.00,'cardinalPoint':'SW','windDirection':'235.00'},{x: Date.UTC(2023,02-1,15,23,44), value: 3.2222222222222, direction:246.00,'cardinalPoint':'WSW','windDirection':'246.00'},{x: Date.UTC(2023,02-1,16,00,24), value: 3.6111111111111, direction:238.00,'cardinalPoint':'WSW','windDirection':'238.00'},{x: Date.UTC(2023,02-1,16,02,09), value: 4.7777777777778, direction:246.00,'cardinalPoint':'WSW','windDirection':'246.00'},{x: Date.UTC(2023,02-1,16,02,44), value: 3.3888888888889, direction:248.00,'cardinalPoint':'WSW','windDirection':'248.00'},{x: Date.UTC(2023,02-1,16,03,19), value: 3.3055555555556, direction:285.00,'cardinalPoint':'WNW','windDirection':'285.00'},{x: Date.UTC(2023,02-1,16,03,49), value: 4.9166666666667, direction:245.00,'cardinalPoint':'WSW','windDirection':'245.00'},{x: Date.UTC(2023,02-1,16,04,29), value: 4.6111111111111, direction:260.00,'cardinalPoint':'W','windDirection':'260.00'},{x: Date.UTC(2023,02-1,16,05,09), value: 4.7777777777778, direction:269.00,'cardinalPoint':'W','windDirection':'269.00'},{x: Date.UTC(2023,02-1,16,05,39), value: 4.9166666666667, direction:253.00,'cardinalPoint':'WSW','windDirection':'253.00'},{x: Date.UTC(2023,02-1,16,06,13), value: 4.1111111111111, direction:238.00,'cardinalPoint':'WSW','windDirection':'238.00'},{x: Date.UTC(2023,02-1,16,07,09), value: 3.0833333333333, direction:245.00,'cardinalPoint':'WSW','windDirection':'245.00'},{x: Date.UTC(2023,02-1,16,07,39), value: 1.7777777777778, direction:241.00,'cardinalPoint':'WSW','windDirection':'241.00'},{x: Date.UTC(2023,02-1,16,08,14), value: 1.1944444444444, direction:284.00,'cardinalPoint':'WNW','windDirection':'284.00'},{x: Date.UTC(2023,02-1,16,08,49), value: 2.5833333333333, direction:206.00,'cardinalPoint':'SSW','windDirection':'206.00'},{x: Date.UTC(2023,02-1,16,09,19), value: 2.5833333333333, direction:281.00,'cardinalPoint':'W','windDirection':'281.00'},{x: Date.UTC(2023,02-1,16,09,54), value: 2.5833333333333, direction:216.00,'cardinalPoint':'SW','windDirection':'216.00'},{x: Date.UTC(2023,02-1,16,10,25), value: 1.7777777777778, direction:116.00,'cardinalPoint':'ESE','windDirection':'116.00'},{x: Date.UTC(2023,02-1,16,10,59), value: 1.5277777777778, direction:82.00,'cardinalPoint':'E','windDirection':'82.00'},{x: Date.UTC(2023,02-1,16,11,34), value: 2.6944444444444, direction:138.00,'cardinalPoint':'SE','windDirection':'138.00'},{x: Date.UTC(2023,02-1,16,12,09), value: 2.2777777777778, direction:170.00,'cardinalPoint':'S','windDirection':'170.00'},{x: Date.UTC(2023,02-1,16,12,39), value: 1.7777777777778, direction:41.00,'cardinalPoint':'NE','windDirection':'41.00'},{x: Date.UTC(2023,02-1,16,13,14), value: 2.6944444444444, direction:115.00,'cardinalPoint':'ESE','windDirection':'115.00'},{x: Date.UTC(2023,02-1,16,13,49), value: 1.5277777777778, direction:198.00,'cardinalPoint':'SSW','windDirection':'198.00'},{x: Date.UTC(2023,02-1,16,14,19), value: 2.5833333333333, direction:148.00,'cardinalPoint':'SSE','windDirection':'148.00'},{x: Date.UTC(2023,02-1,16,14,54), value: 5.4166666666667, direction:298.00,'cardinalPoint':'WNW','windDirection':'298.00'},{x: Date.UTC(2023,02-1,16,15,29), value: 7.1111111111111, direction:252.00,'cardinalPoint':'WSW','windDirection':'252.00'},{x: Date.UTC(2023,02-1,16,15,59), value: 5.8888888888889, direction:237.00,'cardinalPoint':'WSW','windDirection':'237.00'},{x: Date.UTC(2023,02-1,16,16,34), value: 6.0833333333333, direction:291.00,'cardinalPoint':'WNW','windDirection':'291.00'},{x: Date.UTC(2023,02-1,16,17,05), value: 6.4722222222222, direction:259.00,'cardinalPoint':'W','windDirection':'259.00'},{x: Date.UTC(2023,02-1,16,17,39), value: 5.8055555555556, direction:250.00,'cardinalPoint':'WSW','windDirection':'250.00'},{x: Date.UTC(2023,02-1,16,18,14), value: 4.9166666666667, direction:262.00,'cardinalPoint':'W','windDirection':'262.00'}],
+                    name: 'direzione',
+                    color: Highcharts.getOptions().colors[1],
+                }]
+            });
+
+            //Grafico delle precipitazioni ultime 24h
+            last_24_rain=Highcharts.chart('24h_graph_div_rain', {
+                chart: {
+                    type: 'area',
+                    height: bigGraphHeight,
+                    width: null
+                },
+                title:
+                    {
+                        text: null
+                    },
+                xAxis: {
+                    type: 'datetime',
+                    dateTimeLabelFormats: {
+                        week: '%Y-%m-%d',
+                        month: '%Y-%m-%d',
+                        year: '%Y-%m-%d',
+                        day: '<b style="font-weight: 900; color:#000000 !important; fill:#000000 !important; font-size:12px;">%d/%m</b>',
+                        minute: '%H:%M',
+                        hour: '%H:%M',
+                    },
+                    labels:
+                        {
+                            enabled: true,
+                            style: '{"fontSize": "5px"}',
+                            rotation: 0
+                        }
+                },
+                yAxis: [{
+                    title: {
+                        text:'[mm]'
+                    },
+                    labels: {
+                        enabled: true,
+                        formatter: function () {
+                            return this.value;
+                        }
+                    }
+                },{
+                    title: {
+                        text: '[mm]'
+                    },
+                    labels: {
+                        enabled: true,
+                        formatter: function () {
+                            return this.value;
+                        }
+                    },
+                    opposite: true
+                }],
+                legend: {
+                    enabled: true,
+                    align: 'center',
+                    verticalAlign: 'bottom',
+                    layout: 'horizontal'
+
+                },
+                tooltip: {
+                    crosshairs: true,
+                    shared: true,
+                    formatter: function() {
+                        var datastring='';
+
+                        $.each(this.points, function(i, point) {
+                            datastring+=('<span style="color:'+point.series.color+';font-weight:bold;">'+ point.series.name +' : '+
+                                Highcharts.numberFormat(point.y,1) +' mm<span><br>');
+                        });
+
+                        //return '' + Highcharts.dateFormat('%H:%M', this.x ) + ', <b>' + Highcharts.numberFormat(this.y, 1) +' °C </b>';
+                        return '' + Highcharts.dateFormat('%H:%M', this.x )+'<br>' + datastring;
+                    }
+                },
+                plotOptions: {
+                    spline: {
+                        marker: {
+                            radius: 4,
+                            lineColor: '#666666',
+                            lineWidth: 1
+                        }
+                    }
+                },
+                series: [{
+                    name: 'pioggia cumulata',
+                    marker: {
+                        symbol: 'square',
+                        enabled: false
+                    },
+                    data: [
+                        [Date.UTC(2023,02-1,15,19,32),0],[Date.UTC(2023,02-1,15,20,19),0],[Date.UTC(2023,02-1,15,20,24),0],[Date.UTC(2023,02-1,15,20,29),0],[Date.UTC(2023,02-1,15,21,39),0],[Date.UTC(2023,02-1,15,22,05),0],[Date.UTC(2023,02-1,15,22,07),0],[Date.UTC(2023,02-1,15,22,50),0],[Date.UTC(2023,02-1,15,23,44),0],[Date.UTC(2023,02-1,15,23,46),0],[Date.UTC(2023,02-1,16,00,24),0],[Date.UTC(2023,02-1,16,00,29),0],[Date.UTC(2023,02-1,16,00,34),0],[Date.UTC(2023,02-1,16,00,37),0],[Date.UTC(2023,02-1,16,01,29),0],[Date.UTC(2023,02-1,16,01,34),0],[Date.UTC(2023,02-1,16,01,37),0],[Date.UTC(2023,02-1,16,02,09),0],[Date.UTC(2023,02-1,16,02,14),0],[Date.UTC(2023,02-1,16,02,29),0],[Date.UTC(2023,02-1,16,02,34),0],[Date.UTC(2023,02-1,16,02,39),0],[Date.UTC(2023,02-1,16,02,44),0],[Date.UTC(2023,02-1,16,02,47),0],[Date.UTC(2023,02-1,16,03,14),0],[Date.UTC(2023,02-1,16,03,19),0],[Date.UTC(2023,02-1,16,03,24),0],[Date.UTC(2023,02-1,16,03,34),0],[Date.UTC(2023,02-1,16,03,39),0],[Date.UTC(2023,02-1,16,03,44),0],[Date.UTC(2023,02-1,16,03,49),0],[Date.UTC(2023,02-1,16,03,50),0],[Date.UTC(2023,02-1,16,04,11),0],[Date.UTC(2023,02-1,16,04,29),0],[Date.UTC(2023,02-1,16,04,34),0],[Date.UTC(2023,02-1,16,04,38),0],[Date.UTC(2023,02-1,16,04,44),0],[Date.UTC(2023,02-1,16,04,46),0],[Date.UTC(2023,02-1,16,05,09),0],[Date.UTC(2023,02-1,16,05,14),0],[Date.UTC(2023,02-1,16,05,19),0],[Date.UTC(2023,02-1,16,05,23),0],[Date.UTC(2023,02-1,16,05,34),0],[Date.UTC(2023,02-1,16,05,39),0],[Date.UTC(2023,02-1,16,05,49),0],[Date.UTC(2023,02-1,16,05,54),0],[Date.UTC(2023,02-1,16,05,58),0],[Date.UTC(2023,02-1,16,06,13),0],[Date.UTC(2023,02-1,16,06,39),0],[Date.UTC(2023,02-1,16,06,42),0],[Date.UTC(2023,02-1,16,07,09),0],[Date.UTC(2023,02-1,16,07,14),0],[Date.UTC(2023,02-1,16,07,29),0],[Date.UTC(2023,02-1,16,07,34),0],[Date.UTC(2023,02-1,16,07,39),0],[Date.UTC(2023,02-1,16,07,44),0],[Date.UTC(2023,02-1,16,07,49),0],[Date.UTC(2023,02-1,16,07,54),0],[Date.UTC(2023,02-1,16,07,59),0],[Date.UTC(2023,02-1,16,08,04),0],[Date.UTC(2023,02-1,16,08,09),0],[Date.UTC(2023,02-1,16,08,14),0],[Date.UTC(2023,02-1,16,08,19),0],[Date.UTC(2023,02-1,16,08,25),0],[Date.UTC(2023,02-1,16,08,29),0],[Date.UTC(2023,02-1,16,08,34),0],[Date.UTC(2023,02-1,16,08,39),0],[Date.UTC(2023,02-1,16,08,44),0],[Date.UTC(2023,02-1,16,08,49),0],[Date.UTC(2023,02-1,16,08,54),0],[Date.UTC(2023,02-1,16,08,59),0],[Date.UTC(2023,02-1,16,09,04),0],[Date.UTC(2023,02-1,16,09,09),0],[Date.UTC(2023,02-1,16,09,14),0],[Date.UTC(2023,02-1,16,09,19),0],[Date.UTC(2023,02-1,16,09,24),0],[Date.UTC(2023,02-1,16,09,29),0],[Date.UTC(2023,02-1,16,09,34),0],[Date.UTC(2023,02-1,16,09,39),0],[Date.UTC(2023,02-1,16,09,45),0],[Date.UTC(2023,02-1,16,09,49),0],[Date.UTC(2023,02-1,16,09,54),0],[Date.UTC(2023,02-1,16,09,59),0],[Date.UTC(2023,02-1,16,10,04),0],[Date.UTC(2023,02-1,16,10,09),0],[Date.UTC(2023,02-1,16,10,14),0],[Date.UTC(2023,02-1,16,10,19),0],[Date.UTC(2023,02-1,16,10,25),0],[Date.UTC(2023,02-1,16,10,29),0],[Date.UTC(2023,02-1,16,10,34),0],[Date.UTC(2023,02-1,16,10,39),0],[Date.UTC(2023,02-1,16,10,45),0],[Date.UTC(2023,02-1,16,10,49),0],[Date.UTC(2023,02-1,16,10,54),0],[Date.UTC(2023,02-1,16,10,59),0],[Date.UTC(2023,02-1,16,11,05),0],[Date.UTC(2023,02-1,16,11,09),0],[Date.UTC(2023,02-1,16,11,14),0],[Date.UTC(2023,02-1,16,11,19),0],[Date.UTC(2023,02-1,16,11,25),0],[Date.UTC(2023,02-1,16,11,29),0],[Date.UTC(2023,02-1,16,11,34),0],[Date.UTC(2023,02-1,16,11,39),0],[Date.UTC(2023,02-1,16,11,44),0],[Date.UTC(2023,02-1,16,11,49),0],[Date.UTC(2023,02-1,16,11,54),0],[Date.UTC(2023,02-1,16,11,59),0],[Date.UTC(2023,02-1,16,12,04),0],[Date.UTC(2023,02-1,16,12,09),0],[Date.UTC(2023,02-1,16,12,14),0],[Date.UTC(2023,02-1,16,12,19),0],[Date.UTC(2023,02-1,16,12,25),0],[Date.UTC(2023,02-1,16,12,29),0],[Date.UTC(2023,02-1,16,12,34),0],[Date.UTC(2023,02-1,16,12,39),0],[Date.UTC(2023,02-1,16,12,45),0],[Date.UTC(2023,02-1,16,12,49),0],[Date.UTC(2023,02-1,16,12,54),0],[Date.UTC(2023,02-1,16,12,59),0],[Date.UTC(2023,02-1,16,13,04),0],[Date.UTC(2023,02-1,16,13,09),0],[Date.UTC(2023,02-1,16,13,14),0],[Date.UTC(2023,02-1,16,13,19),0],[Date.UTC(2023,02-1,16,13,24),0],[Date.UTC(2023,02-1,16,13,29),0],[Date.UTC(2023,02-1,16,13,34),0],[Date.UTC(2023,02-1,16,13,39),0],[Date.UTC(2023,02-1,16,13,44),0],[Date.UTC(2023,02-1,16,13,49),0],[Date.UTC(2023,02-1,16,13,54),0],[Date.UTC(2023,02-1,16,13,59),0],[Date.UTC(2023,02-1,16,14,05),0],[Date.UTC(2023,02-1,16,14,09),0],[Date.UTC(2023,02-1,16,14,14),0],[Date.UTC(2023,02-1,16,14,19),0],[Date.UTC(2023,02-1,16,14,24),0],[Date.UTC(2023,02-1,16,14,29),0],[Date.UTC(2023,02-1,16,14,34),0],[Date.UTC(2023,02-1,16,14,39),0],[Date.UTC(2023,02-1,16,14,45),0],[Date.UTC(2023,02-1,16,14,49),0],[Date.UTC(2023,02-1,16,14,54),0],[Date.UTC(2023,02-1,16,14,59),0],[Date.UTC(2023,02-1,16,15,05),0],[Date.UTC(2023,02-1,16,15,09),0],[Date.UTC(2023,02-1,16,15,14),0],[Date.UTC(2023,02-1,16,15,19),0],[Date.UTC(2023,02-1,16,15,24),0],[Date.UTC(2023,02-1,16,15,29),0],[Date.UTC(2023,02-1,16,15,34),0],[Date.UTC(2023,02-1,16,15,39),0],[Date.UTC(2023,02-1,16,15,45),0],[Date.UTC(2023,02-1,16,15,49),0],[Date.UTC(2023,02-1,16,15,54),0],[Date.UTC(2023,02-1,16,15,59),0],[Date.UTC(2023,02-1,16,16,05),0],[Date.UTC(2023,02-1,16,16,09),0],[Date.UTC(2023,02-1,16,16,14),0],[Date.UTC(2023,02-1,16,16,19),0],[Date.UTC(2023,02-1,16,16,25),0],[Date.UTC(2023,02-1,16,16,29),0],[Date.UTC(2023,02-1,16,16,34),0],[Date.UTC(2023,02-1,16,16,39),0],[Date.UTC(2023,02-1,16,16,45),0],[Date.UTC(2023,02-1,16,16,49),0],[Date.UTC(2023,02-1,16,16,54),0],[Date.UTC(2023,02-1,16,16,59),0],[Date.UTC(2023,02-1,16,17,05),0],[Date.UTC(2023,02-1,16,17,09),0],[Date.UTC(2023,02-1,16,17,14),0],[Date.UTC(2023,02-1,16,17,19),0],[Date.UTC(2023,02-1,16,17,24),0],[Date.UTC(2023,02-1,16,17,29),0],[Date.UTC(2023,02-1,16,17,34),0],[Date.UTC(2023,02-1,16,17,39),0],[Date.UTC(2023,02-1,16,17,45),0],[Date.UTC(2023,02-1,16,17,49),0],[Date.UTC(2023,02-1,16,17,54),0],[Date.UTC(2023,02-1,16,17,59),0],[Date.UTC(2023,02-1,16,18,05),0],[Date.UTC(2023,02-1,16,18,09),0],[Date.UTC(2023,02-1,16,18,14),0],[Date.UTC(2023,02-1,16,18,19),0],[Date.UTC(2023,02-1,16,18,24),0],[Date.UTC(2023,02-1,16,18,29),0],[Date.UTC(2023,02-1,16,18,34),0],[Date.UTC(2023,02-1,16,18,39),0],[Date.UTC(2023,02-1,16,18,44),0],
+                    ]
+
+                },
+                    {
+                        type: 'column',
+                        name: 'pioggia istantanea',
+                        yAxis: 1,
+                        marker: {
+                            symbol: 'square',
+                            enabled: false
+                        },
+                        data: [
+                            [Date.UTC(2023,02-1,15,19,32),0],[Date.UTC(2023,02-1,15,20,19),0],[Date.UTC(2023,02-1,15,20,24),0],[Date.UTC(2023,02-1,15,20,29),0],[Date.UTC(2023,02-1,15,21,39),0],[Date.UTC(2023,02-1,15,22,05),0],[Date.UTC(2023,02-1,15,22,07),0],[Date.UTC(2023,02-1,15,22,50),0],[Date.UTC(2023,02-1,15,23,44),0],[Date.UTC(2023,02-1,15,23,46),0],[Date.UTC(2023,02-1,16,00,24),0],[Date.UTC(2023,02-1,16,00,29),0],[Date.UTC(2023,02-1,16,00,34),0],[Date.UTC(2023,02-1,16,00,37),0],[Date.UTC(2023,02-1,16,01,29),0],[Date.UTC(2023,02-1,16,01,34),0],[Date.UTC(2023,02-1,16,01,37),0],[Date.UTC(2023,02-1,16,02,09),0],[Date.UTC(2023,02-1,16,02,14),0],[Date.UTC(2023,02-1,16,02,29),0],[Date.UTC(2023,02-1,16,02,34),0],[Date.UTC(2023,02-1,16,02,39),0],[Date.UTC(2023,02-1,16,02,44),0],[Date.UTC(2023,02-1,16,02,47),0],[Date.UTC(2023,02-1,16,03,14),0],[Date.UTC(2023,02-1,16,03,19),0],[Date.UTC(2023,02-1,16,03,24),0],[Date.UTC(2023,02-1,16,03,34),0],[Date.UTC(2023,02-1,16,03,39),0],[Date.UTC(2023,02-1,16,03,44),0],[Date.UTC(2023,02-1,16,03,49),0],[Date.UTC(2023,02-1,16,03,50),0],[Date.UTC(2023,02-1,16,04,11),0],[Date.UTC(2023,02-1,16,04,29),0],[Date.UTC(2023,02-1,16,04,34),0],[Date.UTC(2023,02-1,16,04,38),0],[Date.UTC(2023,02-1,16,04,44),0],[Date.UTC(2023,02-1,16,04,46),0],[Date.UTC(2023,02-1,16,05,09),0],[Date.UTC(2023,02-1,16,05,14),0],[Date.UTC(2023,02-1,16,05,19),0],[Date.UTC(2023,02-1,16,05,23),0],[Date.UTC(2023,02-1,16,05,34),0],[Date.UTC(2023,02-1,16,05,39),0],[Date.UTC(2023,02-1,16,05,49),0],[Date.UTC(2023,02-1,16,05,54),0],[Date.UTC(2023,02-1,16,05,58),0],[Date.UTC(2023,02-1,16,06,13),0],[Date.UTC(2023,02-1,16,06,39),0],[Date.UTC(2023,02-1,16,06,42),0],[Date.UTC(2023,02-1,16,07,09),0],[Date.UTC(2023,02-1,16,07,14),0],[Date.UTC(2023,02-1,16,07,29),0],[Date.UTC(2023,02-1,16,07,34),0],[Date.UTC(2023,02-1,16,07,39),0],[Date.UTC(2023,02-1,16,07,44),0],[Date.UTC(2023,02-1,16,07,49),0],[Date.UTC(2023,02-1,16,07,54),0],[Date.UTC(2023,02-1,16,07,59),0],[Date.UTC(2023,02-1,16,08,04),0],[Date.UTC(2023,02-1,16,08,09),0],[Date.UTC(2023,02-1,16,08,14),0],[Date.UTC(2023,02-1,16,08,19),0],[Date.UTC(2023,02-1,16,08,25),0],[Date.UTC(2023,02-1,16,08,29),0],[Date.UTC(2023,02-1,16,08,34),0],[Date.UTC(2023,02-1,16,08,39),0],[Date.UTC(2023,02-1,16,08,44),0],[Date.UTC(2023,02-1,16,08,49),0],[Date.UTC(2023,02-1,16,08,54),0],[Date.UTC(2023,02-1,16,08,59),0],[Date.UTC(2023,02-1,16,09,04),0],[Date.UTC(2023,02-1,16,09,09),0],[Date.UTC(2023,02-1,16,09,14),0],[Date.UTC(2023,02-1,16,09,19),0],[Date.UTC(2023,02-1,16,09,24),0],[Date.UTC(2023,02-1,16,09,29),0],[Date.UTC(2023,02-1,16,09,34),0],[Date.UTC(2023,02-1,16,09,39),0],[Date.UTC(2023,02-1,16,09,45),0],[Date.UTC(2023,02-1,16,09,49),0],[Date.UTC(2023,02-1,16,09,54),0],[Date.UTC(2023,02-1,16,09,59),0],[Date.UTC(2023,02-1,16,10,04),0],[Date.UTC(2023,02-1,16,10,09),0],[Date.UTC(2023,02-1,16,10,14),0],[Date.UTC(2023,02-1,16,10,19),0],[Date.UTC(2023,02-1,16,10,25),0],[Date.UTC(2023,02-1,16,10,29),0],[Date.UTC(2023,02-1,16,10,34),0],[Date.UTC(2023,02-1,16,10,39),0],[Date.UTC(2023,02-1,16,10,45),0],[Date.UTC(2023,02-1,16,10,49),0],[Date.UTC(2023,02-1,16,10,54),0],[Date.UTC(2023,02-1,16,10,59),0],[Date.UTC(2023,02-1,16,11,05),0],[Date.UTC(2023,02-1,16,11,09),0],[Date.UTC(2023,02-1,16,11,14),0],[Date.UTC(2023,02-1,16,11,19),0],[Date.UTC(2023,02-1,16,11,25),0],[Date.UTC(2023,02-1,16,11,29),0],[Date.UTC(2023,02-1,16,11,34),0],[Date.UTC(2023,02-1,16,11,39),0],[Date.UTC(2023,02-1,16,11,44),0],[Date.UTC(2023,02-1,16,11,49),0],[Date.UTC(2023,02-1,16,11,54),0],[Date.UTC(2023,02-1,16,11,59),0],[Date.UTC(2023,02-1,16,12,04),0],[Date.UTC(2023,02-1,16,12,09),0],[Date.UTC(2023,02-1,16,12,14),0],[Date.UTC(2023,02-1,16,12,19),0],[Date.UTC(2023,02-1,16,12,25),0],[Date.UTC(2023,02-1,16,12,29),0],[Date.UTC(2023,02-1,16,12,34),0],[Date.UTC(2023,02-1,16,12,39),0],[Date.UTC(2023,02-1,16,12,45),0],[Date.UTC(2023,02-1,16,12,49),0],[Date.UTC(2023,02-1,16,12,54),0],[Date.UTC(2023,02-1,16,12,59),0],[Date.UTC(2023,02-1,16,13,04),0],[Date.UTC(2023,02-1,16,13,09),0],[Date.UTC(2023,02-1,16,13,14),0],[Date.UTC(2023,02-1,16,13,19),0],[Date.UTC(2023,02-1,16,13,24),0],[Date.UTC(2023,02-1,16,13,29),0],[Date.UTC(2023,02-1,16,13,34),0],[Date.UTC(2023,02-1,16,13,39),0],[Date.UTC(2023,02-1,16,13,44),0],[Date.UTC(2023,02-1,16,13,49),0],[Date.UTC(2023,02-1,16,13,54),0],[Date.UTC(2023,02-1,16,13,59),0],[Date.UTC(2023,02-1,16,14,05),0],[Date.UTC(2023,02-1,16,14,09),0],[Date.UTC(2023,02-1,16,14,14),0],[Date.UTC(2023,02-1,16,14,19),0],[Date.UTC(2023,02-1,16,14,24),0],[Date.UTC(2023,02-1,16,14,29),0],[Date.UTC(2023,02-1,16,14,34),0],[Date.UTC(2023,02-1,16,14,39),0],[Date.UTC(2023,02-1,16,14,45),0],[Date.UTC(2023,02-1,16,14,49),0],[Date.UTC(2023,02-1,16,14,54),0],[Date.UTC(2023,02-1,16,14,59),0],[Date.UTC(2023,02-1,16,15,05),0],[Date.UTC(2023,02-1,16,15,09),0],[Date.UTC(2023,02-1,16,15,14),0],[Date.UTC(2023,02-1,16,15,19),0],[Date.UTC(2023,02-1,16,15,24),0],[Date.UTC(2023,02-1,16,15,29),0],[Date.UTC(2023,02-1,16,15,34),0],[Date.UTC(2023,02-1,16,15,39),0],[Date.UTC(2023,02-1,16,15,45),0],[Date.UTC(2023,02-1,16,15,49),0],[Date.UTC(2023,02-1,16,15,54),0],[Date.UTC(2023,02-1,16,15,59),0],[Date.UTC(2023,02-1,16,16,05),0],[Date.UTC(2023,02-1,16,16,09),0],[Date.UTC(2023,02-1,16,16,14),0],[Date.UTC(2023,02-1,16,16,19),0],[Date.UTC(2023,02-1,16,16,25),0],[Date.UTC(2023,02-1,16,16,29),0],[Date.UTC(2023,02-1,16,16,34),0],[Date.UTC(2023,02-1,16,16,39),0],[Date.UTC(2023,02-1,16,16,45),0],[Date.UTC(2023,02-1,16,16,49),0],[Date.UTC(2023,02-1,16,16,54),0],[Date.UTC(2023,02-1,16,16,59),0],[Date.UTC(2023,02-1,16,17,05),0],[Date.UTC(2023,02-1,16,17,09),0],[Date.UTC(2023,02-1,16,17,14),0],[Date.UTC(2023,02-1,16,17,19),0],[Date.UTC(2023,02-1,16,17,24),0],[Date.UTC(2023,02-1,16,17,29),0],[Date.UTC(2023,02-1,16,17,34),0],[Date.UTC(2023,02-1,16,17,39),0],[Date.UTC(2023,02-1,16,17,45),0],[Date.UTC(2023,02-1,16,17,49),0],[Date.UTC(2023,02-1,16,17,54),0],[Date.UTC(2023,02-1,16,17,59),0],[Date.UTC(2023,02-1,16,18,05),0],[Date.UTC(2023,02-1,16,18,09),0],[Date.UTC(2023,02-1,16,18,14),0],[Date.UTC(2023,02-1,16,18,19),0],[Date.UTC(2023,02-1,16,18,24),0],[Date.UTC(2023,02-1,16,18,29),0],[Date.UTC(2023,02-1,16,18,34),0],[Date.UTC(2023,02-1,16,18,39),0],[Date.UTC(2023,02-1,16,18,44),0],
+                        ]
+
+                    }]
+            });
+
+            //Grafico della pressione
+            last_24_48_graph_slmp=Highcharts.chart('24h_graph_div_slmp', {
+                chart: {
+                    type: 'spline',
+                    height: bigGraphHeight,
+                    width: null
+                },
+                title:
+                    {
+                        text: null
+                    },
+                xAxis: {
+                    type: 'datetime',
+                    dateTimeLabelFormats: {
+                        week: '%Y-%m-%d',
+                        month: '%Y-%m-%d',
+                        year: '%Y-%m-%d',
+                        day: '<b style="font-weight: 900; color:#000000 !important; fill:#000000 !important; font-size:12px;">%d/%m</b>',
+                        minute: '%H:%M',
+                        hour: '%H:%M',
+                    },
+                    labels:
+                        {
+                            enabled: true,
+                            style: '{"fontSize": "5px"}',
+                            rotation: 0
+                        }
+                },
+                yAxis: {
+                    title: {
+                        text: '[hPa]'
+                    },
+                    labels: {
+                        enabled: true,
+                        formatter: function () {
+                            return this.value;
+                        }
+                    }
+                },
+                legend: {
+                    enabled: true,
+                    align: 'center',
+                    verticalAlign: 'bottom',
+                    layout: 'horizontal'
+
+                },
+                tooltip: {
+                    crosshairs: true,
+                    shared: true,
+                    formatter: function() {
+                        var datastring='';
+
+                        $.each(this.points, function(i, point) {
+                            datastring+=('<span style="color:'+point.series.color+';font-weight:bold;">'+ point.series.name +' : '+
+                                Highcharts.numberFormat(point.y,1) +' hPa<span><br>');
+                        });
+
+                        //return '' + Highcharts.dateFormat('%H:%M', this.x ) + ', <b>' + Highcharts.numberFormat(this.y, 1) +' °C </b>';
+                        return '' + Highcharts.dateFormat('%H:%M', this.x )+'<br>' + datastring;
+                    }
+                },
+                plotOptions: {
+                    spline: {
+                        marker: {
+                            radius: 4,
+                            lineColor: '#666666',
+                            lineWidth: 1
+                        }
+                    }
+                },
+                series: [{
+                    name: 'Ultime 24h',
+                    marker: {
+                        symbol: 'square',
+                        enabled: false
+                    },
+                    color: 'rgba(215,75,58,0.94)',
+                    data: [
+                        [Date.UTC(2023,02-1,15,19,32),1031],[Date.UTC(2023,02-1,15,20,19),1031.2],[Date.UTC(2023,02-1,15,20,24),1031.2],[Date.UTC(2023,02-1,15,20,29),1031.4],[Date.UTC(2023,02-1,15,21,39),1031],[Date.UTC(2023,02-1,15,22,05),1031],[Date.UTC(2023,02-1,15,22,07),1031.2],[Date.UTC(2023,02-1,15,22,50),1031.5],[Date.UTC(2023,02-1,15,23,44),1031.4],[Date.UTC(2023,02-1,15,23,46),1031.4],[Date.UTC(2023,02-1,16,00,24),1031.4],[Date.UTC(2023,02-1,16,00,29),1031.5],[Date.UTC(2023,02-1,16,00,34),1031.3],[Date.UTC(2023,02-1,16,00,37),1031.5],[Date.UTC(2023,02-1,16,01,29),1031.2],[Date.UTC(2023,02-1,16,01,34),1031],[Date.UTC(2023,02-1,16,01,37),1031],[Date.UTC(2023,02-1,16,02,09),1030.8],[Date.UTC(2023,02-1,16,02,14),1030.6],[Date.UTC(2023,02-1,16,02,29),1030.7],[Date.UTC(2023,02-1,16,02,34),1030.6],[Date.UTC(2023,02-1,16,02,39),1030.7],[Date.UTC(2023,02-1,16,02,44),1030.4],[Date.UTC(2023,02-1,16,02,47),1030.5],[Date.UTC(2023,02-1,16,03,14),1030.7],[Date.UTC(2023,02-1,16,03,19),1030.5],[Date.UTC(2023,02-1,16,03,24),1030.5],[Date.UTC(2023,02-1,16,03,34),1030.8],[Date.UTC(2023,02-1,16,03,39),1030.6],[Date.UTC(2023,02-1,16,03,44),1030.7],[Date.UTC(2023,02-1,16,03,49),1030.7],[Date.UTC(2023,02-1,16,03,50),1030.7],[Date.UTC(2023,02-1,16,04,11),1030.7],[Date.UTC(2023,02-1,16,04,29),1031.1],[Date.UTC(2023,02-1,16,04,34),1031.1],[Date.UTC(2023,02-1,16,04,38),1031],[Date.UTC(2023,02-1,16,04,44),1031],[Date.UTC(2023,02-1,16,04,46),1030.9],[Date.UTC(2023,02-1,16,05,09),1031.2],[Date.UTC(2023,02-1,16,05,14),1031.2],[Date.UTC(2023,02-1,16,05,19),1031.2],[Date.UTC(2023,02-1,16,05,23),1031.2],[Date.UTC(2023,02-1,16,05,34),1031.1],[Date.UTC(2023,02-1,16,05,39),1031.1],[Date.UTC(2023,02-1,16,05,49),1031.1],[Date.UTC(2023,02-1,16,05,54),1031.3],[Date.UTC(2023,02-1,16,05,58),1031.3],[Date.UTC(2023,02-1,16,06,13),1031.3],[Date.UTC(2023,02-1,16,06,39),1031.6],[Date.UTC(2023,02-1,16,06,42),1031.4],[Date.UTC(2023,02-1,16,07,09),1031.6],[Date.UTC(2023,02-1,16,07,14),1031.5],[Date.UTC(2023,02-1,16,07,29),1031.4],[Date.UTC(2023,02-1,16,07,34),1031.3],[Date.UTC(2023,02-1,16,07,39),1031.5],[Date.UTC(2023,02-1,16,07,44),1031.5],[Date.UTC(2023,02-1,16,07,49),1031.3],[Date.UTC(2023,02-1,16,07,54),1031.5],[Date.UTC(2023,02-1,16,07,59),1031.4],[Date.UTC(2023,02-1,16,08,04),1031.5],[Date.UTC(2023,02-1,16,08,09),1031.5],[Date.UTC(2023,02-1,16,08,14),1031.4],[Date.UTC(2023,02-1,16,08,19),1031.7],[Date.UTC(2023,02-1,16,08,25),1031.8],[Date.UTC(2023,02-1,16,08,29),1031.5],[Date.UTC(2023,02-1,16,08,34),1031.6],[Date.UTC(2023,02-1,16,08,39),1031.4],[Date.UTC(2023,02-1,16,08,44),1031.5],[Date.UTC(2023,02-1,16,08,49),1031.5],[Date.UTC(2023,02-1,16,08,54),1031.4],[Date.UTC(2023,02-1,16,08,59),1031.3],[Date.UTC(2023,02-1,16,09,04),1031.5],[Date.UTC(2023,02-1,16,09,09),1031.6],[Date.UTC(2023,02-1,16,09,14),1031.6],[Date.UTC(2023,02-1,16,09,19),1031.6],[Date.UTC(2023,02-1,16,09,24),1031.7],[Date.UTC(2023,02-1,16,09,29),1031.4],[Date.UTC(2023,02-1,16,09,34),1031.7],[Date.UTC(2023,02-1,16,09,39),1031.8],[Date.UTC(2023,02-1,16,09,45),1031.7],[Date.UTC(2023,02-1,16,09,49),1031.5],[Date.UTC(2023,02-1,16,09,54),1031.5],[Date.UTC(2023,02-1,16,09,59),1031.5],[Date.UTC(2023,02-1,16,10,04),1032],[Date.UTC(2023,02-1,16,10,09),1031.5],[Date.UTC(2023,02-1,16,10,14),1031.7],[Date.UTC(2023,02-1,16,10,19),1031.7],[Date.UTC(2023,02-1,16,10,25),1031.6],[Date.UTC(2023,02-1,16,10,29),1031.5],[Date.UTC(2023,02-1,16,10,34),1031.3],[Date.UTC(2023,02-1,16,10,39),1031.4],[Date.UTC(2023,02-1,16,10,45),1031.3],[Date.UTC(2023,02-1,16,10,49),1031.4],[Date.UTC(2023,02-1,16,10,54),1031.4],[Date.UTC(2023,02-1,16,10,59),1031.2],[Date.UTC(2023,02-1,16,11,05),1031.3],[Date.UTC(2023,02-1,16,11,09),1031.3],[Date.UTC(2023,02-1,16,11,14),1031],[Date.UTC(2023,02-1,16,11,19),1031],[Date.UTC(2023,02-1,16,11,25),1030.9],[Date.UTC(2023,02-1,16,11,29),1031],[Date.UTC(2023,02-1,16,11,34),1031],[Date.UTC(2023,02-1,16,11,39),1030.8],[Date.UTC(2023,02-1,16,11,44),1030.7],[Date.UTC(2023,02-1,16,11,49),1030.8],[Date.UTC(2023,02-1,16,11,54),1030.7],[Date.UTC(2023,02-1,16,11,59),1030.6],[Date.UTC(2023,02-1,16,12,04),1030.7],[Date.UTC(2023,02-1,16,12,09),1030.6],[Date.UTC(2023,02-1,16,12,14),1030.4],[Date.UTC(2023,02-1,16,12,19),1030.4],[Date.UTC(2023,02-1,16,12,25),1030.3],[Date.UTC(2023,02-1,16,12,29),1030.2],[Date.UTC(2023,02-1,16,12,34),1030.3],[Date.UTC(2023,02-1,16,12,39),1030.3],[Date.UTC(2023,02-1,16,12,45),1030],[Date.UTC(2023,02-1,16,12,49),1030],[Date.UTC(2023,02-1,16,12,54),1030],[Date.UTC(2023,02-1,16,12,59),1030.2],[Date.UTC(2023,02-1,16,13,04),1030.1],[Date.UTC(2023,02-1,16,13,09),1030.2],[Date.UTC(2023,02-1,16,13,14),1030.1],[Date.UTC(2023,02-1,16,13,19),1030.2],[Date.UTC(2023,02-1,16,13,24),1030],[Date.UTC(2023,02-1,16,13,29),1030],[Date.UTC(2023,02-1,16,13,34),1029.9],[Date.UTC(2023,02-1,16,13,39),1029.9],[Date.UTC(2023,02-1,16,13,44),1029.9],[Date.UTC(2023,02-1,16,13,49),1029.9],[Date.UTC(2023,02-1,16,13,54),1030],[Date.UTC(2023,02-1,16,13,59),1029.9],[Date.UTC(2023,02-1,16,14,05),1029.8],[Date.UTC(2023,02-1,16,14,09),1029.7],[Date.UTC(2023,02-1,16,14,14),1029.9],[Date.UTC(2023,02-1,16,14,19),1029.9],[Date.UTC(2023,02-1,16,14,24),1029.8],[Date.UTC(2023,02-1,16,14,29),1029.6],[Date.UTC(2023,02-1,16,14,34),1029.8],[Date.UTC(2023,02-1,16,14,39),1029.7],[Date.UTC(2023,02-1,16,14,45),1029.8],[Date.UTC(2023,02-1,16,14,49),1029.7],[Date.UTC(2023,02-1,16,14,54),1029.6],[Date.UTC(2023,02-1,16,14,59),1029.7],[Date.UTC(2023,02-1,16,15,05),1029.9],[Date.UTC(2023,02-1,16,15,09),1029.8],[Date.UTC(2023,02-1,16,15,14),1029.8],[Date.UTC(2023,02-1,16,15,19),1029.9],[Date.UTC(2023,02-1,16,15,24),1030.1],[Date.UTC(2023,02-1,16,15,29),1029.8],[Date.UTC(2023,02-1,16,15,34),1030],[Date.UTC(2023,02-1,16,15,39),1030.1],[Date.UTC(2023,02-1,16,15,45),1030.1],[Date.UTC(2023,02-1,16,15,49),1030],[Date.UTC(2023,02-1,16,15,54),1030],[Date.UTC(2023,02-1,16,15,59),1030],[Date.UTC(2023,02-1,16,16,05),1030.2],[Date.UTC(2023,02-1,16,16,09),1030.2],[Date.UTC(2023,02-1,16,16,14),1030],[Date.UTC(2023,02-1,16,16,19),1030.2],[Date.UTC(2023,02-1,16,16,25),1030.1],[Date.UTC(2023,02-1,16,16,29),1030.1],[Date.UTC(2023,02-1,16,16,34),1030.2],[Date.UTC(2023,02-1,16,16,39),1030.1],[Date.UTC(2023,02-1,16,16,45),1030],[Date.UTC(2023,02-1,16,16,49),1029.8],[Date.UTC(2023,02-1,16,16,54),1030.1],[Date.UTC(2023,02-1,16,16,59),1030.2],[Date.UTC(2023,02-1,16,17,05),1030.2],[Date.UTC(2023,02-1,16,17,09),1030],[Date.UTC(2023,02-1,16,17,14),1030.3],[Date.UTC(2023,02-1,16,17,19),1029.9],[Date.UTC(2023,02-1,16,17,24),1030.2],[Date.UTC(2023,02-1,16,17,29),1030.2],[Date.UTC(2023,02-1,16,17,34),1030.4],[Date.UTC(2023,02-1,16,17,39),1030.5],[Date.UTC(2023,02-1,16,17,45),1030.2],[Date.UTC(2023,02-1,16,17,49),1030.5],[Date.UTC(2023,02-1,16,17,54),1030.4],[Date.UTC(2023,02-1,16,17,59),1030.3],[Date.UTC(2023,02-1,16,18,05),1030.3],[Date.UTC(2023,02-1,16,18,09),1030.6],[Date.UTC(2023,02-1,16,18,14),1030.4],[Date.UTC(2023,02-1,16,18,19),1030.3],[Date.UTC(2023,02-1,16,18,24),1030.4],[Date.UTC(2023,02-1,16,18,29),1030.2],[Date.UTC(2023,02-1,16,18,34),1030.6],[Date.UTC(2023,02-1,16,18,39),1030.5],[Date.UTC(2023,02-1,16,18,44),1030.5],
+                    ]
+
+                },
+                    {
+                        name: 'Da 48 a 24h fa',
+                        marker: {
+                            symbol: 'square',
+                            enabled: false
+                        },
+                        color: '#c0c3bf',
+                        data: [
+                            [Date.UTC(2023,02-1,15,18,49),1029.4],[Date.UTC(2023,02-1,15,18,54),1029.3],[Date.UTC(2023,02-1,15,18,59),1029.2],[Date.UTC(2023,02-1,15,19,04),1029.3],[Date.UTC(2023,02-1,15,19,09),1029.1],[Date.UTC(2023,02-1,15,19,14),1029.2],[Date.UTC(2023,02-1,15,19,19),1029.3],[Date.UTC(2023,02-1,15,19,24),1029.4],[Date.UTC(2023,02-1,15,19,29),1029.1],[Date.UTC(2023,02-1,15,19,34),1029.2],[Date.UTC(2023,02-1,15,19,39),1029.3],[Date.UTC(2023,02-1,15,19,44),1029.3],[Date.UTC(2023,02-1,15,19,49),1029.4],[Date.UTC(2023,02-1,15,19,54),1029.3],[Date.UTC(2023,02-1,15,19,59),1029.3],[Date.UTC(2023,02-1,15,20,04),1029.2],[Date.UTC(2023,02-1,15,20,09),1029.3],[Date.UTC(2023,02-1,15,20,14),1029.3],[Date.UTC(2023,02-1,15,20,19),1029.4],[Date.UTC(2023,02-1,15,20,24),1029.4],[Date.UTC(2023,02-1,15,20,29),1029.4],[Date.UTC(2023,02-1,15,20,34),1029.1],[Date.UTC(2023,02-1,15,20,39),1029.4],[Date.UTC(2023,02-1,15,20,44),1029.3],[Date.UTC(2023,02-1,15,20,49),1028.9],[Date.UTC(2023,02-1,15,20,54),1029],[Date.UTC(2023,02-1,15,20,59),1029],[Date.UTC(2023,02-1,15,21,04),1029],[Date.UTC(2023,02-1,15,21,09),1029],[Date.UTC(2023,02-1,15,21,14),1029.3],[Date.UTC(2023,02-1,15,21,19),1029.1],[Date.UTC(2023,02-1,15,21,24),1029.3],[Date.UTC(2023,02-1,15,21,29),1029.4],[Date.UTC(2023,02-1,15,21,34),1029.1],[Date.UTC(2023,02-1,15,21,39),1028.9],[Date.UTC(2023,02-1,15,21,44),1029.2],[Date.UTC(2023,02-1,15,21,49),1029],[Date.UTC(2023,02-1,15,21,54),1029],[Date.UTC(2023,02-1,15,21,59),1029.3],[Date.UTC(2023,02-1,15,22,04),1029],[Date.UTC(2023,02-1,15,22,09),1029],[Date.UTC(2023,02-1,15,22,14),1029.2],[Date.UTC(2023,02-1,15,22,19),1029.1],[Date.UTC(2023,02-1,15,22,24),1029],[Date.UTC(2023,02-1,15,22,29),1029.2],[Date.UTC(2023,02-1,15,22,34),1029.1],[Date.UTC(2023,02-1,15,22,39),1029.2],[Date.UTC(2023,02-1,15,22,44),1029.1],[Date.UTC(2023,02-1,15,22,49),1029.3],[Date.UTC(2023,02-1,15,22,54),1029.1],[Date.UTC(2023,02-1,15,22,59),1029],[Date.UTC(2023,02-1,15,23,04),1029],[Date.UTC(2023,02-1,15,23,09),1029.2],[Date.UTC(2023,02-1,15,23,14),1028.8],[Date.UTC(2023,02-1,15,23,19),1028.9],[Date.UTC(2023,02-1,15,23,24),1028.7],[Date.UTC(2023,02-1,15,23,29),1028.6],[Date.UTC(2023,02-1,15,23,34),1028.7],[Date.UTC(2023,02-1,15,23,39),1028.9],[Date.UTC(2023,02-1,15,23,44),1028.8],[Date.UTC(2023,02-1,15,23,49),1029],[Date.UTC(2023,02-1,15,23,54),1029],[Date.UTC(2023,02-1,15,23,59),1028.9],[Date.UTC(2023,02-1,16,00,04),1028.6],[Date.UTC(2023,02-1,16,00,09),1028.6],[Date.UTC(2023,02-1,16,00,14),1028.5],[Date.UTC(2023,02-1,16,00,19),1028.7],[Date.UTC(2023,02-1,16,00,24),1028.9],[Date.UTC(2023,02-1,16,00,29),1028.6],[Date.UTC(2023,02-1,16,00,34),1028.7],[Date.UTC(2023,02-1,16,00,39),1028.5],[Date.UTC(2023,02-1,16,00,44),1028.8],[Date.UTC(2023,02-1,16,00,49),1028.7],[Date.UTC(2023,02-1,16,00,54),1028.7],[Date.UTC(2023,02-1,16,00,59),1028.6],[Date.UTC(2023,02-1,16,01,04),1028.9],[Date.UTC(2023,02-1,16,01,09),1028.3],[Date.UTC(2023,02-1,16,01,14),1028.4],[Date.UTC(2023,02-1,16,01,19),1028.6],[Date.UTC(2023,02-1,16,01,24),1028.3],[Date.UTC(2023,02-1,16,01,29),1028.3],[Date.UTC(2023,02-1,16,01,34),1028.1],[Date.UTC(2023,02-1,16,01,39),1028.1],[Date.UTC(2023,02-1,16,01,44),1028.1],[Date.UTC(2023,02-1,16,01,49),1027.9],[Date.UTC(2023,02-1,16,01,54),1028],[Date.UTC(2023,02-1,16,01,59),1028.1],[Date.UTC(2023,02-1,16,02,04),1027.8],[Date.UTC(2023,02-1,16,02,09),1028.1],[Date.UTC(2023,02-1,16,02,14),1027.9],[Date.UTC(2023,02-1,16,02,19),1027.8],[Date.UTC(2023,02-1,16,02,24),1027.9],[Date.UTC(2023,02-1,16,02,29),1027.8],[Date.UTC(2023,02-1,16,02,34),1027.8],[Date.UTC(2023,02-1,16,02,39),1027.6],[Date.UTC(2023,02-1,16,02,44),1027.8],[Date.UTC(2023,02-1,16,02,49),1027.5],[Date.UTC(2023,02-1,16,02,54),1027.7],[Date.UTC(2023,02-1,16,02,59),1027.5],[Date.UTC(2023,02-1,16,03,04),1027.8],[Date.UTC(2023,02-1,16,03,09),1027.7],[Date.UTC(2023,02-1,16,03,14),1027.8],[Date.UTC(2023,02-1,16,03,19),1027.8],[Date.UTC(2023,02-1,16,03,24),1027.9],[Date.UTC(2023,02-1,16,03,29),1028.1],[Date.UTC(2023,02-1,16,03,34),1028.1],[Date.UTC(2023,02-1,16,03,39),1028.2],[Date.UTC(2023,02-1,16,03,44),1028.2],[Date.UTC(2023,02-1,16,03,49),1028.1],[Date.UTC(2023,02-1,16,03,54),1028.3],[Date.UTC(2023,02-1,16,03,59),1028.1],[Date.UTC(2023,02-1,16,04,04),1028.2],[Date.UTC(2023,02-1,16,04,09),1028.1],[Date.UTC(2023,02-1,16,04,14),1028.1],[Date.UTC(2023,02-1,16,04,19),1028.1],[Date.UTC(2023,02-1,16,04,24),1028.2],[Date.UTC(2023,02-1,16,04,29),1028.3],[Date.UTC(2023,02-1,16,04,34),1028.1],[Date.UTC(2023,02-1,16,04,39),1028.2],[Date.UTC(2023,02-1,16,04,44),1028.2],[Date.UTC(2023,02-1,16,04,49),1028.2],[Date.UTC(2023,02-1,16,04,54),1028.3],[Date.UTC(2023,02-1,16,04,59),1028.4],[Date.UTC(2023,02-1,16,05,04),1028.4],[Date.UTC(2023,02-1,16,05,09),1028.6],[Date.UTC(2023,02-1,16,05,14),1028.4],[Date.UTC(2023,02-1,16,05,19),1028.5],[Date.UTC(2023,02-1,16,05,24),1028.5],[Date.UTC(2023,02-1,16,05,29),1028.8],[Date.UTC(2023,02-1,16,05,34),1028.7],[Date.UTC(2023,02-1,16,05,39),1028.8],[Date.UTC(2023,02-1,16,05,44),1028.9],[Date.UTC(2023,02-1,16,05,49),1028.9],[Date.UTC(2023,02-1,16,05,54),1029.1],[Date.UTC(2023,02-1,16,05,59),1028.9],[Date.UTC(2023,02-1,16,06,04),1029.2],[Date.UTC(2023,02-1,16,06,09),1029.4],[Date.UTC(2023,02-1,16,06,14),1029.2],[Date.UTC(2023,02-1,16,06,19),1029.4],[Date.UTC(2023,02-1,16,06,24),1029.3],[Date.UTC(2023,02-1,16,06,29),1029.4],[Date.UTC(2023,02-1,16,06,34),1029.5],[Date.UTC(2023,02-1,16,06,39),1029.2],[Date.UTC(2023,02-1,16,06,44),1029.2],[Date.UTC(2023,02-1,16,06,49),1029.3],[Date.UTC(2023,02-1,16,06,54),1029.4],[Date.UTC(2023,02-1,16,06,59),1029.2],[Date.UTC(2023,02-1,16,07,04),1029.2],[Date.UTC(2023,02-1,16,07,09),1029.4],[Date.UTC(2023,02-1,16,07,14),1029.5],[Date.UTC(2023,02-1,16,07,19),1029.4],[Date.UTC(2023,02-1,16,07,24),1029.3],[Date.UTC(2023,02-1,16,07,29),1029.1],[Date.UTC(2023,02-1,16,07,34),1029.2],[Date.UTC(2023,02-1,16,07,39),1029.2],[Date.UTC(2023,02-1,16,07,44),1029.3],[Date.UTC(2023,02-1,16,07,49),1029.5],[Date.UTC(2023,02-1,16,07,54),1029.2],[Date.UTC(2023,02-1,16,07,59),1029.5],[Date.UTC(2023,02-1,16,08,04),1029.5],[Date.UTC(2023,02-1,16,08,09),1029.2],[Date.UTC(2023,02-1,16,08,14),1029.2],[Date.UTC(2023,02-1,16,08,19),1029.3],[Date.UTC(2023,02-1,16,08,24),1029.3],[Date.UTC(2023,02-1,16,08,29),1029.2],[Date.UTC(2023,02-1,16,08,34),1029.2],[Date.UTC(2023,02-1,16,08,39),1029.4],[Date.UTC(2023,02-1,16,08,44),1029.3],[Date.UTC(2023,02-1,16,08,49),1029.2],[Date.UTC(2023,02-1,16,08,54),1029.5],[Date.UTC(2023,02-1,16,08,59),1029.6],[Date.UTC(2023,02-1,16,09,04),1029.4],[Date.UTC(2023,02-1,16,09,09),1029.5],[Date.UTC(2023,02-1,16,09,14),1029.5],[Date.UTC(2023,02-1,16,09,19),1029.3],[Date.UTC(2023,02-1,16,09,24),1029.4],[Date.UTC(2023,02-1,16,09,29),1029.6],[Date.UTC(2023,02-1,16,09,34),1029.5],[Date.UTC(2023,02-1,16,09,39),1029.6],[Date.UTC(2023,02-1,16,09,44),1029.3],[Date.UTC(2023,02-1,16,09,49),1029.6],[Date.UTC(2023,02-1,16,09,54),1029.5],[Date.UTC(2023,02-1,16,09,59),1029.7],[Date.UTC(2023,02-1,16,10,04),1029.5],[Date.UTC(2023,02-1,16,10,09),1029.5],[Date.UTC(2023,02-1,16,10,14),1029.3],[Date.UTC(2023,02-1,16,10,19),1029.3],[Date.UTC(2023,02-1,16,10,24),1029.4],[Date.UTC(2023,02-1,16,10,29),1029.4],[Date.UTC(2023,02-1,16,10,34),1029.5],[Date.UTC(2023,02-1,16,10,39),1029.2],[Date.UTC(2023,02-1,16,10,44),1029.2],[Date.UTC(2023,02-1,16,10,49),1029.2],[Date.UTC(2023,02-1,16,10,54),1029.1],[Date.UTC(2023,02-1,16,10,59),1029],[Date.UTC(2023,02-1,16,11,04),1029.1],[Date.UTC(2023,02-1,16,11,09),1029],[Date.UTC(2023,02-1,16,11,14),1029.1],[Date.UTC(2023,02-1,16,11,19),1029.2],[Date.UTC(2023,02-1,16,11,24),1029],[Date.UTC(2023,02-1,16,11,29),1029.1],[Date.UTC(2023,02-1,16,11,34),1029.2],[Date.UTC(2023,02-1,16,11,39),1029.3],[Date.UTC(2023,02-1,16,11,44),1029.1],[Date.UTC(2023,02-1,16,11,47),1029.4],[Date.UTC(2023,02-1,16,11,54),1029.3],[Date.UTC(2023,02-1,16,11,59),1029.1],[Date.UTC(2023,02-1,16,12,03),1029.3],[Date.UTC(2023,02-1,16,12,14),1029.1],[Date.UTC(2023,02-1,16,12,19),1029],[Date.UTC(2023,02-1,16,12,24),1029.1],[Date.UTC(2023,02-1,16,12,29),1029.2],[Date.UTC(2023,02-1,16,12,34),1029.1],[Date.UTC(2023,02-1,16,12,39),1029.1],[Date.UTC(2023,02-1,16,12,44),1029.1],[Date.UTC(2023,02-1,16,12,49),1029],[Date.UTC(2023,02-1,16,12,54),1029],[Date.UTC(2023,02-1,16,12,57),1029],[Date.UTC(2023,02-1,16,13,44),1029],[Date.UTC(2023,02-1,16,13,49),1029.1],[Date.UTC(2023,02-1,16,13,54),1029.2],[Date.UTC(2023,02-1,16,13,55),1029.2],[Date.UTC(2023,02-1,16,14,54),1029.6],[Date.UTC(2023,02-1,16,14,59),1029.5],[Date.UTC(2023,02-1,16,15,04),1029.5],[Date.UTC(2023,02-1,16,15,19),1029.6],[Date.UTC(2023,02-1,16,15,24),1029.8],[Date.UTC(2023,02-1,16,15,29),1029.9],[Date.UTC(2023,02-1,16,15,34),1029.9],[Date.UTC(2023,02-1,16,15,39),1029.6],[Date.UTC(2023,02-1,16,15,43),1029.9],[Date.UTC(2023,02-1,16,15,54),1030],[Date.UTC(2023,02-1,16,15,59),1030],[Date.UTC(2023,02-1,16,16,04),1030.2],[Date.UTC(2023,02-1,16,16,09),1030.1],[Date.UTC(2023,02-1,16,16,14),1030.2],[Date.UTC(2023,02-1,16,16,19),1030.1],[Date.UTC(2023,02-1,16,16,22),1030],[Date.UTC(2023,02-1,16,16,34),1030.2],[Date.UTC(2023,02-1,16,16,39),1030.1],[Date.UTC(2023,02-1,16,16,43),1030.2],[Date.UTC(2023,02-1,16,16,59),1030.3],[Date.UTC(2023,02-1,16,17,04),1030.2],[Date.UTC(2023,02-1,16,17,34),1030.6],[Date.UTC(2023,02-1,16,17,37),1030.7],[Date.UTC(2023,02-1,16,18,19),1030.9],[Date.UTC(2023,02-1,16,18,34),1031],[Date.UTC(2023,02-1,16,18,39),1030.9],[Date.UTC(2023,02-1,16,18,44),1030.9],[Date.UTC(2023,02-1,16,18,48),1030.9],
+                        ]
+                    }],
+            });
+
+            //Grafico della dp
+            last_24_48_graph_dp=Highcharts.chart('24h_graph_div_dp', {
+                chart: {
+                    type: 'spline',
+                    height: bigGraphHeight,
+                    width: null
+                },
+                title:
+                    {
+                        text: null
+                    },
+                xAxis: {
+                    type: 'datetime',
+                    dateTimeLabelFormats: {
+                        week: '%Y-%m-%d',
+                        month: '%Y-%m-%d',
+                        year: '%Y-%m-%d',
+                        day: '<b style="font-weight: 900; color:#000000 !important; fill:#000000 !important; font-size:12px;">%d/%m</b>',
+                        minute: '%H:%M',
+                        hour: '%H:%M',
+                    },
+                    labels:
+                        {
+                            enabled: true,
+                            style: '{"fontSize": "5px"}',
+                            rotation: 0
+                        }
+                },
+                yAxis: {
+                    title: {
+                        text: '[°C] '
+                    },
+                    labels: {
+                        enabled: true,
+                        formatter: function () {
+                            return this.value ;
+                        }
+                    }
+                },
+                legend: {
+                    enabled: true,
+                    align: 'center',
+                    verticalAlign: 'bottom',
+                    layout: 'horizontal'
+
+                },
+                tooltip: {
+                    crosshairs: true,
+                    shared: true,
+                    formatter: function() {
+                        var datastring='';
+
+                        $.each(this.points, function(i, point) {
+                            datastring+=('<span style="color:'+point.series.color+';font-weight:bold;">'+ point.series.name +' : '+
+                                Highcharts.numberFormat(point.y,1) +' °C<span><br>');
+                        });
+
+                        //return '' + Highcharts.dateFormat('%H:%M', this.x ) + ', <b>' + Highcharts.numberFormat(this.y, 1) +' °C </b>';
+                        return '' + Highcharts.dateFormat('%H:%M', this.x )+'<br>' + datastring;
+                    }
+                },
+                plotOptions: {
+                    spline: {
+                        marker: {
+                            radius: 4,
+                            lineColor: '#666666',
+                            lineWidth: 1
+                        }
+                    }
+                },
+                series: [{
+                    name: 'Ultime 24h',
+                    marker: {
+                        symbol: 'square',
+                        enabled: false
+                    },
+                    color: 'rgba(215,75,58,0.94)',
+                    data: [
+                        [Date.UTC(2023,02-1,15,19,32),6.5],[Date.UTC(2023,02-1,15,20,19),6.6],[Date.UTC(2023,02-1,15,20,24),6.7],[Date.UTC(2023,02-1,15,20,29),6.6],[Date.UTC(2023,02-1,15,21,39),6.5],[Date.UTC(2023,02-1,15,22,05),6.6],[Date.UTC(2023,02-1,15,22,07),6.5],[Date.UTC(2023,02-1,15,22,50),6.3],[Date.UTC(2023,02-1,15,23,44),6],[Date.UTC(2023,02-1,15,23,46),6],[Date.UTC(2023,02-1,16,00,24),5.8],[Date.UTC(2023,02-1,16,00,29),5.7],[Date.UTC(2023,02-1,16,00,34),5.7],[Date.UTC(2023,02-1,16,00,37),5.7],[Date.UTC(2023,02-1,16,01,29),5.5],[Date.UTC(2023,02-1,16,01,34),5.4],[Date.UTC(2023,02-1,16,01,37),5.3],[Date.UTC(2023,02-1,16,02,09),5.4],[Date.UTC(2023,02-1,16,02,14),5.5],[Date.UTC(2023,02-1,16,02,29),5.5],[Date.UTC(2023,02-1,16,02,34),5.5],[Date.UTC(2023,02-1,16,02,39),5.4],[Date.UTC(2023,02-1,16,02,44),5.3],[Date.UTC(2023,02-1,16,02,47),5.3],[Date.UTC(2023,02-1,16,03,14),5.4],[Date.UTC(2023,02-1,16,03,19),5.4],[Date.UTC(2023,02-1,16,03,24),5.3],[Date.UTC(2023,02-1,16,03,34),5.2],[Date.UTC(2023,02-1,16,03,39),5.3],[Date.UTC(2023,02-1,16,03,44),5.2],[Date.UTC(2023,02-1,16,03,49),5.2],[Date.UTC(2023,02-1,16,03,50),5.2],[Date.UTC(2023,02-1,16,04,11),5.2],[Date.UTC(2023,02-1,16,04,29),5],[Date.UTC(2023,02-1,16,04,34),5.1],[Date.UTC(2023,02-1,16,04,38),5.1],[Date.UTC(2023,02-1,16,04,44),5.1],[Date.UTC(2023,02-1,16,04,46),5.1],[Date.UTC(2023,02-1,16,05,09),5],[Date.UTC(2023,02-1,16,05,14),5],[Date.UTC(2023,02-1,16,05,19),5],[Date.UTC(2023,02-1,16,05,23),5.1],[Date.UTC(2023,02-1,16,05,34),5],[Date.UTC(2023,02-1,16,05,39),5],[Date.UTC(2023,02-1,16,05,49),5.1],[Date.UTC(2023,02-1,16,05,54),5],[Date.UTC(2023,02-1,16,05,58),5],[Date.UTC(2023,02-1,16,06,13),5.1],[Date.UTC(2023,02-1,16,06,39),5.2],[Date.UTC(2023,02-1,16,06,42),5.3],[Date.UTC(2023,02-1,16,07,09),5.6],[Date.UTC(2023,02-1,16,07,14),5.8],[Date.UTC(2023,02-1,16,07,29),6],[Date.UTC(2023,02-1,16,07,34),6],[Date.UTC(2023,02-1,16,07,39),6.3],[Date.UTC(2023,02-1,16,07,44),6.4],[Date.UTC(2023,02-1,16,07,49),6.7],[Date.UTC(2023,02-1,16,07,54),6.7],[Date.UTC(2023,02-1,16,07,59),6.9],[Date.UTC(2023,02-1,16,08,04),6.8],[Date.UTC(2023,02-1,16,08,09),6.9],[Date.UTC(2023,02-1,16,08,14),7.1],[Date.UTC(2023,02-1,16,08,19),7],[Date.UTC(2023,02-1,16,08,25),7.2],[Date.UTC(2023,02-1,16,08,29),7.3],[Date.UTC(2023,02-1,16,08,34),7.3],[Date.UTC(2023,02-1,16,08,39),7.4],[Date.UTC(2023,02-1,16,08,44),7.4],[Date.UTC(2023,02-1,16,08,49),7.4],[Date.UTC(2023,02-1,16,08,54),7],[Date.UTC(2023,02-1,16,08,59),7.2],[Date.UTC(2023,02-1,16,09,04),6.8],[Date.UTC(2023,02-1,16,09,09),6.9],[Date.UTC(2023,02-1,16,09,14),6.5],[Date.UTC(2023,02-1,16,09,19),6.7],[Date.UTC(2023,02-1,16,09,24),7.1],[Date.UTC(2023,02-1,16,09,29),6.6],[Date.UTC(2023,02-1,16,09,34),6.7],[Date.UTC(2023,02-1,16,09,39),6.8],[Date.UTC(2023,02-1,16,09,45),8.1],[Date.UTC(2023,02-1,16,09,49),7.5],[Date.UTC(2023,02-1,16,09,54),6.7],[Date.UTC(2023,02-1,16,09,59),7.5],[Date.UTC(2023,02-1,16,10,04),7.9],[Date.UTC(2023,02-1,16,10,09),7.8],[Date.UTC(2023,02-1,16,10,14),7.6],[Date.UTC(2023,02-1,16,10,19),7.5],[Date.UTC(2023,02-1,16,10,25),7.5],[Date.UTC(2023,02-1,16,10,29),7.3],[Date.UTC(2023,02-1,16,10,34),7.2],[Date.UTC(2023,02-1,16,10,39),6.8],[Date.UTC(2023,02-1,16,10,45),6.8],[Date.UTC(2023,02-1,16,10,49),7.2],[Date.UTC(2023,02-1,16,10,54),7.4],[Date.UTC(2023,02-1,16,10,59),7.3],[Date.UTC(2023,02-1,16,11,05),7.5],[Date.UTC(2023,02-1,16,11,09),6.5],[Date.UTC(2023,02-1,16,11,14),7.6],[Date.UTC(2023,02-1,16,11,19),7.7],[Date.UTC(2023,02-1,16,11,25),7.5],[Date.UTC(2023,02-1,16,11,29),8.2],[Date.UTC(2023,02-1,16,11,34),8.6],[Date.UTC(2023,02-1,16,11,39),9],[Date.UTC(2023,02-1,16,11,44),9],[Date.UTC(2023,02-1,16,11,49),9.1],[Date.UTC(2023,02-1,16,11,54),9.7],[Date.UTC(2023,02-1,16,11,59),9.2],[Date.UTC(2023,02-1,16,12,04),9.3],[Date.UTC(2023,02-1,16,12,09),8.9],[Date.UTC(2023,02-1,16,12,14),9.6],[Date.UTC(2023,02-1,16,12,19),9.3],[Date.UTC(2023,02-1,16,12,25),9.1],[Date.UTC(2023,02-1,16,12,29),9],[Date.UTC(2023,02-1,16,12,34),9.1],[Date.UTC(2023,02-1,16,12,39),9.2],[Date.UTC(2023,02-1,16,12,45),9.4],[Date.UTC(2023,02-1,16,12,49),8.9],[Date.UTC(2023,02-1,16,12,54),8.7],[Date.UTC(2023,02-1,16,12,59),9],[Date.UTC(2023,02-1,16,13,04),8.6],[Date.UTC(2023,02-1,16,13,09),8.4],[Date.UTC(2023,02-1,16,13,14),8.5],[Date.UTC(2023,02-1,16,13,19),8.7],[Date.UTC(2023,02-1,16,13,24),8.4],[Date.UTC(2023,02-1,16,13,29),8.4],[Date.UTC(2023,02-1,16,13,34),8.2],[Date.UTC(2023,02-1,16,13,39),8],[Date.UTC(2023,02-1,16,13,44),8.6],[Date.UTC(2023,02-1,16,13,49),8.9],[Date.UTC(2023,02-1,16,13,54),8.3],[Date.UTC(2023,02-1,16,13,59),8.4],[Date.UTC(2023,02-1,16,14,05),9.2],[Date.UTC(2023,02-1,16,14,09),9.2],[Date.UTC(2023,02-1,16,14,14),9.2],[Date.UTC(2023,02-1,16,14,19),9.2],[Date.UTC(2023,02-1,16,14,24),7.4],[Date.UTC(2023,02-1,16,14,29),8.1],[Date.UTC(2023,02-1,16,14,34),8],[Date.UTC(2023,02-1,16,14,39),7.9],[Date.UTC(2023,02-1,16,14,45),7.8],[Date.UTC(2023,02-1,16,14,49),7.6],[Date.UTC(2023,02-1,16,14,54),7.9],[Date.UTC(2023,02-1,16,14,59),7.9],[Date.UTC(2023,02-1,16,15,05),7.7],[Date.UTC(2023,02-1,16,15,09),7.5],[Date.UTC(2023,02-1,16,15,14),7.6],[Date.UTC(2023,02-1,16,15,19),7.4],[Date.UTC(2023,02-1,16,15,24),7.5],[Date.UTC(2023,02-1,16,15,29),7.6],[Date.UTC(2023,02-1,16,15,34),7.5],[Date.UTC(2023,02-1,16,15,39),7.6],[Date.UTC(2023,02-1,16,15,45),7.5],[Date.UTC(2023,02-1,16,15,49),7.7],[Date.UTC(2023,02-1,16,15,54),7.8],[Date.UTC(2023,02-1,16,15,59),7.7],[Date.UTC(2023,02-1,16,16,05),7.7],[Date.UTC(2023,02-1,16,16,09),7.6],[Date.UTC(2023,02-1,16,16,14),7.5],[Date.UTC(2023,02-1,16,16,19),7.4],[Date.UTC(2023,02-1,16,16,25),7.4],[Date.UTC(2023,02-1,16,16,29),7.6],[Date.UTC(2023,02-1,16,16,34),7.5],[Date.UTC(2023,02-1,16,16,39),7.4],[Date.UTC(2023,02-1,16,16,45),7.4],[Date.UTC(2023,02-1,16,16,49),7.5],[Date.UTC(2023,02-1,16,16,54),7.4],[Date.UTC(2023,02-1,16,16,59),7.5],[Date.UTC(2023,02-1,16,17,05),7.3],[Date.UTC(2023,02-1,16,17,09),7.3],[Date.UTC(2023,02-1,16,17,14),7.2],[Date.UTC(2023,02-1,16,17,19),7],[Date.UTC(2023,02-1,16,17,24),7.2],[Date.UTC(2023,02-1,16,17,29),7.2],[Date.UTC(2023,02-1,16,17,34),7.1],[Date.UTC(2023,02-1,16,17,39),7.1],[Date.UTC(2023,02-1,16,17,45),6.8],[Date.UTC(2023,02-1,16,17,49),6.7],[Date.UTC(2023,02-1,16,17,54),6.8],[Date.UTC(2023,02-1,16,17,59),6.7],[Date.UTC(2023,02-1,16,18,05),6.7],[Date.UTC(2023,02-1,16,18,09),6.8],[Date.UTC(2023,02-1,16,18,14),6.7],[Date.UTC(2023,02-1,16,18,19),6.7],[Date.UTC(2023,02-1,16,18,24),6.5],[Date.UTC(2023,02-1,16,18,29),6.5],[Date.UTC(2023,02-1,16,18,34),6.5],[Date.UTC(2023,02-1,16,18,39),6.7],[Date.UTC(2023,02-1,16,18,44),6.4],
+                    ]
+
+                },
+                    {
+                        name: 'Da 48 a 24h fa',
+                        marker: {
+                            symbol: 'square',
+                            enabled: false
+                        },
+                        color: '#c0c3bf',
+                        data: [
+                            [Date.UTC(2023,02-1,15,18,49),5.2],[Date.UTC(2023,02-1,15,18,54),5.3],[Date.UTC(2023,02-1,15,18,59),5.3],[Date.UTC(2023,02-1,15,19,04),5.4],[Date.UTC(2023,02-1,15,19,09),5.3],[Date.UTC(2023,02-1,15,19,14),5.5],[Date.UTC(2023,02-1,15,19,19),5.6],[Date.UTC(2023,02-1,15,19,24),5.8],[Date.UTC(2023,02-1,15,19,29),5.6],[Date.UTC(2023,02-1,15,19,34),5.7],[Date.UTC(2023,02-1,15,19,39),5.6],[Date.UTC(2023,02-1,15,19,44),5.8],[Date.UTC(2023,02-1,15,19,49),5.8],[Date.UTC(2023,02-1,15,19,54),5.8],[Date.UTC(2023,02-1,15,19,59),5.9],[Date.UTC(2023,02-1,15,20,04),6],[Date.UTC(2023,02-1,15,20,09),5.9],[Date.UTC(2023,02-1,15,20,14),5.8],[Date.UTC(2023,02-1,15,20,19),5.8],[Date.UTC(2023,02-1,15,20,24),5.8],[Date.UTC(2023,02-1,15,20,29),5.7],[Date.UTC(2023,02-1,15,20,34),5.7],[Date.UTC(2023,02-1,15,20,39),5.6],[Date.UTC(2023,02-1,15,20,44),5.4],[Date.UTC(2023,02-1,15,20,49),5.4],[Date.UTC(2023,02-1,15,20,54),5.5],[Date.UTC(2023,02-1,15,20,59),5.5],[Date.UTC(2023,02-1,15,21,04),5.5],[Date.UTC(2023,02-1,15,21,09),5.5],[Date.UTC(2023,02-1,15,21,14),5.5],[Date.UTC(2023,02-1,15,21,19),5.5],[Date.UTC(2023,02-1,15,21,24),5.5],[Date.UTC(2023,02-1,15,21,29),5.7],[Date.UTC(2023,02-1,15,21,34),5.6],[Date.UTC(2023,02-1,15,21,39),5.9],[Date.UTC(2023,02-1,15,21,44),5.8],[Date.UTC(2023,02-1,15,21,49),5.9],[Date.UTC(2023,02-1,15,21,54),5.8],[Date.UTC(2023,02-1,15,21,59),5.8],[Date.UTC(2023,02-1,15,22,04),5.9],[Date.UTC(2023,02-1,15,22,09),5.9],[Date.UTC(2023,02-1,15,22,14),5.7],[Date.UTC(2023,02-1,15,22,19),5.8],[Date.UTC(2023,02-1,15,22,24),5.6],[Date.UTC(2023,02-1,15,22,29),5.8],[Date.UTC(2023,02-1,15,22,34),5.8],[Date.UTC(2023,02-1,15,22,39),5.9],[Date.UTC(2023,02-1,15,22,44),5.8],[Date.UTC(2023,02-1,15,22,49),5.8],[Date.UTC(2023,02-1,15,22,54),5.9],[Date.UTC(2023,02-1,15,22,59),5.9],[Date.UTC(2023,02-1,15,23,04),5.9],[Date.UTC(2023,02-1,15,23,09),5.8],[Date.UTC(2023,02-1,15,23,14),5.9],[Date.UTC(2023,02-1,15,23,19),5.8],[Date.UTC(2023,02-1,15,23,24),5.8],[Date.UTC(2023,02-1,15,23,29),5.8],[Date.UTC(2023,02-1,15,23,34),5.8],[Date.UTC(2023,02-1,15,23,39),6],[Date.UTC(2023,02-1,15,23,44),5.9],[Date.UTC(2023,02-1,15,23,49),6.1],[Date.UTC(2023,02-1,15,23,54),6.3],[Date.UTC(2023,02-1,15,23,59),6.4],[Date.UTC(2023,02-1,16,00,04),6.2],[Date.UTC(2023,02-1,16,00,09),6.3],[Date.UTC(2023,02-1,16,00,14),6.2],[Date.UTC(2023,02-1,16,00,19),6.3],[Date.UTC(2023,02-1,16,00,24),6.3],[Date.UTC(2023,02-1,16,00,29),6.4],[Date.UTC(2023,02-1,16,00,34),6.6],[Date.UTC(2023,02-1,16,00,39),6.4],[Date.UTC(2023,02-1,16,00,44),6.4],[Date.UTC(2023,02-1,16,00,49),6.5],[Date.UTC(2023,02-1,16,00,54),6.3],[Date.UTC(2023,02-1,16,00,59),6.6],[Date.UTC(2023,02-1,16,01,04),6.6],[Date.UTC(2023,02-1,16,01,09),6.5],[Date.UTC(2023,02-1,16,01,14),6.6],[Date.UTC(2023,02-1,16,01,19),6.6],[Date.UTC(2023,02-1,16,01,24),6.6],[Date.UTC(2023,02-1,16,01,29),6.7],[Date.UTC(2023,02-1,16,01,34),6.6],[Date.UTC(2023,02-1,16,01,39),6.8],[Date.UTC(2023,02-1,16,01,44),6.7],[Date.UTC(2023,02-1,16,01,49),6.6],[Date.UTC(2023,02-1,16,01,54),6.6],[Date.UTC(2023,02-1,16,01,59),6.7],[Date.UTC(2023,02-1,16,02,04),6.9],[Date.UTC(2023,02-1,16,02,09),6.7],[Date.UTC(2023,02-1,16,02,14),6.8],[Date.UTC(2023,02-1,16,02,19),6.8],[Date.UTC(2023,02-1,16,02,24),6.9],[Date.UTC(2023,02-1,16,02,29),6.7],[Date.UTC(2023,02-1,16,02,34),6.9],[Date.UTC(2023,02-1,16,02,39),6.8],[Date.UTC(2023,02-1,16,02,44),6.9],[Date.UTC(2023,02-1,16,02,49),6.9],[Date.UTC(2023,02-1,16,02,54),6.8],[Date.UTC(2023,02-1,16,02,59),7],[Date.UTC(2023,02-1,16,03,04),7],[Date.UTC(2023,02-1,16,03,09),7],[Date.UTC(2023,02-1,16,03,14),7.1],[Date.UTC(2023,02-1,16,03,19),7],[Date.UTC(2023,02-1,16,03,24),6.8],[Date.UTC(2023,02-1,16,03,29),7.1],[Date.UTC(2023,02-1,16,03,34),7.1],[Date.UTC(2023,02-1,16,03,39),7],[Date.UTC(2023,02-1,16,03,44),7.1],[Date.UTC(2023,02-1,16,03,49),7.2],[Date.UTC(2023,02-1,16,03,54),7.1],[Date.UTC(2023,02-1,16,03,59),7.1],[Date.UTC(2023,02-1,16,04,04),7],[Date.UTC(2023,02-1,16,04,09),7],[Date.UTC(2023,02-1,16,04,14),6.9],[Date.UTC(2023,02-1,16,04,19),6.9],[Date.UTC(2023,02-1,16,04,24),7],[Date.UTC(2023,02-1,16,04,29),6.9],[Date.UTC(2023,02-1,16,04,34),7],[Date.UTC(2023,02-1,16,04,39),6.9],[Date.UTC(2023,02-1,16,04,44),6.9],[Date.UTC(2023,02-1,16,04,49),6.9],[Date.UTC(2023,02-1,16,04,54),6.8],[Date.UTC(2023,02-1,16,04,59),6.9],[Date.UTC(2023,02-1,16,05,04),6.8],[Date.UTC(2023,02-1,16,05,09),6.6],[Date.UTC(2023,02-1,16,05,14),6.7],[Date.UTC(2023,02-1,16,05,19),6.7],[Date.UTC(2023,02-1,16,05,24),6.8],[Date.UTC(2023,02-1,16,05,29),6.8],[Date.UTC(2023,02-1,16,05,34),6.7],[Date.UTC(2023,02-1,16,05,39),6.9],[Date.UTC(2023,02-1,16,05,44),6.8],[Date.UTC(2023,02-1,16,05,49),6.7],[Date.UTC(2023,02-1,16,05,54),6.7],[Date.UTC(2023,02-1,16,05,59),6.7],[Date.UTC(2023,02-1,16,06,04),6.9],[Date.UTC(2023,02-1,16,06,09),6.9],[Date.UTC(2023,02-1,16,06,14),7],[Date.UTC(2023,02-1,16,06,19),6.9],[Date.UTC(2023,02-1,16,06,24),6.9],[Date.UTC(2023,02-1,16,06,29),6.9],[Date.UTC(2023,02-1,16,06,34),6.9],[Date.UTC(2023,02-1,16,06,39),6.9],[Date.UTC(2023,02-1,16,06,44),7.1],[Date.UTC(2023,02-1,16,06,49),7.2],[Date.UTC(2023,02-1,16,06,54),7],[Date.UTC(2023,02-1,16,06,59),7.1],[Date.UTC(2023,02-1,16,07,04),7.2],[Date.UTC(2023,02-1,16,07,09),7.4],[Date.UTC(2023,02-1,16,07,14),7.5],[Date.UTC(2023,02-1,16,07,19),7.4],[Date.UTC(2023,02-1,16,07,24),7.5],[Date.UTC(2023,02-1,16,07,29),7.6],[Date.UTC(2023,02-1,16,07,34),7.6],[Date.UTC(2023,02-1,16,07,39),7.7],[Date.UTC(2023,02-1,16,07,44),7.4],[Date.UTC(2023,02-1,16,07,49),7.5],[Date.UTC(2023,02-1,16,07,54),7.6],[Date.UTC(2023,02-1,16,07,59),7.6],[Date.UTC(2023,02-1,16,08,04),7.5],[Date.UTC(2023,02-1,16,08,09),7.6],[Date.UTC(2023,02-1,16,08,14),7.8],[Date.UTC(2023,02-1,16,08,19),8.1],[Date.UTC(2023,02-1,16,08,24),7.9],[Date.UTC(2023,02-1,16,08,29),7.6],[Date.UTC(2023,02-1,16,08,34),7.7],[Date.UTC(2023,02-1,16,08,39),7.9],[Date.UTC(2023,02-1,16,08,44),7.7],[Date.UTC(2023,02-1,16,08,49),7.8],[Date.UTC(2023,02-1,16,08,54),7.8],[Date.UTC(2023,02-1,16,08,59),7.7],[Date.UTC(2023,02-1,16,09,04),7.6],[Date.UTC(2023,02-1,16,09,09),8.1],[Date.UTC(2023,02-1,16,09,14),7.9],[Date.UTC(2023,02-1,16,09,19),7.9],[Date.UTC(2023,02-1,16,09,24),8.1],[Date.UTC(2023,02-1,16,09,29),8],[Date.UTC(2023,02-1,16,09,34),7.5],[Date.UTC(2023,02-1,16,09,39),7.6],[Date.UTC(2023,02-1,16,09,44),7.6],[Date.UTC(2023,02-1,16,09,49),7.5],[Date.UTC(2023,02-1,16,09,54),7.6],[Date.UTC(2023,02-1,16,09,59),7.6],[Date.UTC(2023,02-1,16,10,04),7.6],[Date.UTC(2023,02-1,16,10,09),7.8],[Date.UTC(2023,02-1,16,10,14),7.7],[Date.UTC(2023,02-1,16,10,19),7.7],[Date.UTC(2023,02-1,16,10,24),7.2],[Date.UTC(2023,02-1,16,10,29),7.1],[Date.UTC(2023,02-1,16,10,34),7.5],[Date.UTC(2023,02-1,16,10,39),7.6],[Date.UTC(2023,02-1,16,10,44),7.6],[Date.UTC(2023,02-1,16,10,49),7.2],[Date.UTC(2023,02-1,16,10,54),7],[Date.UTC(2023,02-1,16,10,59),7.5],[Date.UTC(2023,02-1,16,11,04),7.4],[Date.UTC(2023,02-1,16,11,09),6.9],[Date.UTC(2023,02-1,16,11,14),7.2],[Date.UTC(2023,02-1,16,11,19),7.2],[Date.UTC(2023,02-1,16,11,24),7.2],[Date.UTC(2023,02-1,16,11,29),7],[Date.UTC(2023,02-1,16,11,34),8.7],[Date.UTC(2023,02-1,16,11,39),8.8],[Date.UTC(2023,02-1,16,11,44),8.2],[Date.UTC(2023,02-1,16,11,47),8.5],[Date.UTC(2023,02-1,16,11,54),8.4],[Date.UTC(2023,02-1,16,11,59),8.2],[Date.UTC(2023,02-1,16,12,03),8.1],[Date.UTC(2023,02-1,16,12,14),8.2],[Date.UTC(2023,02-1,16,12,19),8.1],[Date.UTC(2023,02-1,16,12,24),8.1],[Date.UTC(2023,02-1,16,12,29),8],[Date.UTC(2023,02-1,16,12,34),8.1],[Date.UTC(2023,02-1,16,12,39),7.7],[Date.UTC(2023,02-1,16,12,44),7.5],[Date.UTC(2023,02-1,16,12,49),7.4],[Date.UTC(2023,02-1,16,12,54),7.7],[Date.UTC(2023,02-1,16,12,57),7.4],[Date.UTC(2023,02-1,16,13,44),6.7],[Date.UTC(2023,02-1,16,13,49),7],[Date.UTC(2023,02-1,16,13,54),7],[Date.UTC(2023,02-1,16,13,55),7],[Date.UTC(2023,02-1,16,14,54),6.9],[Date.UTC(2023,02-1,16,14,59),7],[Date.UTC(2023,02-1,16,15,04),7.1],[Date.UTC(2023,02-1,16,15,19),7.1],[Date.UTC(2023,02-1,16,15,24),7],[Date.UTC(2023,02-1,16,15,29),7],[Date.UTC(2023,02-1,16,15,34),7],[Date.UTC(2023,02-1,16,15,39),7.1],[Date.UTC(2023,02-1,16,15,43),7],[Date.UTC(2023,02-1,16,15,54),6.9],[Date.UTC(2023,02-1,16,15,59),6.8],[Date.UTC(2023,02-1,16,16,04),6.9],[Date.UTC(2023,02-1,16,16,09),6.9],[Date.UTC(2023,02-1,16,16,14),6.7],[Date.UTC(2023,02-1,16,16,19),6.8],[Date.UTC(2023,02-1,16,16,22),6.7],[Date.UTC(2023,02-1,16,16,34),6.7],[Date.UTC(2023,02-1,16,16,39),6.7],[Date.UTC(2023,02-1,16,16,43),6.7],[Date.UTC(2023,02-1,16,16,59),6.7],[Date.UTC(2023,02-1,16,17,04),6.7],[Date.UTC(2023,02-1,16,17,34),6.6],[Date.UTC(2023,02-1,16,17,37),6.7],[Date.UTC(2023,02-1,16,18,19),6.4],[Date.UTC(2023,02-1,16,18,34),6.6],[Date.UTC(2023,02-1,16,18,39),6.7],[Date.UTC(2023,02-1,16,18,44),6.7],[Date.UTC(2023,02-1,16,18,48),6.7],
+                        ]
+                    }],
+            });
+
+            //Grafico della ur
+            last_24_48_graph_rh=Highcharts.chart('24h_graph_div_rh', {
+                chart: {
+                    type: 'spline',
+                    height: bigGraphHeight,
+                    width: null
+                },
+                title:
+                    {
+                        text: null
+                    },
+                xAxis: {
+                    type: 'datetime',
+                    dateTimeLabelFormats: {
+                        week: '%Y-%m-%d',
+                        month: '%Y-%m-%d',
+                        year: '%Y-%m-%d',
+                        day: '<b style="font-weight: 900; color:#000000 !important; fill:#000000 !important; font-size:12px;">%d/%m</b>',
+                        minute: '%H:%M',
+                        hour: '%H:%M',
+                    },
+                    labels:
+                        {
+                            enabled: true,
+                            style: '{"fontSize": "5px"}',
+                            rotation: 0
+                        }
+                },
+                yAxis: {
+                    title: {
+                        text: '[\%]'
+                    },
+                    labels: {
+                        enabled: true,
+                        formatter: function () {
+                            return this.value;
+                        }
+                    },
+                    max:100
+                },
+                legend: {
+                    enabled: true,
+                    align: 'center',
+                    verticalAlign: 'bottom',
+                    layout: 'horizontal'
+                },
+                tooltip: {
+                    crosshairs: true,
+                    shared: true,
+                    formatter: function() {
+                        var datastring='';
+
+                        $.each(this.points, function(i, point) {
+                            datastring+=('<span style="color:'+point.series.color+';font-weight:bold;">'+ point.series.name +' : '+
+                                Highcharts.numberFormat(point.y,1) +' %<span><br>');
+                        });
+
+                        //return '' + Highcharts.dateFormat('%H:%M', this.x ) + ', <b>' + Highcharts.numberFormat(this.y, 1) +' °C </b>';
+                        return '' + Highcharts.dateFormat('%H:%M', this.x )+'<br>' + datastring;
+                    }
+                },
+                plotOptions: {
+                    spline: {
+                        marker: {
+                            radius: 4,
+                            lineColor: '#666666',
+                            lineWidth: 1
+                        }
+                    }
+                },
+                series: [{
+                    name: 'Ultime 24h',
+                    marker: {
+                        symbol: 'square',
+                        enabled: false
+                    },
+                    color: 'rgba(215,75,58,0.94)',
+                    data: [
+                        [Date.UTC(2023,02-1,15,19,32),76],[Date.UTC(2023,02-1,15,20,19),76],[Date.UTC(2023,02-1,15,20,24),77],[Date.UTC(2023,02-1,15,20,29),76],[Date.UTC(2023,02-1,15,21,39),77],[Date.UTC(2023,02-1,15,22,05),78],[Date.UTC(2023,02-1,15,22,07),78],[Date.UTC(2023,02-1,15,22,50),77],[Date.UTC(2023,02-1,15,23,44),77],[Date.UTC(2023,02-1,15,23,46),77],[Date.UTC(2023,02-1,16,00,24),77],[Date.UTC(2023,02-1,16,00,29),76],[Date.UTC(2023,02-1,16,00,34),76],[Date.UTC(2023,02-1,16,00,37),76],[Date.UTC(2023,02-1,16,01,29),75],[Date.UTC(2023,02-1,16,01,34),75],[Date.UTC(2023,02-1,16,01,37),75],[Date.UTC(2023,02-1,16,02,09),75],[Date.UTC(2023,02-1,16,02,14),75],[Date.UTC(2023,02-1,16,02,29),75],[Date.UTC(2023,02-1,16,02,34),76],[Date.UTC(2023,02-1,16,02,39),76],[Date.UTC(2023,02-1,16,02,44),76],[Date.UTC(2023,02-1,16,02,47),76],[Date.UTC(2023,02-1,16,03,14),76],[Date.UTC(2023,02-1,16,03,19),75],[Date.UTC(2023,02-1,16,03,24),75],[Date.UTC(2023,02-1,16,03,34),74],[Date.UTC(2023,02-1,16,03,39),74],[Date.UTC(2023,02-1,16,03,44),74],[Date.UTC(2023,02-1,16,03,49),74],[Date.UTC(2023,02-1,16,03,50),74],[Date.UTC(2023,02-1,16,04,11),75],[Date.UTC(2023,02-1,16,04,29),74],[Date.UTC(2023,02-1,16,04,34),74],[Date.UTC(2023,02-1,16,04,38),74],[Date.UTC(2023,02-1,16,04,44),74],[Date.UTC(2023,02-1,16,04,46),74],[Date.UTC(2023,02-1,16,05,09),74],[Date.UTC(2023,02-1,16,05,14),74],[Date.UTC(2023,02-1,16,05,19),74],[Date.UTC(2023,02-1,16,05,23),74],[Date.UTC(2023,02-1,16,05,34),73],[Date.UTC(2023,02-1,16,05,39),73],[Date.UTC(2023,02-1,16,05,49),74],[Date.UTC(2023,02-1,16,05,54),73],[Date.UTC(2023,02-1,16,05,58),73],[Date.UTC(2023,02-1,16,06,13),73],[Date.UTC(2023,02-1,16,06,39),71],[Date.UTC(2023,02-1,16,06,42),71],[Date.UTC(2023,02-1,16,07,09),68],[Date.UTC(2023,02-1,16,07,14),68],[Date.UTC(2023,02-1,16,07,29),67],[Date.UTC(2023,02-1,16,07,34),66],[Date.UTC(2023,02-1,16,07,39),66],[Date.UTC(2023,02-1,16,07,44),66],[Date.UTC(2023,02-1,16,07,49),65],[Date.UTC(2023,02-1,16,07,54),65],[Date.UTC(2023,02-1,16,07,59),64],[Date.UTC(2023,02-1,16,08,04),63],[Date.UTC(2023,02-1,16,08,09),63],[Date.UTC(2023,02-1,16,08,14),63],[Date.UTC(2023,02-1,16,08,19),62],[Date.UTC(2023,02-1,16,08,25),63],[Date.UTC(2023,02-1,16,08,29),62],[Date.UTC(2023,02-1,16,08,34),64],[Date.UTC(2023,02-1,16,08,39),62],[Date.UTC(2023,02-1,16,08,44),61],[Date.UTC(2023,02-1,16,08,49),61],[Date.UTC(2023,02-1,16,08,54),60],[Date.UTC(2023,02-1,16,08,59),60],[Date.UTC(2023,02-1,16,09,04),59],[Date.UTC(2023,02-1,16,09,09),59],[Date.UTC(2023,02-1,16,09,14),56],[Date.UTC(2023,02-1,16,09,19),56],[Date.UTC(2023,02-1,16,09,24),58],[Date.UTC(2023,02-1,16,09,29),56],[Date.UTC(2023,02-1,16,09,34),57],[Date.UTC(2023,02-1,16,09,39),56],[Date.UTC(2023,02-1,16,09,45),64],[Date.UTC(2023,02-1,16,09,49),59],[Date.UTC(2023,02-1,16,09,54),55],[Date.UTC(2023,02-1,16,09,59),57],[Date.UTC(2023,02-1,16,10,04),61],[Date.UTC(2023,02-1,16,10,09),63],[Date.UTC(2023,02-1,16,10,14),60],[Date.UTC(2023,02-1,16,10,19),58],[Date.UTC(2023,02-1,16,10,25),59],[Date.UTC(2023,02-1,16,10,29),59],[Date.UTC(2023,02-1,16,10,34),60],[Date.UTC(2023,02-1,16,10,39),58],[Date.UTC(2023,02-1,16,10,45),58],[Date.UTC(2023,02-1,16,10,49),59],[Date.UTC(2023,02-1,16,10,54),60],[Date.UTC(2023,02-1,16,10,59),59],[Date.UTC(2023,02-1,16,11,05),59],[Date.UTC(2023,02-1,16,11,09),55],[Date.UTC(2023,02-1,16,11,14),58],[Date.UTC(2023,02-1,16,11,19),59],[Date.UTC(2023,02-1,16,11,25),60],[Date.UTC(2023,02-1,16,11,29),62],[Date.UTC(2023,02-1,16,11,34),64],[Date.UTC(2023,02-1,16,11,39),67],[Date.UTC(2023,02-1,16,11,44),69],[Date.UTC(2023,02-1,16,11,49),70],[Date.UTC(2023,02-1,16,11,54),70],[Date.UTC(2023,02-1,16,11,59),69],[Date.UTC(2023,02-1,16,12,04),69],[Date.UTC(2023,02-1,16,12,09),68],[Date.UTC(2023,02-1,16,12,14),69],[Date.UTC(2023,02-1,16,12,19),69],[Date.UTC(2023,02-1,16,12,25),68],[Date.UTC(2023,02-1,16,12,29),67],[Date.UTC(2023,02-1,16,12,34),67],[Date.UTC(2023,02-1,16,12,39),67],[Date.UTC(2023,02-1,16,12,45),68],[Date.UTC(2023,02-1,16,12,49),66],[Date.UTC(2023,02-1,16,12,54),64],[Date.UTC(2023,02-1,16,12,59),65],[Date.UTC(2023,02-1,16,13,04),63],[Date.UTC(2023,02-1,16,13,09),62],[Date.UTC(2023,02-1,16,13,14),62],[Date.UTC(2023,02-1,16,13,19),63],[Date.UTC(2023,02-1,16,13,24),62],[Date.UTC(2023,02-1,16,13,29),62],[Date.UTC(2023,02-1,16,13,34),61],[Date.UTC(2023,02-1,16,13,39),60],[Date.UTC(2023,02-1,16,13,44),62],[Date.UTC(2023,02-1,16,13,49),65],[Date.UTC(2023,02-1,16,13,54),62],[Date.UTC(2023,02-1,16,13,59),62],[Date.UTC(2023,02-1,16,14,05),65],[Date.UTC(2023,02-1,16,14,09),65],[Date.UTC(2023,02-1,16,14,14),65],[Date.UTC(2023,02-1,16,14,19),65],[Date.UTC(2023,02-1,16,14,24),56],[Date.UTC(2023,02-1,16,14,29),57],[Date.UTC(2023,02-1,16,14,34),57],[Date.UTC(2023,02-1,16,14,39),58],[Date.UTC(2023,02-1,16,14,45),59],[Date.UTC(2023,02-1,16,14,49),59],[Date.UTC(2023,02-1,16,14,54),60],[Date.UTC(2023,02-1,16,14,59),61],[Date.UTC(2023,02-1,16,15,05),61],[Date.UTC(2023,02-1,16,15,09),61],[Date.UTC(2023,02-1,16,15,14),62],[Date.UTC(2023,02-1,16,15,19),62],[Date.UTC(2023,02-1,16,15,24),63],[Date.UTC(2023,02-1,16,15,29),64],[Date.UTC(2023,02-1,16,15,34),64],[Date.UTC(2023,02-1,16,15,39),65],[Date.UTC(2023,02-1,16,15,45),65],[Date.UTC(2023,02-1,16,15,49),66],[Date.UTC(2023,02-1,16,15,54),67],[Date.UTC(2023,02-1,16,15,59),67],[Date.UTC(2023,02-1,16,16,05),68],[Date.UTC(2023,02-1,16,16,09),68],[Date.UTC(2023,02-1,16,16,14),68],[Date.UTC(2023,02-1,16,16,19),68],[Date.UTC(2023,02-1,16,16,25),68],[Date.UTC(2023,02-1,16,16,29),69],[Date.UTC(2023,02-1,16,16,34),69],[Date.UTC(2023,02-1,16,16,39),69],[Date.UTC(2023,02-1,16,16,45),69],[Date.UTC(2023,02-1,16,16,49),69],[Date.UTC(2023,02-1,16,16,54),69],[Date.UTC(2023,02-1,16,16,59),70],[Date.UTC(2023,02-1,16,17,05),69],[Date.UTC(2023,02-1,16,17,09),69],[Date.UTC(2023,02-1,16,17,14),69],[Date.UTC(2023,02-1,16,17,19),68],[Date.UTC(2023,02-1,16,17,24),69],[Date.UTC(2023,02-1,16,17,29),69],[Date.UTC(2023,02-1,16,17,34),69],[Date.UTC(2023,02-1,16,17,39),69],[Date.UTC(2023,02-1,16,17,45),68],[Date.UTC(2023,02-1,16,17,49),67],[Date.UTC(2023,02-1,16,17,54),68],[Date.UTC(2023,02-1,16,17,59),68],[Date.UTC(2023,02-1,16,18,05),68],[Date.UTC(2023,02-1,16,18,09),68],[Date.UTC(2023,02-1,16,18,14),68],[Date.UTC(2023,02-1,16,18,19),68],[Date.UTC(2023,02-1,16,18,24),67],[Date.UTC(2023,02-1,16,18,29),67],[Date.UTC(2023,02-1,16,18,34),67],[Date.UTC(2023,02-1,16,18,39),68],[Date.UTC(2023,02-1,16,18,44),67],
+                    ]
+
+                },
+                    {
+                        name: 'Da 48 a 24h fa',
+                        marker: {
+                            symbol: 'square',
+                            enabled: false
+                        },
+                        color: '#c0c3bf',
+                        data: [
+                            [Date.UTC(2023,02-1,15,18,49),66],[Date.UTC(2023,02-1,15,18,54),67],[Date.UTC(2023,02-1,15,18,59),67],[Date.UTC(2023,02-1,15,19,04),67],[Date.UTC(2023,02-1,15,19,09),68],[Date.UTC(2023,02-1,15,19,14),69],[Date.UTC(2023,02-1,15,19,19),69],[Date.UTC(2023,02-1,15,19,24),68],[Date.UTC(2023,02-1,15,19,29),68],[Date.UTC(2023,02-1,15,19,34),68],[Date.UTC(2023,02-1,15,19,39),68],[Date.UTC(2023,02-1,15,19,44),69],[Date.UTC(2023,02-1,15,19,49),69],[Date.UTC(2023,02-1,15,19,54),69],[Date.UTC(2023,02-1,15,19,59),69],[Date.UTC(2023,02-1,15,20,04),70],[Date.UTC(2023,02-1,15,20,09),70],[Date.UTC(2023,02-1,15,20,14),69],[Date.UTC(2023,02-1,15,20,19),69],[Date.UTC(2023,02-1,15,20,24),69],[Date.UTC(2023,02-1,15,20,29),69],[Date.UTC(2023,02-1,15,20,34),69],[Date.UTC(2023,02-1,15,20,39),68],[Date.UTC(2023,02-1,15,20,44),67],[Date.UTC(2023,02-1,15,20,49),67],[Date.UTC(2023,02-1,15,20,54),67],[Date.UTC(2023,02-1,15,20,59),68],[Date.UTC(2023,02-1,15,21,04),68],[Date.UTC(2023,02-1,15,21,09),68],[Date.UTC(2023,02-1,15,21,14),68],[Date.UTC(2023,02-1,15,21,19),67],[Date.UTC(2023,02-1,15,21,24),68],[Date.UTC(2023,02-1,15,21,29),68],[Date.UTC(2023,02-1,15,21,34),68],[Date.UTC(2023,02-1,15,21,39),69],[Date.UTC(2023,02-1,15,21,44),69],[Date.UTC(2023,02-1,15,21,49),69],[Date.UTC(2023,02-1,15,21,54),69],[Date.UTC(2023,02-1,15,21,59),69],[Date.UTC(2023,02-1,15,22,04),68],[Date.UTC(2023,02-1,15,22,09),69],[Date.UTC(2023,02-1,15,22,14),68],[Date.UTC(2023,02-1,15,22,19),68],[Date.UTC(2023,02-1,15,22,24),68],[Date.UTC(2023,02-1,15,22,29),69],[Date.UTC(2023,02-1,15,22,34),69],[Date.UTC(2023,02-1,15,22,39),69],[Date.UTC(2023,02-1,15,22,44),68],[Date.UTC(2023,02-1,15,22,49),68],[Date.UTC(2023,02-1,15,22,54),69],[Date.UTC(2023,02-1,15,22,59),69],[Date.UTC(2023,02-1,15,23,04),69],[Date.UTC(2023,02-1,15,23,09),69],[Date.UTC(2023,02-1,15,23,14),70],[Date.UTC(2023,02-1,15,23,19),69],[Date.UTC(2023,02-1,15,23,24),69],[Date.UTC(2023,02-1,15,23,29),69],[Date.UTC(2023,02-1,15,23,34),69],[Date.UTC(2023,02-1,15,23,39),70],[Date.UTC(2023,02-1,15,23,44),70],[Date.UTC(2023,02-1,15,23,49),70],[Date.UTC(2023,02-1,15,23,54),70],[Date.UTC(2023,02-1,15,23,59),70],[Date.UTC(2023,02-1,16,00,04),70],[Date.UTC(2023,02-1,16,00,09),70],[Date.UTC(2023,02-1,16,00,14),70],[Date.UTC(2023,02-1,16,00,19),70],[Date.UTC(2023,02-1,16,00,24),70],[Date.UTC(2023,02-1,16,00,29),71],[Date.UTC(2023,02-1,16,00,34),71],[Date.UTC(2023,02-1,16,00,39),71],[Date.UTC(2023,02-1,16,00,44),71],[Date.UTC(2023,02-1,16,00,49),71],[Date.UTC(2023,02-1,16,00,54),71],[Date.UTC(2023,02-1,16,00,59),71],[Date.UTC(2023,02-1,16,01,04),71],[Date.UTC(2023,02-1,16,01,09),71],[Date.UTC(2023,02-1,16,01,14),71],[Date.UTC(2023,02-1,16,01,19),72],[Date.UTC(2023,02-1,16,01,24),72],[Date.UTC(2023,02-1,16,01,29),72],[Date.UTC(2023,02-1,16,01,34),72],[Date.UTC(2023,02-1,16,01,39),73],[Date.UTC(2023,02-1,16,01,44),73],[Date.UTC(2023,02-1,16,01,49),73],[Date.UTC(2023,02-1,16,01,54),72],[Date.UTC(2023,02-1,16,01,59),72],[Date.UTC(2023,02-1,16,02,04),73],[Date.UTC(2023,02-1,16,02,09),73],[Date.UTC(2023,02-1,16,02,14),73],[Date.UTC(2023,02-1,16,02,19),72],[Date.UTC(2023,02-1,16,02,24),72],[Date.UTC(2023,02-1,16,02,29),73],[Date.UTC(2023,02-1,16,02,34),74],[Date.UTC(2023,02-1,16,02,39),74],[Date.UTC(2023,02-1,16,02,44),74],[Date.UTC(2023,02-1,16,02,49),75],[Date.UTC(2023,02-1,16,02,54),75],[Date.UTC(2023,02-1,16,02,59),74],[Date.UTC(2023,02-1,16,03,04),74],[Date.UTC(2023,02-1,16,03,09),74],[Date.UTC(2023,02-1,16,03,14),74],[Date.UTC(2023,02-1,16,03,19),73],[Date.UTC(2023,02-1,16,03,24),73],[Date.UTC(2023,02-1,16,03,29),73],[Date.UTC(2023,02-1,16,03,34),72],[Date.UTC(2023,02-1,16,03,39),72],[Date.UTC(2023,02-1,16,03,44),73],[Date.UTC(2023,02-1,16,03,49),72],[Date.UTC(2023,02-1,16,03,54),71],[Date.UTC(2023,02-1,16,03,59),71],[Date.UTC(2023,02-1,16,04,04),72],[Date.UTC(2023,02-1,16,04,09),73],[Date.UTC(2023,02-1,16,04,14),72],[Date.UTC(2023,02-1,16,04,19),73],[Date.UTC(2023,02-1,16,04,24),73],[Date.UTC(2023,02-1,16,04,29),73],[Date.UTC(2023,02-1,16,04,34),73],[Date.UTC(2023,02-1,16,04,39),73],[Date.UTC(2023,02-1,16,04,44),73],[Date.UTC(2023,02-1,16,04,49),72],[Date.UTC(2023,02-1,16,04,54),72],[Date.UTC(2023,02-1,16,04,59),72],[Date.UTC(2023,02-1,16,05,04),72],[Date.UTC(2023,02-1,16,05,09),72],[Date.UTC(2023,02-1,16,05,14),73],[Date.UTC(2023,02-1,16,05,19),73],[Date.UTC(2023,02-1,16,05,24),73],[Date.UTC(2023,02-1,16,05,29),73],[Date.UTC(2023,02-1,16,05,34),73],[Date.UTC(2023,02-1,16,05,39),73],[Date.UTC(2023,02-1,16,05,44),73],[Date.UTC(2023,02-1,16,05,49),73],[Date.UTC(2023,02-1,16,05,54),73],[Date.UTC(2023,02-1,16,05,59),72],[Date.UTC(2023,02-1,16,06,04),72],[Date.UTC(2023,02-1,16,06,09),72],[Date.UTC(2023,02-1,16,06,14),72],[Date.UTC(2023,02-1,16,06,19),72],[Date.UTC(2023,02-1,16,06,24),71],[Date.UTC(2023,02-1,16,06,29),71],[Date.UTC(2023,02-1,16,06,34),71],[Date.UTC(2023,02-1,16,06,39),70],[Date.UTC(2023,02-1,16,06,44),70],[Date.UTC(2023,02-1,16,06,49),70],[Date.UTC(2023,02-1,16,06,54),69],[Date.UTC(2023,02-1,16,06,59),69],[Date.UTC(2023,02-1,16,07,04),69],[Date.UTC(2023,02-1,16,07,09),69],[Date.UTC(2023,02-1,16,07,14),69],[Date.UTC(2023,02-1,16,07,19),68],[Date.UTC(2023,02-1,16,07,24),68],[Date.UTC(2023,02-1,16,07,29),67],[Date.UTC(2023,02-1,16,07,34),66],[Date.UTC(2023,02-1,16,07,39),67],[Date.UTC(2023,02-1,16,07,44),66],[Date.UTC(2023,02-1,16,07,49),66],[Date.UTC(2023,02-1,16,07,54),66],[Date.UTC(2023,02-1,16,07,59),65],[Date.UTC(2023,02-1,16,08,04),65],[Date.UTC(2023,02-1,16,08,09),65],[Date.UTC(2023,02-1,16,08,14),65],[Date.UTC(2023,02-1,16,08,19),66],[Date.UTC(2023,02-1,16,08,24),65],[Date.UTC(2023,02-1,16,08,29),64],[Date.UTC(2023,02-1,16,08,34),64],[Date.UTC(2023,02-1,16,08,39),64],[Date.UTC(2023,02-1,16,08,44),64],[Date.UTC(2023,02-1,16,08,49),63],[Date.UTC(2023,02-1,16,08,54),62],[Date.UTC(2023,02-1,16,08,59),63],[Date.UTC(2023,02-1,16,09,04),62],[Date.UTC(2023,02-1,16,09,09),63],[Date.UTC(2023,02-1,16,09,14),61],[Date.UTC(2023,02-1,16,09,19),60],[Date.UTC(2023,02-1,16,09,24),61],[Date.UTC(2023,02-1,16,09,29),60],[Date.UTC(2023,02-1,16,09,34),61],[Date.UTC(2023,02-1,16,09,39),60],[Date.UTC(2023,02-1,16,09,44),61],[Date.UTC(2023,02-1,16,09,49),61],[Date.UTC(2023,02-1,16,09,54),60],[Date.UTC(2023,02-1,16,09,59),60],[Date.UTC(2023,02-1,16,10,04),60],[Date.UTC(2023,02-1,16,10,09),60],[Date.UTC(2023,02-1,16,10,14),58],[Date.UTC(2023,02-1,16,10,19),58],[Date.UTC(2023,02-1,16,10,24),56],[Date.UTC(2023,02-1,16,10,29),56],[Date.UTC(2023,02-1,16,10,34),57],[Date.UTC(2023,02-1,16,10,39),58],[Date.UTC(2023,02-1,16,10,44),56],[Date.UTC(2023,02-1,16,10,49),55],[Date.UTC(2023,02-1,16,10,54),55],[Date.UTC(2023,02-1,16,10,59),56],[Date.UTC(2023,02-1,16,11,04),56],[Date.UTC(2023,02-1,16,11,09),54],[Date.UTC(2023,02-1,16,11,14),54],[Date.UTC(2023,02-1,16,11,19),54],[Date.UTC(2023,02-1,16,11,24),53],[Date.UTC(2023,02-1,16,11,29),53],[Date.UTC(2023,02-1,16,11,34),61],[Date.UTC(2023,02-1,16,11,39),64],[Date.UTC(2023,02-1,16,11,44),65],[Date.UTC(2023,02-1,16,11,47),67],[Date.UTC(2023,02-1,16,11,54),67],[Date.UTC(2023,02-1,16,11,59),66],[Date.UTC(2023,02-1,16,12,03),67],[Date.UTC(2023,02-1,16,12,14),67],[Date.UTC(2023,02-1,16,12,19),66],[Date.UTC(2023,02-1,16,12,24),65],[Date.UTC(2023,02-1,16,12,29),64],[Date.UTC(2023,02-1,16,12,34),65],[Date.UTC(2023,02-1,16,12,39),65],[Date.UTC(2023,02-1,16,12,44),65],[Date.UTC(2023,02-1,16,12,49),65],[Date.UTC(2023,02-1,16,12,54),64],[Date.UTC(2023,02-1,16,12,57),62],[Date.UTC(2023,02-1,16,13,44),62],[Date.UTC(2023,02-1,16,13,49),62],[Date.UTC(2023,02-1,16,13,54),62],[Date.UTC(2023,02-1,16,13,55),62],[Date.UTC(2023,02-1,16,14,54),63],[Date.UTC(2023,02-1,16,14,59),64],[Date.UTC(2023,02-1,16,15,04),64],[Date.UTC(2023,02-1,16,15,19),65],[Date.UTC(2023,02-1,16,15,24),65],[Date.UTC(2023,02-1,16,15,29),65],[Date.UTC(2023,02-1,16,15,34),65],[Date.UTC(2023,02-1,16,15,39),65],[Date.UTC(2023,02-1,16,15,43),65],[Date.UTC(2023,02-1,16,15,54),65],[Date.UTC(2023,02-1,16,15,59),65],[Date.UTC(2023,02-1,16,16,04),66],[Date.UTC(2023,02-1,16,16,09),66],[Date.UTC(2023,02-1,16,16,14),66],[Date.UTC(2023,02-1,16,16,19),66],[Date.UTC(2023,02-1,16,16,22),66],[Date.UTC(2023,02-1,16,16,34),67],[Date.UTC(2023,02-1,16,16,39),68],[Date.UTC(2023,02-1,16,16,43),68],[Date.UTC(2023,02-1,16,16,59),68],[Date.UTC(2023,02-1,16,17,04),69],[Date.UTC(2023,02-1,16,17,34),73],[Date.UTC(2023,02-1,16,17,37),73],[Date.UTC(2023,02-1,16,18,19),75],[Date.UTC(2023,02-1,16,18,34),75],[Date.UTC(2023,02-1,16,18,39),75],[Date.UTC(2023,02-1,16,18,44),76],[Date.UTC(2023,02-1,16,18,48),76],
+                        ]
+                    }],
+            });
+
+            //Grafico della temperaturaa
+            last_24_48_graph_t=Highcharts.chart('24h_graph_div_t', {
+                chart: {
+                    type: 'spline',
+                    height: bigGraphHeight,
+                    width: null
+                },
+                title:
+                    {
+                        text: null
+                    },
+                xAxis: {
+                    type: 'datetime',
+                    dateTimeLabelFormats: {
+                        week: '%Y-%m-%d',
+                        month: '%Y-%m-%d',
+                        year: '%Y-%m-%d',
+                        day: '<b style="font-weight: 900; color:#000000 !important; fill:#000000 !important; font-size:12px;">%d/%m</b>',
+                        minute: '%H:%M',
+                        hour: '%H:%M',
+                    },
+                    labels:
+                        {
+                            enabled: true,
+                            style: '{"fontSize": "5px"}',
+                            rotation: 0
+                        }
+                },
+                yAxis: {
+                    title: {
+                        text: '[°C]'
+                    },
+                    labels: {
+                        enabled: true,
+                        formatter: function () {
+                            return this.value;
+                        }
+                    }
+                },
+                legend: {
+                    enabled: true,
+                    align: 'center',
+                    verticalAlign: 'bottom',
+                    layout: 'horizontal'
+                },
+                tooltip: {
+                    crosshairs: true,
+                    shared: true,
+                    formatter: function() {
+                        var data = new Date(this.x);
+                        var datastring='';
+
+                        $.each(this.points, function(i, point) {
+                            datastring+=('<span style="color:'+point.series.color+';font-weight:bold;">'+ point.series.name +' : '+
+                                Highcharts.numberFormat(point.y,1) +' °C<span><br>');
+                        });
+
+                        //return '' + Highcharts.dateFormat('%H:%M', this.x ) + ', <b>' + Highcharts.numberFormat(this.y, 1) +' °C </b>';
+                        return '' + Highcharts.dateFormat('%H:%M', this.x )+'<br>' + datastring;
+                    }
+                },
+                plotOptions: {
+                    spline: {
+                        marker: {
+                            radius: 4,
+                            lineColor: '#666666',
+                            lineWidth: 1
+                        }
+                    }
+                },
+                series: [{
+                    name: 'Ultime 24h',
+                    marker: {
+                        symbol: 'square',
+                        enabled: false
+                    },
+                    color: 'rgba(215,75,58,0.94)',
+                    data: [
+                        [Date.UTC(2023,02-1,15,19,32),10.6],[Date.UTC(2023,02-1,15,20,19),10.7],[Date.UTC(2023,02-1,15,20,24),10.6],[Date.UTC(2023,02-1,15,20,29),10.7],[Date.UTC(2023,02-1,15,21,39),10.4],[Date.UTC(2023,02-1,15,22,05),10.3],[Date.UTC(2023,02-1,15,22,07),10.2],[Date.UTC(2023,02-1,15,22,50),10.2],[Date.UTC(2023,02-1,15,23,44),9.9],[Date.UTC(2023,02-1,15,23,46),9.9],[Date.UTC(2023,02-1,16,00,24),9.6],[Date.UTC(2023,02-1,16,00,29),9.7],[Date.UTC(2023,02-1,16,00,34),9.7],[Date.UTC(2023,02-1,16,00,37),9.7],[Date.UTC(2023,02-1,16,01,29),9.7],[Date.UTC(2023,02-1,16,01,34),9.6],[Date.UTC(2023,02-1,16,01,37),9.5],[Date.UTC(2023,02-1,16,02,09),9.6],[Date.UTC(2023,02-1,16,02,14),9.7],[Date.UTC(2023,02-1,16,02,29),9.7],[Date.UTC(2023,02-1,16,02,34),9.5],[Date.UTC(2023,02-1,16,02,39),9.4],[Date.UTC(2023,02-1,16,02,44),9.3],[Date.UTC(2023,02-1,16,02,47),9.3],[Date.UTC(2023,02-1,16,03,14),9.4],[Date.UTC(2023,02-1,16,03,19),9.6],[Date.UTC(2023,02-1,16,03,24),9.5],[Date.UTC(2023,02-1,16,03,34),9.6],[Date.UTC(2023,02-1,16,03,39),9.7],[Date.UTC(2023,02-1,16,03,44),9.6],[Date.UTC(2023,02-1,16,03,49),9.6],[Date.UTC(2023,02-1,16,03,50),9.6],[Date.UTC(2023,02-1,16,04,11),9.4],[Date.UTC(2023,02-1,16,04,29),9.4],[Date.UTC(2023,02-1,16,04,34),9.5],[Date.UTC(2023,02-1,16,04,38),9.5],[Date.UTC(2023,02-1,16,04,44),9.5],[Date.UTC(2023,02-1,16,04,46),9.5],[Date.UTC(2023,02-1,16,05,09),9.4],[Date.UTC(2023,02-1,16,05,14),9.4],[Date.UTC(2023,02-1,16,05,19),9.4],[Date.UTC(2023,02-1,16,05,23),9.5],[Date.UTC(2023,02-1,16,05,34),9.6],[Date.UTC(2023,02-1,16,05,39),9.6],[Date.UTC(2023,02-1,16,05,49),9.5],[Date.UTC(2023,02-1,16,05,54),9.6],[Date.UTC(2023,02-1,16,05,58),9.6],[Date.UTC(2023,02-1,16,06,13),9.7],[Date.UTC(2023,02-1,16,06,39),10.2],[Date.UTC(2023,02-1,16,06,42),10.3],[Date.UTC(2023,02-1,16,07,09),11.3],[Date.UTC(2023,02-1,16,07,14),11.5],[Date.UTC(2023,02-1,16,07,29),12],[Date.UTC(2023,02-1,16,07,34),12.2],[Date.UTC(2023,02-1,16,07,39),12.5],[Date.UTC(2023,02-1,16,07,44),12.6],[Date.UTC(2023,02-1,16,07,49),13.1],[Date.UTC(2023,02-1,16,07,54),13.1],[Date.UTC(2023,02-1,16,07,59),13.6],[Date.UTC(2023,02-1,16,08,04),13.7],[Date.UTC(2023,02-1,16,08,09),13.8],[Date.UTC(2023,02-1,16,08,14),14],[Date.UTC(2023,02-1,16,08,19),14.2],[Date.UTC(2023,02-1,16,08,25),14.1],[Date.UTC(2023,02-1,16,08,29),14.5],[Date.UTC(2023,02-1,16,08,34),14],[Date.UTC(2023,02-1,16,08,39),14.6],[Date.UTC(2023,02-1,16,08,44),14.9],[Date.UTC(2023,02-1,16,08,49),14.8],[Date.UTC(2023,02-1,16,08,54),14.7],[Date.UTC(2023,02-1,16,08,59),14.9],[Date.UTC(2023,02-1,16,09,04),14.7],[Date.UTC(2023,02-1,16,09,09),14.8],[Date.UTC(2023,02-1,16,09,14),15.2],[Date.UTC(2023,02-1,16,09,19),15.4],[Date.UTC(2023,02-1,16,09,24),15.3],[Date.UTC(2023,02-1,16,09,29),15.3],[Date.UTC(2023,02-1,16,09,34),15.1],[Date.UTC(2023,02-1,16,09,39),15.5],[Date.UTC(2023,02-1,16,09,45),14.8],[Date.UTC(2023,02-1,16,09,49),15.4],[Date.UTC(2023,02-1,16,09,54),15.7],[Date.UTC(2023,02-1,16,09,59),16],[Date.UTC(2023,02-1,16,10,04),15.4],[Date.UTC(2023,02-1,16,10,09),14.8],[Date.UTC(2023,02-1,16,10,14),15.3],[Date.UTC(2023,02-1,16,10,19),15.7],[Date.UTC(2023,02-1,16,10,25),15.5],[Date.UTC(2023,02-1,16,10,29),15.2],[Date.UTC(2023,02-1,16,10,34),14.9],[Date.UTC(2023,02-1,16,10,39),15],[Date.UTC(2023,02-1,16,10,45),15],[Date.UTC(2023,02-1,16,10,49),15.1],[Date.UTC(2023,02-1,16,10,54),15.1],[Date.UTC(2023,02-1,16,10,59),15.2],[Date.UTC(2023,02-1,16,11,05),15.5],[Date.UTC(2023,02-1,16,11,09),15.5],[Date.UTC(2023,02-1,16,11,14),15.8],[Date.UTC(2023,02-1,16,11,19),15.7],[Date.UTC(2023,02-1,16,11,25),15.2],[Date.UTC(2023,02-1,16,11,29),15.4],[Date.UTC(2023,02-1,16,11,34),15.4],[Date.UTC(2023,02-1,16,11,39),15.1],[Date.UTC(2023,02-1,16,11,44),14.6],[Date.UTC(2023,02-1,16,11,49),14.5],[Date.UTC(2023,02-1,16,11,54),15.1],[Date.UTC(2023,02-1,16,11,59),14.8],[Date.UTC(2023,02-1,16,12,04),14.9],[Date.UTC(2023,02-1,16,12,09),14.8],[Date.UTC(2023,02-1,16,12,14),15.2],[Date.UTC(2023,02-1,16,12,19),14.9],[Date.UTC(2023,02-1,16,12,25),15],[Date.UTC(2023,02-1,16,12,29),15.1],[Date.UTC(2023,02-1,16,12,34),15.2],[Date.UTC(2023,02-1,16,12,39),15.3],[Date.UTC(2023,02-1,16,12,45),15.3],[Date.UTC(2023,02-1,16,12,49),15.2],[Date.UTC(2023,02-1,16,12,54),15.5],[Date.UTC(2023,02-1,16,12,59),15.5],[Date.UTC(2023,02-1,16,13,04),15.6],[Date.UTC(2023,02-1,16,13,09),15.7],[Date.UTC(2023,02-1,16,13,14),15.8],[Date.UTC(2023,02-1,16,13,19),15.7],[Date.UTC(2023,02-1,16,13,24),15.7],[Date.UTC(2023,02-1,16,13,29),15.7],[Date.UTC(2023,02-1,16,13,34),15.7],[Date.UTC(2023,02-1,16,13,39),15.7],[Date.UTC(2023,02-1,16,13,44),15.9],[Date.UTC(2023,02-1,16,13,49),15.4],[Date.UTC(2023,02-1,16,13,54),15.6],[Date.UTC(2023,02-1,16,13,59),15.7],[Date.UTC(2023,02-1,16,14,05),15.8],[Date.UTC(2023,02-1,16,14,09),15.7],[Date.UTC(2023,02-1,16,14,14),15.8],[Date.UTC(2023,02-1,16,14,19),15.8],[Date.UTC(2023,02-1,16,14,24),16.2],[Date.UTC(2023,02-1,16,14,29),16.6],[Date.UTC(2023,02-1,16,14,34),16.5],[Date.UTC(2023,02-1,16,14,39),16.2],[Date.UTC(2023,02-1,16,14,45),15.8],[Date.UTC(2023,02-1,16,14,49),15.6],[Date.UTC(2023,02-1,16,14,54),15.6],[Date.UTC(2023,02-1,16,14,59),15.4],[Date.UTC(2023,02-1,16,15,05),15.2],[Date.UTC(2023,02-1,16,15,09),15],[Date.UTC(2023,02-1,16,15,14),14.8],[Date.UTC(2023,02-1,16,15,19),14.6],[Date.UTC(2023,02-1,16,15,24),14.4],[Date.UTC(2023,02-1,16,15,29),14.3],[Date.UTC(2023,02-1,16,15,34),14.2],[Date.UTC(2023,02-1,16,15,39),14.1],[Date.UTC(2023,02-1,16,15,45),14],[Date.UTC(2023,02-1,16,15,49),13.9],[Date.UTC(2023,02-1,16,15,54),13.8],[Date.UTC(2023,02-1,16,15,59),13.7],[Date.UTC(2023,02-1,16,16,05),13.5],[Date.UTC(2023,02-1,16,16,09),13.4],[Date.UTC(2023,02-1,16,16,14),13.3],[Date.UTC(2023,02-1,16,16,19),13.2],[Date.UTC(2023,02-1,16,16,25),13.2],[Date.UTC(2023,02-1,16,16,29),13.1],[Date.UTC(2023,02-1,16,16,34),13],[Date.UTC(2023,02-1,16,16,39),12.9],[Date.UTC(2023,02-1,16,16,45),12.9],[Date.UTC(2023,02-1,16,16,49),13],[Date.UTC(2023,02-1,16,16,54),12.9],[Date.UTC(2023,02-1,16,16,59),12.8],[Date.UTC(2023,02-1,16,17,05),12.8],[Date.UTC(2023,02-1,16,17,09),12.8],[Date.UTC(2023,02-1,16,17,14),12.7],[Date.UTC(2023,02-1,16,17,19),12.8],[Date.UTC(2023,02-1,16,17,24),12.7],[Date.UTC(2023,02-1,16,17,29),12.7],[Date.UTC(2023,02-1,16,17,34),12.6],[Date.UTC(2023,02-1,16,17,39),12.6],[Date.UTC(2023,02-1,16,17,45),12.6],[Date.UTC(2023,02-1,16,17,49),12.7],[Date.UTC(2023,02-1,16,17,54),12.6],[Date.UTC(2023,02-1,16,17,59),12.5],[Date.UTC(2023,02-1,16,18,05),12.5],[Date.UTC(2023,02-1,16,18,09),12.6],[Date.UTC(2023,02-1,16,18,14),12.5],[Date.UTC(2023,02-1,16,18,19),12.4],[Date.UTC(2023,02-1,16,18,24),12.5],[Date.UTC(2023,02-1,16,18,29),12.5],[Date.UTC(2023,02-1,16,18,34),12.5],[Date.UTC(2023,02-1,16,18,39),12.4],[Date.UTC(2023,02-1,16,18,44),12.4],
+                    ]
+
+                },
+                    {
+                        name: 'Da 48 a 24h fa',
+                        marker: {
+                            symbol: 'square',
+                            enabled: false
+                        },
+                        color: '#c0c3bf',
+                        data: [
+                            [Date.UTC(2023,02-1,15,18,49),11.3],[Date.UTC(2023,02-1,15,18,54),11.2],[Date.UTC(2023,02-1,15,18,59),11.2],[Date.UTC(2023,02-1,15,19,04),11.3],[Date.UTC(2023,02-1,15,19,09),11],[Date.UTC(2023,02-1,15,19,14),11],[Date.UTC(2023,02-1,15,19,19),11.1],[Date.UTC(2023,02-1,15,19,24),11.5],[Date.UTC(2023,02-1,15,19,29),11.3],[Date.UTC(2023,02-1,15,19,34),11.4],[Date.UTC(2023,02-1,15,19,39),11.3],[Date.UTC(2023,02-1,15,19,44),11.3],[Date.UTC(2023,02-1,15,19,49),11.3],[Date.UTC(2023,02-1,15,19,54),11.3],[Date.UTC(2023,02-1,15,19,59),11.4],[Date.UTC(2023,02-1,15,20,04),11.3],[Date.UTC(2023,02-1,15,20,09),11.2],[Date.UTC(2023,02-1,15,20,14),11.3],[Date.UTC(2023,02-1,15,20,19),11.3],[Date.UTC(2023,02-1,15,20,24),11.3],[Date.UTC(2023,02-1,15,20,29),11.2],[Date.UTC(2023,02-1,15,20,34),11.2],[Date.UTC(2023,02-1,15,20,39),11.3],[Date.UTC(2023,02-1,15,20,44),11.3],[Date.UTC(2023,02-1,15,20,49),11.3],[Date.UTC(2023,02-1,15,20,54),11.4],[Date.UTC(2023,02-1,15,20,59),11.2],[Date.UTC(2023,02-1,15,21,04),11.2],[Date.UTC(2023,02-1,15,21,09),11.2],[Date.UTC(2023,02-1,15,21,14),11.2],[Date.UTC(2023,02-1,15,21,19),11.4],[Date.UTC(2023,02-1,15,21,24),11.2],[Date.UTC(2023,02-1,15,21,29),11.4],[Date.UTC(2023,02-1,15,21,34),11.3],[Date.UTC(2023,02-1,15,21,39),11.4],[Date.UTC(2023,02-1,15,21,44),11.3],[Date.UTC(2023,02-1,15,21,49),11.4],[Date.UTC(2023,02-1,15,21,54),11.3],[Date.UTC(2023,02-1,15,21,59),11.3],[Date.UTC(2023,02-1,15,22,04),11.6],[Date.UTC(2023,02-1,15,22,09),11.4],[Date.UTC(2023,02-1,15,22,14),11.4],[Date.UTC(2023,02-1,15,22,19),11.5],[Date.UTC(2023,02-1,15,22,24),11.3],[Date.UTC(2023,02-1,15,22,29),11.3],[Date.UTC(2023,02-1,15,22,34),11.3],[Date.UTC(2023,02-1,15,22,39),11.4],[Date.UTC(2023,02-1,15,22,44),11.5],[Date.UTC(2023,02-1,15,22,49),11.5],[Date.UTC(2023,02-1,15,22,54),11.4],[Date.UTC(2023,02-1,15,22,59),11.4],[Date.UTC(2023,02-1,15,23,04),11.4],[Date.UTC(2023,02-1,15,23,09),11.3],[Date.UTC(2023,02-1,15,23,14),11.2],[Date.UTC(2023,02-1,15,23,19),11.3],[Date.UTC(2023,02-1,15,23,24),11.3],[Date.UTC(2023,02-1,15,23,29),11.3],[Date.UTC(2023,02-1,15,23,34),11.3],[Date.UTC(2023,02-1,15,23,39),11.3],[Date.UTC(2023,02-1,15,23,44),11.2],[Date.UTC(2023,02-1,15,23,49),11.4],[Date.UTC(2023,02-1,15,23,54),11.6],[Date.UTC(2023,02-1,15,23,59),11.7],[Date.UTC(2023,02-1,16,00,04),11.5],[Date.UTC(2023,02-1,16,00,09),11.6],[Date.UTC(2023,02-1,16,00,14),11.5],[Date.UTC(2023,02-1,16,00,19),11.6],[Date.UTC(2023,02-1,16,00,24),11.6],[Date.UTC(2023,02-1,16,00,29),11.5],[Date.UTC(2023,02-1,16,00,34),11.7],[Date.UTC(2023,02-1,16,00,39),11.5],[Date.UTC(2023,02-1,16,00,44),11.5],[Date.UTC(2023,02-1,16,00,49),11.6],[Date.UTC(2023,02-1,16,00,54),11.4],[Date.UTC(2023,02-1,16,00,59),11.7],[Date.UTC(2023,02-1,16,01,04),11.7],[Date.UTC(2023,02-1,16,01,09),11.6],[Date.UTC(2023,02-1,16,01,14),11.7],[Date.UTC(2023,02-1,16,01,19),11.5],[Date.UTC(2023,02-1,16,01,24),11.5],[Date.UTC(2023,02-1,16,01,29),11.6],[Date.UTC(2023,02-1,16,01,34),11.5],[Date.UTC(2023,02-1,16,01,39),11.5],[Date.UTC(2023,02-1,16,01,44),11.3],[Date.UTC(2023,02-1,16,01,49),11.2],[Date.UTC(2023,02-1,16,01,54),11.5],[Date.UTC(2023,02-1,16,01,59),11.6],[Date.UTC(2023,02-1,16,02,04),11.6],[Date.UTC(2023,02-1,16,02,09),11.3],[Date.UTC(2023,02-1,16,02,14),11.5],[Date.UTC(2023,02-1,16,02,19),11.7],[Date.UTC(2023,02-1,16,02,24),11.8],[Date.UTC(2023,02-1,16,02,29),11.4],[Date.UTC(2023,02-1,16,02,34),11.3],[Date.UTC(2023,02-1,16,02,39),11.2],[Date.UTC(2023,02-1,16,02,44),11.3],[Date.UTC(2023,02-1,16,02,49),11.2],[Date.UTC(2023,02-1,16,02,54),11.1],[Date.UTC(2023,02-1,16,02,59),11.4],[Date.UTC(2023,02-1,16,03,04),11.4],[Date.UTC(2023,02-1,16,03,09),11.5],[Date.UTC(2023,02-1,16,03,14),11.6],[Date.UTC(2023,02-1,16,03,19),11.7],[Date.UTC(2023,02-1,16,03,24),11.5],[Date.UTC(2023,02-1,16,03,29),11.8],[Date.UTC(2023,02-1,16,03,34),12],[Date.UTC(2023,02-1,16,03,39),11.9],[Date.UTC(2023,02-1,16,03,44),11.8],[Date.UTC(2023,02-1,16,03,49),12.1],[Date.UTC(2023,02-1,16,03,54),12.2],[Date.UTC(2023,02-1,16,03,59),12.2],[Date.UTC(2023,02-1,16,04,04),11.9],[Date.UTC(2023,02-1,16,04,09),11.7],[Date.UTC(2023,02-1,16,04,14),11.8],[Date.UTC(2023,02-1,16,04,19),11.6],[Date.UTC(2023,02-1,16,04,24),11.7],[Date.UTC(2023,02-1,16,04,29),11.6],[Date.UTC(2023,02-1,16,04,34),11.7],[Date.UTC(2023,02-1,16,04,39),11.6],[Date.UTC(2023,02-1,16,04,44),11.6],[Date.UTC(2023,02-1,16,04,49),11.8],[Date.UTC(2023,02-1,16,04,54),11.7],[Date.UTC(2023,02-1,16,04,59),11.8],[Date.UTC(2023,02-1,16,05,04),11.7],[Date.UTC(2023,02-1,16,05,09),11.5],[Date.UTC(2023,02-1,16,05,14),11.3],[Date.UTC(2023,02-1,16,05,19),11.3],[Date.UTC(2023,02-1,16,05,24),11.5],[Date.UTC(2023,02-1,16,05,29),11.5],[Date.UTC(2023,02-1,16,05,34),11.4],[Date.UTC(2023,02-1,16,05,39),11.6],[Date.UTC(2023,02-1,16,05,44),11.5],[Date.UTC(2023,02-1,16,05,49),11.4],[Date.UTC(2023,02-1,16,05,54),11.4],[Date.UTC(2023,02-1,16,05,59),11.6],[Date.UTC(2023,02-1,16,06,04),11.8],[Date.UTC(2023,02-1,16,06,09),11.8],[Date.UTC(2023,02-1,16,06,14),11.9],[Date.UTC(2023,02-1,16,06,19),11.8],[Date.UTC(2023,02-1,16,06,24),12],[Date.UTC(2023,02-1,16,06,29),12],[Date.UTC(2023,02-1,16,06,34),12],[Date.UTC(2023,02-1,16,06,39),12.2],[Date.UTC(2023,02-1,16,06,44),12.4],[Date.UTC(2023,02-1,16,06,49),12.5],[Date.UTC(2023,02-1,16,06,54),12.5],[Date.UTC(2023,02-1,16,06,59),12.6],[Date.UTC(2023,02-1,16,07,04),12.7],[Date.UTC(2023,02-1,16,07,09),12.9],[Date.UTC(2023,02-1,16,07,14),13],[Date.UTC(2023,02-1,16,07,19),13.2],[Date.UTC(2023,02-1,16,07,24),13.3],[Date.UTC(2023,02-1,16,07,29),13.6],[Date.UTC(2023,02-1,16,07,34),13.8],[Date.UTC(2023,02-1,16,07,39),13.7],[Date.UTC(2023,02-1,16,07,44),13.6],[Date.UTC(2023,02-1,16,07,49),13.7],[Date.UTC(2023,02-1,16,07,54),13.8],[Date.UTC(2023,02-1,16,07,59),14.1],[Date.UTC(2023,02-1,16,08,04),14],[Date.UTC(2023,02-1,16,08,09),14.1],[Date.UTC(2023,02-1,16,08,14),14.3],[Date.UTC(2023,02-1,16,08,19),14.4],[Date.UTC(2023,02-1,16,08,24),14.4],[Date.UTC(2023,02-1,16,08,29),14.3],[Date.UTC(2023,02-1,16,08,34),14.4],[Date.UTC(2023,02-1,16,08,39),14.6],[Date.UTC(2023,02-1,16,08,44),14.4],[Date.UTC(2023,02-1,16,08,49),14.8],[Date.UTC(2023,02-1,16,08,54),15],[Date.UTC(2023,02-1,16,08,59),14.7],[Date.UTC(2023,02-1,16,09,04),14.8],[Date.UTC(2023,02-1,16,09,09),15.1],[Date.UTC(2023,02-1,16,09,14),15.4],[Date.UTC(2023,02-1,16,09,19),15.6],[Date.UTC(2023,02-1,16,09,24),15.6],[Date.UTC(2023,02-1,16,09,29),15.7],[Date.UTC(2023,02-1,16,09,34),15],[Date.UTC(2023,02-1,16,09,39),15.3],[Date.UTC(2023,02-1,16,09,44),15.1],[Date.UTC(2023,02-1,16,09,49),15],[Date.UTC(2023,02-1,16,09,54),15.3],[Date.UTC(2023,02-1,16,09,59),15.3],[Date.UTC(2023,02-1,16,10,04),15.3],[Date.UTC(2023,02-1,16,10,09),15.5],[Date.UTC(2023,02-1,16,10,14),16],[Date.UTC(2023,02-1,16,10,19),16],[Date.UTC(2023,02-1,16,10,24),15.9],[Date.UTC(2023,02-1,16,10,29),15.8],[Date.UTC(2023,02-1,16,10,34),16],[Date.UTC(2023,02-1,16,10,39),15.9],[Date.UTC(2023,02-1,16,10,44),16.4],[Date.UTC(2023,02-1,16,10,49),16.2],[Date.UTC(2023,02-1,16,10,54),16],[Date.UTC(2023,02-1,16,10,59),16.3],[Date.UTC(2023,02-1,16,11,04),16.2],[Date.UTC(2023,02-1,16,11,09),16.2],[Date.UTC(2023,02-1,16,11,14),16.5],[Date.UTC(2023,02-1,16,11,19),16.5],[Date.UTC(2023,02-1,16,11,24),16.8],[Date.UTC(2023,02-1,16,11,29),16.6],[Date.UTC(2023,02-1,16,11,34),16.2],[Date.UTC(2023,02-1,16,11,39),15.6],[Date.UTC(2023,02-1,16,11,44),14.7],[Date.UTC(2023,02-1,16,11,47),14.6],[Date.UTC(2023,02-1,16,11,54),14.5],[Date.UTC(2023,02-1,16,11,59),14.5],[Date.UTC(2023,02-1,16,12,03),14.2],[Date.UTC(2023,02-1,16,12,14),14.3],[Date.UTC(2023,02-1,16,12,19),14.4],[Date.UTC(2023,02-1,16,12,24),14.6],[Date.UTC(2023,02-1,16,12,29),14.7],[Date.UTC(2023,02-1,16,12,34),14.6],[Date.UTC(2023,02-1,16,12,39),14.2],[Date.UTC(2023,02-1,16,12,44),14],[Date.UTC(2023,02-1,16,12,49),13.9],[Date.UTC(2023,02-1,16,12,54),14.4],[Date.UTC(2023,02-1,16,12,57),14.6],[Date.UTC(2023,02-1,16,13,44),13.9],[Date.UTC(2023,02-1,16,13,49),14.2],[Date.UTC(2023,02-1,16,13,54),14.2],[Date.UTC(2023,02-1,16,13,55),14.2],[Date.UTC(2023,02-1,16,14,54),13.8],[Date.UTC(2023,02-1,16,14,59),13.7],[Date.UTC(2023,02-1,16,15,04),13.8],[Date.UTC(2023,02-1,16,15,19),13.5],[Date.UTC(2023,02-1,16,15,24),13.4],[Date.UTC(2023,02-1,16,15,29),13.4],[Date.UTC(2023,02-1,16,15,34),13.4],[Date.UTC(2023,02-1,16,15,39),13.5],[Date.UTC(2023,02-1,16,15,43),13.4],[Date.UTC(2023,02-1,16,15,54),13.3],[Date.UTC(2023,02-1,16,15,59),13.2],[Date.UTC(2023,02-1,16,16,04),13.1],[Date.UTC(2023,02-1,16,16,09),13.1],[Date.UTC(2023,02-1,16,16,14),12.9],[Date.UTC(2023,02-1,16,16,19),13],[Date.UTC(2023,02-1,16,16,22),12.9],[Date.UTC(2023,02-1,16,16,34),12.7],[Date.UTC(2023,02-1,16,16,39),12.5],[Date.UTC(2023,02-1,16,16,43),12.4],[Date.UTC(2023,02-1,16,16,59),12.4],[Date.UTC(2023,02-1,16,17,04),12.2],[Date.UTC(2023,02-1,16,17,34),11.2],[Date.UTC(2023,02-1,16,17,37),11.3],[Date.UTC(2023,02-1,16,18,19),10.7],[Date.UTC(2023,02-1,16,18,34),10.9],[Date.UTC(2023,02-1,16,18,39),11],[Date.UTC(2023,02-1,16,18,44),10.8],[Date.UTC(2023,02-1,16,18,48),10.8],
+                        ]
+                    }]
+            });
+
+            reflowLast24hGraphs();
+        });
+    </script>
+
+        <script type="text/javascript">
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+        </script>
+
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172409-9"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-172409-3');
+        </script>
+
+    </body>
+</html>
